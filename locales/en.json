@@ -1,0 +1,871 @@
+{
+  "common": {
+    "language": "Language",
+    "optional": "optional",
+    "back": "Back",
+    "saving": "Saving…",
+    "saveAndContinue": "Save and continue",
+    "save": "Save",
+    "cancel": "Cancel",
+    "skipToContent": "Skip to main content",
+    "demoMode": "Demo mode: no AI service is connected, so writing shows sample text. Add an AI key to write real content.",
+    "yes": "Yes",
+    "no": "No",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "none": "None"
+  },
+  "nav": {
+    "main": "Main menu",
+    "menu": "Menu",
+    "home": "Home",
+    "listings": "My listings",
+    "create": "Create content",
+    "coach": "Follow-Up Coach",
+    "contacts": "Contacts",
+    "pipeline": "Pipeline",
+    "tasks": "Tasks",
+    "cma": "Price analysis (CMA)",
+    "team": "Team",
+    "settings": "Settings",
+    "help": "Help",
+    "admin": "Admin",
+    "signOut": "Sign out",
+    "locked": "Upgrade to unlock"
+  },
+  "errors": {
+    "required": "Please fill this in.",
+    "tooShort": "This is too short.",
+    "tooLong": "This is too long. Please shorten it.",
+    "invalidFormat": "This doesn't look right. Please check it.",
+    "invalid": "Please check this field.",
+    "fixFields": "A few fields need your attention. They are marked below in red.",
+    "notFound": "We couldn't find that. It may have been deleted.",
+    "generic": "Something went wrong on our side. Please try again in a minute."
+  },
+  "auth": {
+    "email": "Email address",
+    "password": "Password",
+    "passwordHint": "At least 8 characters.",
+    "name": "Your full name",
+    "nameHint": "As you'd like it to appear on your marketing.",
+    "signInTitle": "Welcome back",
+    "signInSubtitle": "Sign in to your RealtyBoost account.",
+    "signInButton": "Sign in",
+    "signingIn": "Signing in…",
+    "signIn": "Sign in",
+    "noAccount": "New here?",
+    "startTrial": "Start your free 14-day trial",
+    "signUpTitle": "Start your free trial",
+    "signUpSubtitle": "14 days free. No credit card needed to start.",
+    "createAccountButton": "Create my account",
+    "creatingAccount": "Creating your account…",
+    "trialNote": "Your trial includes everything in the Pro plan.",
+    "haveAccount": "Already have an account?",
+    "errors": {
+      "emailTaken": "An account with this email already exists. Try signing in instead.",
+      "wrongLogin": "That email and password don't match. Please check them and try again."
+    }
+  },
+  "setup": {
+    "title": "Set up your account",
+    "stepOf": "Step {step} of {total}",
+    "error": "Please check your answers and try again.",
+    "step1": {
+      "title": "About you",
+      "subtitle": "This goes on your marketing. You can change it any time.",
+      "displayName": "Your name",
+      "displayNameHint": "The name clients know you by.",
+      "phone": "Mobile phone",
+      "brokerage": "Brokerage",
+      "brokerageHint": "Many states require the brokerage name on ads.",
+      "license": "License number",
+      "state": "State"
+    },
+    "step2": {
+      "title": "Your languages",
+      "subtitle": "Pick the language for this app, and the languages you want your marketing written in.",
+      "uiLanguage": "Language for this app",
+      "uiLanguageHint": "Buttons, menus and help text.",
+      "contentLanguage": "Main language for your marketing",
+      "contentLanguageHint": "Listings and posts will be written in this language.",
+      "extraLanguages": "Other languages you serve (up to {count})",
+      "extraLanguagesHint": "Write the same listing in several languages at once.",
+      "soloLimit": "Your plan includes one marketing language. The Pro plan includes three."
+    },
+    "step3": {
+      "title": "How you sound",
+      "subtitle": "Pick the style that sounds most like you. Everything we write will match it.",
+      "tone": "Your style",
+      "tones": {
+        "warm": {
+          "name": "Warm and welcoming",
+          "example": "Morning light fills the kitchen, and the back porch is ready for slow weekends."
+        },
+        "professional": {
+          "name": "Polished and professional",
+          "example": "A well-maintained three-bedroom home with a renovated kitchen and a two-car garage."
+        },
+        "luxury": {
+          "name": "Refined and elegant",
+          "example": "Wide-plank oak floors and custom millwork set a quiet, refined tone throughout."
+        },
+        "friendly": {
+          "name": "Casual and upbeat",
+          "example": "Big backyard, new roof, and a kitchen you'll actually want to cook in."
+        },
+        "straightforward": {
+          "name": "Plain and simple",
+          "example": "3 bedrooms. 2 baths. New roof in 2022. Fenced yard."
+        }
+      },
+      "voiceNotes": "Anything else about your style?",
+      "voiceNotesHint": "For example: \"I always mention the commute\" or \"Keep it short.\"",
+      "wordsToAvoid": "Words you never want to see",
+      "wordsToAvoidHint": "Separate with commas. For example: nestled, cozy, must-see."
+    },
+    "step4": {
+      "title": "Your phone and area",
+      "subtitle": "We use your phone model to give you exact camera settings for listing photos.",
+      "phone": "Which phone do you take photos with?",
+      "phoneHint": "Not sure? On iPhone: Settings → General → About.",
+      "phonePick": "Choose your phone",
+      "markets": "Areas you serve",
+      "marketsHint": "Cities or neighborhoods, separated by commas."
+    },
+    "step5": {
+      "title": "You're all set!",
+      "subtitle": "Here's what we saved. You can change any of it in Settings.",
+      "name": "Name: {name}",
+      "language": "Marketing language: {language}",
+      "tone": "Style: {tone}",
+      "phone": "Phone: {phone}",
+      "notSet": "not set",
+      "goDashboard": "Go to my home page",
+      "addListing": "Add my first listing"
+    }
+  },
+  "dashboard": {
+    "title": "Home",
+    "morning": "Good morning, {name}",
+    "afternoon": "Good afternoon, {name}",
+    "evening": "Good evening, {name}",
+    "subtitle": "What would you like to do today?",
+    "quickActions": "Quick actions",
+    "addListing": "Add a listing",
+    "addListingBody": "Enter the home's details once. Use them for everything.",
+    "createContent": "Create content",
+    "createContentBody": "Listing copy, social posts, videos, emails and photo guides.",
+    "coachMe": "What do I say to this lead?",
+    "coachMeBody": "Get a call script, a text and an email in seconds.",
+    "listingUsage": "You've added {used} of {limit} listings this month.",
+    "unlimitedUpgrade": "Get unlimited listings",
+    "todayTasks": "Due today",
+    "noTasks": "Nothing due today. Nice work!",
+    "newLeads": "New leads",
+    "noLeads": "No new leads yet. Publish a listing page to start collecting them.",
+    "seeAll": "See all",
+    "activeDeals": "{count, plural, =0 {No active deals} one {# active deal} other {# active deals}}",
+    "openPipeline": "Open pipeline",
+    "crmPitch": "Want to keep track of buyers and sellers, get reminders, and collect leads from your listing pages? That's included in Pro.",
+    "seePro": "See the Pro plan",
+    "recentContent": "Recently created"
+  },
+  "properties": {
+    "title": "My listings",
+    "subtitle": "Every home you're marketing. Click one to create content for it.",
+    "addListing": "Add a listing",
+    "addFirstListing": "Add your first listing",
+    "emptyTitle": "No listings yet",
+    "emptyBody": "Add a home's details once — then create listing copy, posts, videos and a photo plan with one click each.",
+    "newTitle": "Add a listing",
+    "newSubtitle": "Fill in what you know. Only the address is required — more details mean better writing.",
+    "editTitle": "Edit listing",
+    "backToListings": "Back to my listings",
+    "backToListing": "Back to this listing",
+    "bedsShort": "{count} bd",
+    "bathsShort": "{count} ba",
+    "sqftShort": "{count, number} sq ft",
+    "builtIn": "Built {year}",
+    "piecesCount": "{count, plural, =0 {No content yet} one {# piece of content} other {# pieces of content}}",
+    "pageLive": "Page is live",
+    "pageDraft": "Page is a draft",
+    "pageViews": "{count, plural, =0 {No visits yet} one {# visit} other {# visits}}",
+    "deleted": "The listing was deleted.",
+    "saved": "Your changes were saved.",
+    "createdTitle": "Listing saved!",
+    "createdBody": "Now pick what you'd like to create for it below.",
+    "editDetails": "Edit details",
+    "addDetailsTip": "Tip: add features and upgrades (like \"quartz counters\" or \"new roof 2022\") for much better writing.",
+    "createForListing": "Create for this listing",
+    "locked": "Locked — upgrade to use",
+    "micrositeTitle": "Listing page",
+    "micrositePitch": "A simple web page for this home with a form that sends interested buyers straight to your contacts.",
+    "createPage": "Create the page",
+    "editPage": "Edit page",
+    "viewPage": "View page",
+    "openHouseKiosk": "Open-house sign-in",
+    "dealsTitle": "Deals for this home",
+    "addDeal": "Add a deal",
+    "noDeals": "No deals linked to this home yet.",
+    "cmaTitle": "Price analyses",
+    "newCma": "New price analysis",
+    "historyTitle": "Everything created for this listing",
+    "limitReached": "You've reached this month's listing limit for your plan. Upgrade to Pro for unlimited listings.",
+    "deleteTitle": "Delete this listing",
+    "deleteWarning": "This removes the listing, its listing page and all content created for it. This can't be undone.",
+    "deleteConfirm": "Yes, I want to delete this listing",
+    "deleteButton": "Delete listing",
+    "deleting": "Deleting…",
+    "form": {
+      "addressSection": "Address",
+      "address": "Street address",
+      "unit": "Unit or apartment",
+      "city": "City",
+      "state": "State",
+      "zip": "ZIP code",
+      "basicsSection": "The basics",
+      "status": "Status",
+      "propertyType": "Type of home",
+      "price": "List price ($)",
+      "beds": "Bedrooms",
+      "baths": "Bathrooms",
+      "bathsHint": "Use .5 for a half bath, like 2.5",
+      "sqft": "Square feet",
+      "lotSize": "Lot size",
+      "yearBuilt": "Year built",
+      "stories": "Stories",
+      "garage": "Garage or parking",
+      "garagePlaceholder": "2-car attached",
+      "hoaFee": "HOA fee ($ per month)",
+      "detailsSection": "What makes it special",
+      "detailsIntro": "Only true facts, please — the writing uses exactly what you put here and never makes things up.",
+      "features": "Key features",
+      "featuresHint": "Rooms, materials, layout. Commas or new lines are fine.",
+      "featuresPlaceholder": "Open kitchen with quartz counters, gas range, primary suite on main floor, vaulted living room",
+      "upgrades": "Recent upgrades (with years)",
+      "upgradesHint": "Buyers love dates: \"new roof 2022\" beats \"newer roof\".",
+      "upgradesPlaceholder": "New roof 2022, HVAC 2021, fresh interior paint 2024",
+      "outdoor": "Outdoor spaces",
+      "outdoorPlaceholder": "Fenced backyard, covered patio, mature oak trees, garden beds",
+      "neighborhood": "Location and nearby places",
+      "neighborhoodHint": "Facts about places, not people: parks, shops, commute times, the school district's name.",
+      "neighborhoodPlaceholder": "2 blocks to Lakeside Park, 10 minutes to downtown, Plano ISD",
+      "photoSection": "Photos and open house",
+      "facing": "Which way does the front of the house face?",
+      "facingHint": "Stand at the front door facing the street and check your phone's compass. This helps plan the best time for photos.",
+      "facingUnknown": "I'm not sure",
+      "phoneModel": "Phone for this shoot",
+      "phoneModelHint": "Leave as is to use the phone from your settings.",
+      "phoneModelDefault": "Use my usual phone",
+      "heroImageUrl": "Main photo link",
+      "heroImageUrlHint": "Paste a link to the main photo (for example from your MLS or Google Photos). Shown on the listing page.",
+      "openHouseAt": "Open house starts",
+      "openHouseEnd": "Open house ends",
+      "privateSection": "Private (never shown or written into marketing)",
+      "soldPrice": "Sold price ($)",
+      "privateNotes": "Private notes",
+      "privateNotesHint": "Lockbox code, seller notes — for you only.",
+      "saveListing": "Save listing",
+      "saveChanges": "Save changes",
+      "statuses": {
+        "COMING_SOON": "Coming soon",
+        "ACTIVE": "Active",
+        "PENDING": "Pending",
+        "SOLD": "Sold",
+        "OFF_MARKET": "Off market"
+      },
+      "types": {
+        "single_family": "Single-family home",
+        "condo": "Condo",
+        "townhouse": "Townhouse",
+        "multi_family": "Multi-family",
+        "manufactured": "Manufactured home",
+        "land": "Land / lot",
+        "other": "Other"
+      },
+      "facings": {
+        "N": "North",
+        "NE": "Northeast",
+        "E": "East",
+        "SE": "Southeast",
+        "S": "South",
+        "SW": "Southwest",
+        "W": "West",
+        "NW": "Northwest"
+      }
+    }
+  },
+  "create": {
+    "title": "Create content",
+    "subtitle": "Pick what you'd like to make. Everything is written from your listing's real details, in your style.",
+    "recent": "Recently created",
+    "locked": "Locked — upgrade to use",
+    "chooseListing": "Which listing is this for?",
+    "backToCreate": "Back to Create",
+    "noListingsTitle": "Add a listing first",
+    "noListingsBody": "This needs a home's details to work from.",
+    "addListing": "Add a listing",
+    "forListing": "For",
+    "changeListing": "Choose a different listing",
+    "optionalListing": "Is this about a specific home?",
+    "pickListing": "Pick the listing",
+    "form": {
+      "contact": "Who is this for?",
+      "contactHint": "Pick a contact to use their details, or leave it empty.",
+      "noContact": "Not in my contacts",
+      "languages": "Write it in",
+      "languagesHint": "Tick more than one to get the same content in several languages. Your plan allows {count, plural, one {# language} other {# languages}}.",
+      "languageLocked": "Add this language in Settings, or upgrade for more languages.",
+      "generateButton": "Write it for me",
+      "writing": "Writing… this takes about 30 seconds",
+      "timeNote": "You'll see everything on the next screen. Nothing is posted anywhere until you copy it."
+    },
+    "errors": {
+      "unknown_module": "We couldn't find that type of content.",
+      "property_required": "Please choose a listing first.",
+      "language_not_allowed": "One of the languages isn't included in your plan or settings.",
+      "invalid_options": "Some of the options weren't valid. Please check them.",
+      "ai": "The writing didn't finish."
+    }
+  },
+  "generation": {
+    "title": "Your content",
+    "backToCreate": "Back to Create",
+    "print": "Print",
+    "emailMe": "Email it to me",
+    "sending": "Sending…",
+    "emailed": "Sent! Check your inbox.",
+    "emailNotConfigured": "Email isn't set up on this account yet, so nothing was sent. You can print or copy instead.",
+    "regenerate": "Write a new version",
+    "rewriting": "Writing a new version…",
+    "changeOptions": "Change the options",
+    "languages": "Languages",
+    "needsReview": "Please review",
+    "failed": "Didn't finish",
+    "failedTitle": "This one didn't finish",
+    "failedBody": "Please try again in a minute.",
+    "noHistory": "Nothing created yet.",
+    "reviewNote": "Always read AI writing before you use it. You are responsible for what you publish."
+  },
+  "output": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "chars": "{count, plural, one {# character} other {# characters}}",
+    "charsOfLimit": "{count} of {limit} characters",
+    "overLimit": "{count} characters — {over} over the {limit} limit. Shorten before posting."
+  },
+  "fairHousing": {
+    "title": "Fair Housing check",
+    "clean": "Fair Housing check passed. This copy describes the property, not the people.",
+    "removedTitle": "{count, plural, one {We removed # sentence} other {We removed # sentences}}",
+    "removedItem": "\"{phrase}\" — {reason}",
+    "flaggedTitle": "{count, plural, one {Please review # phrase} other {Please review # phrases}}",
+    "flaggedItem": "\"{phrase}\" — {reason}",
+    "rewrittenTitle": "{count, plural, one {We improved # phrase} other {We improved # phrases}}",
+    "rewrittenItem": "\"{from}\" → \"{to}\"",
+    "disclaimer": "This automatic check helps, but it isn't legal advice. When in doubt, ask your broker.",
+    "classes": {
+      "familial_status": "talks about families or children, which Fair Housing law protects",
+      "age": "mentions age, which many states protect",
+      "marital_status": "mentions marital status, which many states protect",
+      "sex": "suggests a gender preference",
+      "disability": "could exclude people with disabilities",
+      "source_of_income": "refuses housing vouchers, which is illegal in many states",
+      "race_national_origin": "describes race, ethnicity or national origin",
+      "religion": "suggests a religious preference",
+      "military_status": "mentions military status, which several states protect",
+      "steering": "could steer buyers (\"safe\", school ratings)",
+      "style_guideline": "is wording many MLSs ask agents to avoid"
+    }
+  },
+  "billing": {
+    "title": "Plan and billing",
+    "subtitle": "Simple monthly pricing. Cancel any time.",
+    "backToSettings": "Back to settings",
+    "currentPlan": "Your plan",
+    "noPlan": "No active plan",
+    "trialDaysLeft": "{days, plural, =0 {Your trial ends today.} one {# day left in your free trial.} other {# days left in your free trial.}}",
+    "renewsOn": "Renews on {date}",
+    "manageBilling": "Manage payment and invoices",
+    "opening": "Opening…",
+    "perMonth": "per month",
+    "mostPopular": "Most popular",
+    "yourPlan": "This is your plan",
+    "choosePlanButton": "Choose {plan}",
+    "choosePlan": "Choose a plan",
+    "trialBanner": "{days, plural, =0 {Your free trial ends today.} one {# day left in your free trial.} other {# days left in your free trial.}}",
+    "inactiveBanner": "Your plan isn't active, so most features are paused.",
+    "successTitle": "Thank you!",
+    "successBody": "Your plan is active. Everything included is unlocked now.",
+    "canceledBody": "No problem — nothing was charged.",
+    "testCardNote": "Testing? Use Stripe's test card 4242 4242 4242 4242 with any future date and any 3 digits.",
+    "devModeTitle": "Test billing mode",
+    "devModeBody": "Stripe isn't connected, so choosing a plan switches it instantly without payment. This only works on test servers.",
+    "status": {
+      "TRIALING": "Free trial",
+      "ACTIVE": "Active",
+      "PAST_DUE": "Payment problem",
+      "CANCELED": "Canceled",
+      "NONE": "Not active"
+    },
+    "errors": {
+      "owner": "Only the account owner can change the plan.",
+      "not_configured": "Payments aren't set up yet. Please contact support.",
+      "generic": "We couldn't open checkout. Please try again."
+    },
+    "plans": {
+      "SOLO": {
+        "name": "Solo",
+        "tagline": "Marketing made easy"
+      },
+      "PRO": {
+        "name": "Pro",
+        "tagline": "Marketing plus your whole client list"
+      },
+      "TEAM": {
+        "name": "Team",
+        "tagline": "For teams and small brokerages"
+      }
+    },
+    "features": {
+      "marketing": "Listing copy, social posts, Reel scripts and emails",
+      "photoGuide": "Phone photography and video guides",
+      "coach": "Follow-Up Coach: what to say to every lead",
+      "oneLanguage": "1 marketing language",
+      "tenListings": "10 listings per month",
+      "emailSupport": "Email support",
+      "everythingSolo": "Everything in Solo",
+      "crm": "Contacts, pipeline, tasks and reminders",
+      "microsites": "Listing pages that collect leads",
+      "cma": "Price analysis (CMA) assistant",
+      "transactions": "Deal checklists and deadlines",
+      "threeLanguages": "3 marketing languages",
+      "unlimitedListings": "Unlimited listings",
+      "chatSupport": "Chat support",
+      "everythingPro": "Everything in Pro",
+      "fiveSeats": "5 team members",
+      "allLanguages": "All 8 marketing languages",
+      "whiteLabel": "Your own brand name and logo",
+      "teamDashboard": "Team performance dashboard",
+      "leadRouting": "Lead routing",
+      "prioritySupport": "Priority support"
+    }
+  },
+  "locked": {
+    "includedIn": "Included in the {plan} plan — ${price} per month",
+    "upgradeButton": "Upgrade to {plan}",
+    "generic": "This feature isn't included in your plan.",
+    "features": {
+      "MARKETING": {
+        "title": "Marketing suite",
+        "pitch": "Listing copy, social posts, Reel scripts and emails written in your style."
+      },
+      "PHOTO_GUIDE": {
+        "title": "Photo guides",
+        "pitch": "Shoot listing photos like a pro with your own phone."
+      },
+      "FOLLOW_UP_COACH": {
+        "title": "Follow-Up Coach",
+        "pitch": "Know exactly what to say to every lead."
+      },
+      "CRM": {
+        "title": "Your client list, organized",
+        "pitch": "Keep every buyer and seller in one place, see your deals at a glance, and never forget a follow-up."
+      },
+      "MICROSITES": {
+        "title": "Listing pages that bring you leads",
+        "pitch": "One click creates a page for your listing. Interested buyers land right in your contacts."
+      },
+      "CMA": {
+        "title": "Price analysis (CMA) assistant",
+        "pitch": "Enter your comps and get a clear, client-ready price analysis with talking points."
+      },
+      "TRANSACTIONS": {
+        "title": "Deal checklists",
+        "pitch": "Track every deadline from contract to closing."
+      },
+      "TEAM_DASHBOARD": {
+        "title": "Team dashboard",
+        "pitch": "See how your whole team is doing."
+      },
+      "LEAD_ROUTING": {
+        "title": "Lead routing",
+        "pitch": "Send new leads to the right teammate automatically."
+      },
+      "WHITE_LABEL": {
+        "title": "Your own brand",
+        "pitch": "Show your team's name and logo instead of ours."
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Your details, your writing style and your languages.",
+    "saved": "Saved!",
+    "billingLink": "Plan and billing",
+    "profileSection": "Your details",
+    "publicEmail": "Email for clients",
+    "publicEmailHint": "Shown on your listing pages and used in signatures.",
+    "brokeragePhone": "Brokerage phone",
+    "mlsId": "MLS agent ID",
+    "headshotUrl": "Headshot photo link",
+    "headshotUrlHint": "Paste a link to your photo. Shown on your listing pages.",
+    "bio": "Short bio",
+    "bioHint": "2–3 sentences about you. Shown on your listing pages.",
+    "voiceSection": "Your writing style",
+    "signature": "Email sign-off",
+    "signatureHint": "How you like to sign your emails.",
+    "languagesSection": "Languages and phone",
+    "saveButton": "Save settings",
+    "whiteLabelSection": "Your brand",
+    "whiteLabelIntro": "Replace the RealtyBoost name with your team's name and logo.",
+    "brandName": "Team or brokerage name",
+    "brandColor": "Brand color",
+    "brandColorHint": "A color code like #1d4ed8",
+    "logoUrl": "Logo link",
+    "saveBrand": "Save brand"
+  },
+  "modules": {
+    "mls-listing": {
+      "name": "MLS listing description",
+      "description": "Three versions, each with a headline, a short and a long description.",
+      "longLimit": "Your MLS character limit",
+      "longLimitHint": "Check your MLS rules. When unsure, 1,000 is safe for most.",
+      "chars500": "500 characters",
+      "chars1000": "1,000 characters",
+      "chars1500": "1,500 characters",
+      "chars2000": "2,000 characters",
+      "chars4000": "4,000 characters",
+      "emphasis": "Anything you especially want to highlight?",
+      "emphasisPlaceholder": "The new kitchen",
+      "view": {
+        "variants": "Your three versions",
+        "headline": "Headline",
+        "short": "Short description",
+        "long": "Full MLS description",
+        "bullets": "Feature list",
+        "bulletsCopy": "Feature list (copy-ready)",
+        "checklist": "Before you publish"
+      }
+    },
+    "social-posts": {
+      "name": "Social media posts",
+      "description": "Instagram, Facebook, LinkedIn and X — each written the way that platform likes.",
+      "occasion": "What's happening?",
+      "occasions": {
+        "just_listed": "Just listed",
+        "open_house": "Open house",
+        "coming_soon": "Coming soon",
+        "price_improvement": "Price improvement",
+        "under_contract": "Under contract",
+        "just_sold": "Just sold"
+      },
+      "useEmoji": "Use a few emoji",
+      "view": {
+        "caption": "Caption",
+        "hashtags": "Hashtags",
+        "hashtagsHint": "Instagram allows up to 5 hashtags per post.",
+        "captionWithTags": "Caption with hashtags (copy-ready)",
+        "altText": "Photo description (alt text)",
+        "altTextHint": "Paste this in Instagram's \"Accessibility\" setting so people who can't see the photo know what's in it.",
+        "stories": "Story slides"
+      }
+    },
+    "reel-script": {
+      "name": "Reel / TikTok video plan",
+      "description": "Hook, scene-by-scene storyboard, shot list, voiceover and caption.",
+      "duration": "How long?",
+      "seconds15": "15 seconds",
+      "seconds30": "30 seconds",
+      "seconds60": "60 seconds",
+      "style": "Style",
+      "styles": {
+        "tour": "Walkthrough tour",
+        "top_features": "Top features countdown",
+        "reveal": "Just-listed reveal",
+        "detail_montage": "Details and finishes"
+      },
+      "onCamera": "I'll be on camera for the intro and ending",
+      "view": {
+        "length": "{seconds} seconds",
+        "scenes": "{count} scenes",
+        "hook": "The hook (first 2 seconds)",
+        "storyboard": "Storyboard",
+        "scene": "Scene {number}",
+        "seconds": "{seconds} sec",
+        "shot": "What to film",
+        "cameraMove": "How to move",
+        "overlay": "Text on screen",
+        "voiceover": "Say",
+        "totalSeconds": "Total: about {seconds} seconds",
+        "voiceoverScript": "Full voiceover script",
+        "shotList": "Shot list for filming day",
+        "editing": "Finish it in CapCut (free)",
+        "caption": "Caption"
+      }
+    },
+    "email-blast": {
+      "name": "Listing email",
+      "description": "Just listed, open house, price improvement or just sold — ready to paste.",
+      "emailType": "Type of email",
+      "types": {
+        "just_listed": "Just listed",
+        "open_house": "Open house invitation",
+        "price_improvement": "Price improvement",
+        "just_sold": "Just sold"
+      },
+      "audience": "Who is it going to?",
+      "audiences": {
+        "sphere": "Friends, neighbors and past clients",
+        "buyers": "Buyers looking for a home like this",
+        "agents": "Other agents"
+      },
+      "view": {
+        "subjects": "Subject lines",
+        "subjectOption": "Option {number}",
+        "preview": "Preview text",
+        "email": "The email",
+        "copyAll": "Whole email (copy-ready)",
+        "canSpam": "Send this from your email marketing tool so it includes your mailing address and an unsubscribe link (required by the CAN-SPAM law)."
+      }
+    },
+    "photo-guide": {
+      "name": "DIY photo and video guide",
+      "description": "Shoot this listing with your own phone: settings, shot list, best light, editing.",
+      "phone": "Which phone?",
+      "phoneHint": "We'll give you settings for this exact phone.",
+      "phoneDefault": "My usual phone (from settings)",
+      "time": "How much time do you have?",
+      "times": {
+        "quick": "About 20 minutes",
+        "afternoon": "An afternoon (1–2 hours)",
+        "weekend": "A weekend (premium plan)"
+      },
+      "style": "What look do you want?",
+      "styles": {
+        "bright_airy": "Bright and airy",
+        "warm_cozy": "Warm and cozy",
+        "modern_crisp": "Modern and crisp",
+        "luxury": "Luxury"
+      },
+      "detail": "How detailed?",
+      "details": {
+        "quick": "Quick — one-page cheat sheet",
+        "pro": "Pro — full step-by-step guide"
+      },
+      "includeVideo": "Include a walkthrough video plan",
+      "view": {
+        "bestTime": "Best time to shoot",
+        "totalTime": "Time needed",
+        "roomOrder": "Shoot in this order",
+        "beforeYouStart": "Before you start",
+        "phoneSettings": "Settings for your {phone}",
+        "setting": "Setting",
+        "value": "Set it to",
+        "why": "Why",
+        "lighting": "Lighting plan",
+        "shotList": "Shot list",
+        "lens": "Lens",
+        "staging": "Get the house ready",
+        "composition": "Framing rules",
+        "editing": "Edit in {app} (free)",
+        "video": "Walkthrough video",
+        "seconds": "{seconds} sec",
+        "troubleshooting": "If something goes wrong"
+      }
+    },
+    "follow-up-coach": {
+      "name": "Follow-Up Coach",
+      "description": "What to say to a lead: call script, answers to tough questions, a text, an email and a 2-week plan.",
+      "situation": "How did they reach you?",
+      "situations": {
+        "portal_inquiry": "Zillow, Realtor.com or another website",
+        "listing_page": "My listing page form",
+        "open_house": "My open house",
+        "sign_call": "They called from my yard sign",
+        "referral": "Someone referred them",
+        "past_client": "A past client",
+        "gone_quiet": "A lead who stopped replying"
+      },
+      "goal": "What do you want next?",
+      "goals": {
+        "showing": "Book a showing",
+        "consultation": "Book a buyer meeting",
+        "preapproval": "Help them get pre-approved",
+        "listing_appointment": "Book a listing appointment",
+        "stay_in_touch": "Stay in touch until they're ready"
+      },
+      "leadName": "Their first name",
+      "leadNameHint": "Leave empty if you picked a contact above.",
+      "whatTheySaid": "What did they say or ask?",
+      "whatTheySaidPlaceholder": "\"Is the price negotiable? We're moving from Ohio in March.\"",
+      "experience": "Your experience",
+      "experiences": {
+        "new": "I'm new (less than a year)",
+        "experienced": "I'm experienced"
+      },
+      "view": {
+        "callScript": "The phone call",
+        "callNow": "Call now",
+        "opening": "Start with",
+        "questions": "Ask these questions",
+        "keyPoints": "Share these points",
+        "askForAppointment": "Ask for the next step",
+        "voicemail": "If you get voicemail",
+        "objections": "If they say…",
+        "theySay": "They say",
+        "youSay": "You say",
+        "text": "Text message",
+        "openTextApp": "Open in my text app",
+        "textConsent": "Text only people who contacted you or agreed to texts. If they ask you to stop, stop.",
+        "email": "Email",
+        "subject": "Subject",
+        "body": "Message",
+        "openEmailApp": "Open in my email app",
+        "plan": "Your 2-week follow-up plan",
+        "day": "Day {day}",
+        "tips": "Coaching tips",
+        "avoid": "Avoid this"
+      }
+    },
+    "microsite-copy": {
+      "name": "Listing page copy",
+      "description": "Headline, welcome and highlights for your listing page."
+    },
+    "cma-narrative": {
+      "name": "Price analysis write-up",
+      "description": "A client-ready explanation of your comparable sales."
+    }
+  },
+  "landing": {
+    "metaTitle": "RealtyBoost — Listing marketing, photo guides and follow-up for real estate agents",
+    "metaDescription": "Write MLS descriptions, social posts, video plans and emails in your voice, shoot great listing photos with your own phone, and know what to say to every lead. In five languages.",
+    "signIn": "Sign in",
+    "eyebrow": "For real estate agents who'd rather sell homes than fight software",
+    "heroTitle": "Market every listing in minutes — in your voice, in your clients' language.",
+    "heroBody": "Enter a home's details once. Get the MLS description, social posts, a Reel plan, a listing email and a step-by-step phone photo guide. Then know exactly what to say when a buyer calls.",
+    "ctaTrial": "Start your free 14-day trial",
+    "ctaTrialShort": "Start free trial",
+    "ctaHow": "See how it works",
+    "ctaNote": "No credit card to start. Cancel any time.",
+    "photoTitle": "No photographer? No problem.",
+    "photoBody": "Professional listing photos can cost hundreds of dollars per home. For simpler listings, RealtyBoost gives you a shooting plan made for that exact house and your exact phone.",
+    "photoPoints": {
+      "settings": "Camera settings for your phone model — iPhone, Samsung Galaxy or Google Pixel",
+      "light": "The best time of day to shoot, based on which way the house faces",
+      "shots": "A room-by-room shot list and a staging checklist",
+      "editing": "Free-app editing steps with starting values",
+      "video": "A simple walkthrough video plan — in 20 minutes or a full weekend"
+    },
+    "howTitle": "How it works",
+    "how": {
+      "one": {
+        "title": "Enter the home once",
+        "body": "Address, beds, baths and what makes it special. Only true facts — we never make anything up."
+      },
+      "two": {
+        "title": "Click what you need",
+        "body": "MLS description, posts, video plan, email, photo guide, or a call script for a new lead."
+      },
+      "three": {
+        "title": "Copy and use it",
+        "body": "Big copy buttons, character counts for every platform, and a print button for checklists."
+      }
+    },
+    "featuresTitle": "Everything an agent needs, in one simple place",
+    "featuresBody": "Instead of five different tools with five passwords.",
+    "features": {
+      "mls": {
+        "title": "MLS descriptions",
+        "body": "Three versions with headlines, sized to your MLS's character limit."
+      },
+      "social": {
+        "title": "Social posts",
+        "body": "Instagram, Facebook, LinkedIn and X — each written the way that platform likes."
+      },
+      "reels": {
+        "title": "Reel and TikTok plans",
+        "body": "A hook, storyboard, shot list and voiceover you can film in 30 minutes."
+      },
+      "email": {
+        "title": "Listing emails",
+        "body": "Just listed, open house, price improvement and just sold."
+      },
+      "coach": {
+        "title": "Follow-Up Coach",
+        "body": "What to say when a lead calls: a script, answers to tough questions, a text, an email and a 2-week plan."
+      },
+      "pages": {
+        "title": "Listing pages",
+        "body": "One click creates a page for your listing that sends interested buyers to your contacts."
+      },
+      "crm": {
+        "title": "Simple client list",
+        "body": "Contacts, a drag-and-drop pipeline, tasks and reminders."
+      },
+      "cma": {
+        "title": "Price analysis helper",
+        "body": "Enter your comps; get clear math and client-ready talking points."
+      },
+      "checklists": {
+        "title": "Deal checklists",
+        "body": "Every deadline from contract to closing, in one list."
+      }
+    },
+    "trust": {
+      "fairHousing": {
+        "title": "Fair Housing checked",
+        "body": "Every word is checked for Fair Housing problems before you see it — and we tell you what we changed."
+      },
+      "languages": {
+        "title": "Five languages",
+        "body": "English, Spanish, Chinese, Vietnamese and Korean — the whole app and everything it writes."
+      },
+      "easy": {
+        "title": "Made to be easy",
+        "body": "Large text, clear buttons, plain words. One thing per screen. No 40-page manual."
+      }
+    },
+    "pricingTitle": "Simple pricing",
+    "pricingBody": "Every plan starts with a 14-day free trial of Pro.",
+    "faqTitle": "Questions agents ask",
+    "faq": {
+      "computers": {
+        "q": "I'm not great with computers. Can I use this?",
+        "a": "Yes. It was designed for busy agents: big text, clear buttons and one step at a time. If you can fill in a form, you can use RealtyBoost."
+      },
+      "accuracy": {
+        "q": "Will the AI make things up about the house?",
+        "a": "It writes only from the facts you enter, and we tell it never to invent features. You should still read everything before you use it — you're the expert."
+      },
+      "posting": {
+        "q": "Does it post to my social media for me?",
+        "a": "Not yet. You copy and paste with one click, so you stay in control of what goes out."
+      },
+      "privacy": {
+        "q": "Who can see my clients and listings?",
+        "a": "Only you (and teammates on a Team plan). Your data is kept separate from every other account."
+      },
+      "cancel": {
+        "q": "Can I cancel any time?",
+        "a": "Yes. There are no contracts. Cancel from your billing page in two clicks."
+      },
+      "languages": {
+        "q": "Can it write the same listing in two languages?",
+        "a": "Yes. Tick more than one language and you'll get each version side by side."
+      }
+    },
+    "comingTitle": "Coming next",
+    "coming": {
+      "mls": "Import listings from your MLS",
+      "esign": "E-signatures",
+      "sending": "Send emails and texts from the app",
+      "showings": "Showing scheduler"
+    },
+    "finalTitle": "Your next listing could be marketed by lunch.",
+    "finalBody": "Try everything free for 14 days.",
+    "footerNote": "RealtyBoost writes drafts. Always review before publishing."
+  }
+}

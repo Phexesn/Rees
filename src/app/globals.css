@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
+/*
+ * Age-friendly design tokens (brief: min 16px body, 20px+ inputs, WCAG 2.1 AA).
+ * Text sizes are raised so that `text-sm` is still 16px. Body copy is 18px.
+ * All text colors used on white are slate-700 or darker (≥ 7:1 contrast).
+ */
+@theme {
+  --font-sans: var(--font-atkinson), "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Noto Sans", "Noto Sans SC", "Noto Sans KR", "Apple SD Gothic Neo", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+
+  --text-xs: 0.9375rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.125rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.6;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.4;
+  --text-2xl: 1.75rem;
+  --text-2xl--line-height: 1.3;
+  --text-3xl: 2.125rem;
+  --text-3xl--line-height: 1.2;
+  --text-4xl: 2.75rem;
+  --text-4xl--line-height: 1.1;
+
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* Visible, thick focus ring everywhere — keyboard users and low-vision users rely on it. */
+:focus-visible {
+  outline: 4px solid #2563eb;
+  outline-offset: 3px;
+}
+
+/* Respect reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    font-size: 12pt;
+  }
+  .no-print {
+    display: none !important;
+  }
 }
