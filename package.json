@@ -15,7 +15,8 @@
     "db:seed": "tsx --conditions=react-server scripts/seed.ts",
     "check:locales": "tsx scripts/check-locales.ts",
     "walkthrough": "tsx --conditions=react-server scripts/walkthrough.ts",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "vercel-build": "prisma migrate deploy && npm run build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.4.0",

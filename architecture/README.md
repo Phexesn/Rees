@@ -43,7 +43,7 @@ research/ vault/        research notes; the Realtor Playbook Obsidian vault (sid
 4. **`systemDb()`** sets `app.bypass_rls = on` and is used only where there is no tenant yet: login, signup, session lookup, Stripe webhook, public listing pages, platform admin. Each call site has a comment explaining why.
 5. Conventions: use scalar foreign keys (`contactId`), not nested `connect`/`create`; pass `tenantId` on create.
 
-The app's database role must **not** be a superuser (superusers bypass RLS). Neon's default `*_owner` role is fine.
+The app's database role must **not** be a superuser or have `BYPASSRLS` (both skip RLS). Check with `select rolsuper, rolbypassrls from pg_roles where rolname = current_user;`. Some hosted defaults (e.g. Neon's owner role) may have `BYPASSRLS` — the app still works and app-level scoping still applies, but for production create a dedicated app role without it.
 
 ## Feature flags & tiers
 
@@ -140,6 +140,6 @@ output_schema: { JSON Schema }        # every object becomes strict (all props r
 1. Create a Neon (or Supabase) Postgres database; copy the connection string.
 2. Import the GitHub repo in Vercel. Set env vars (names in `.env.example`): `DATABASE_URL`, `APP_URL`, `ANTHROPIC_API_KEY`, `ADMIN_EMAILS`, and optionally Stripe/Resend keys.
 3. Build command: default (`npm run build` — generates the module registry and Prisma client).
-4. Run migrations against production once per release: `npx prisma migrate deploy` (locally with the production `DATABASE_URL`, or as a Vercel build step if you prefer).
+4. Migrations run automatically on Vercel: the `vercel-build` script runs `prisma migrate deploy` before building.
 5. Stripe: create three monthly prices (Solo/Pro/Team) in test mode → `STRIPE_PRICE_SOLO/PRO/TEAM`; add a webhook endpoint `https://<domain>/api/stripe/webhook` for `checkout.session.completed`, `customer.subscription.*`, `invoice.payment_failed` → `STRIPE_WEBHOOK_SECRET`.
 6. **Rollback**: Vercel → Deployments → "Promote" a previous deployment (instant). Migrations are additive; never drop columns in the same release that stops using them.
