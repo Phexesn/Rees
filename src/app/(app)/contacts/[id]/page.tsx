@@ -9,8 +9,10 @@ import { TaskList } from "@/components/crm/TaskList";
 import { LockedFeature } from "@/components/LockedFeature";
 import { Alert, Badge, Card, LinkButton, PageHeader } from "@/components/ui";
 import { requireSetupContext } from "@/lib/auth/context";
+import { env } from "@/lib/env";
 import { summarizeBatches } from "@/lib/generation/history";
 import { languageInfo } from "@/lib/languages";
+import { hasBuyerPreferences, listingsForBuyerWhere } from "@/lib/matching";
 import { money } from "@/modules/_shared/variables";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
@@ -46,6 +48,9 @@ export default async function ContactPage({
     },
   });
   if (!contact) notFound();
+  const matches = hasBuyerPreferences(contact)
+    ? await ctx.db.property.findMany({ where: listingsForBuyerWhere(contact), include: { microsite: { select: { slug: true, published: true } } }, take: 6 })
+    : [];
   const t = await getTranslations("contacts");
   const tf = await getTranslations("contacts.form");
   const format = await getFormatter();
@@ -121,6 +126,31 @@ export default async function ContactPage({
           )}
         </Card>
       </div>
+
+      {matches.length > 0 && (
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold">🏡 {t("matchingListings")}</h2>
+          <ul className="grid gap-3 md:grid-cols-2">
+            {matches.map((m) => {
+              const link = m.microsite?.published ? `${env.appUrl()}/l/${m.microsite.slug}` : null;
+              return (
+                <li key={m.id} className="rounded-xl border-2 border-green-200 bg-white p-4">
+                  <Link href={`/properties/${m.id}`} className="text-lg font-bold hover:underline">{m.address}, {m.city}</Link>
+                  <p className="text-base text-slate-700">{[money(m.price), m.beds ? `${m.beds} ${tf("bedsShort")}` : null, m.baths ? `${m.baths} ${tf("bathsShort")}` : null].filter(Boolean).join(" · ")}</p>
+                  {link && contact.email && !doNotContact ? (
+                    <a
+                      href={`mailto:${contact.email}?subject=${encodeURIComponent(m.address)}&body=${encodeURIComponent(`${t("shareListingBody", { name: contact.firstName })}\n\n${link}`)}`}
+                      className="mt-2 inline-flex min-h-11 items-center gap-2 rounded-lg border-2 border-brand-700 px-3 text-base font-semibold text-brand-800 hover:bg-brand-50"
+                    >
+                      ✉️ {t("shareListing")}
+                    </a>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
 
       <section className="space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-3">

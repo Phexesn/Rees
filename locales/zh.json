@@ -170,7 +170,8 @@
     "openPipeline": "打开交易进度",
     "crmPitch": "想记录买家和卖家的信息、收到提醒，还能从房源页面收集客户线索吗？Pro 计划都包含这些功能。",
     "seePro": "了解 Pro 计划",
-    "recentContent": "最近创建的内容"
+    "recentContent": "最近创建的内容",
+    "welcome": "欢迎回来，{name}"
   },
   "properties": {
     "title": "我的房源",
@@ -295,7 +296,9 @@
         "W": "西",
         "NW": "西北"
       }
-    }
+    },
+    "matchingBuyers": "可能喜欢这套房子的买家",
+    "matchingBuyersHint": "根据每位买家告诉您的预算和面积需求。"
   },
   "create": {
     "title": "创建内容",
@@ -1072,7 +1075,10 @@
       "lender": "贷款机构",
       "saveContact": "保存联系人",
       "saveChanges": "保存修改"
-    }
+    },
+    "matchingListings": "符合该客户需求的您的房源",
+    "shareListing": "通过邮件发送此房源",
+    "shareListingBody": "{name}您好，这套房子看起来很符合您描述的需求。以下是详细信息："
   },
   "crm": {
     "activity": {

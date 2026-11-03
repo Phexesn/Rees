@@ -7,6 +7,7 @@ import { Alert, Badge, Card, LinkButton, PageHeader } from "@/components/ui";
 import { requireSetupContext } from "@/lib/auth/context";
 import { env } from "@/lib/env";
 import { summarizeBatches } from "@/lib/generation/history";
+import { buyersForListingWhere } from "@/lib/matching";
 import { listModuleMeta } from "@/modules";
 import { money } from "@/modules/_shared/variables";
 
@@ -39,6 +40,9 @@ export default async function PropertyPage({
     ctx.can("CRM") ? ctx.db.deal.findMany({ where: { propertyId: id }, include: { contact: true } }) : Promise.resolve([]),
     ctx.can("CMA") ? ctx.db.cma.findMany({ where: { propertyId: id }, orderBy: { createdAt: "desc" } }) : Promise.resolve([]),
   ]);
+  const matchingBuyers = ctx.can("CRM")
+    ? await ctx.db.contact.findMany({ where: buyersForListingWhere(property), take: 8, orderBy: { updatedAt: "desc" } })
+    : [];
   const t = await getTranslations("properties");
   const tf = await getTranslations("properties.form");
   const tm = await getTranslations("modules");
@@ -166,6 +170,22 @@ export default async function PropertyPage({
           ) : (
             <p className="text-lg text-slate-700">{t("noDeals")}</p>
           )}
+        </section>
+      )}
+
+      {matchingBuyers.length > 0 && (
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold">🎯 {t("matchingBuyers")}</h2>
+          <p className="text-lg text-slate-700">{t("matchingBuyersHint")}</p>
+          <ul className="flex flex-wrap gap-3">
+            {matchingBuyers.map((c) => (
+              <li key={c.id}>
+                <Link href={`/contacts/${c.id}`} className="inline-flex min-h-12 items-center rounded-xl border-2 border-green-300 bg-white px-4 text-lg font-semibold hover:border-green-700">
+                  {c.firstName} {c.lastName ?? ""}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

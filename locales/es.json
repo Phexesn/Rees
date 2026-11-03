@@ -170,7 +170,8 @@
     "openPipeline": "Abrir el embudo de negocios",
     "crmPitch": "¿Quiere llevar el control de compradores y vendedores, recibir recordatorios y captar clientes potenciales desde las páginas de sus listados? Todo eso está incluido en Pro.",
     "seePro": "Ver el plan Pro",
-    "recentContent": "Creado recientemente"
+    "recentContent": "Creado recientemente",
+    "welcome": "Bienvenido de nuevo, {name}"
   },
   "properties": {
     "title": "Mis listados",
@@ -295,7 +296,9 @@
         "W": "Oeste",
         "NW": "Noroeste"
       }
-    }
+    },
+    "matchingBuyers": "Compradores a quienes les podría gustar esta casa",
+    "matchingBuyersHint": "Según el presupuesto y el tamaño que cada comprador le indicó."
   },
   "create": {
     "title": "Crear contenido",
@@ -1072,7 +1075,10 @@
       "lender": "Prestamista",
       "saveContact": "Guardar contacto",
       "saveChanges": "Guardar cambios"
-    }
+    },
+    "matchingListings": "Sus listados que coinciden con lo que busca",
+    "shareListing": "Enviar este listado por correo",
+    "shareListingBody": "Hola {name}, esta casa parece ajustarse a lo que me describió. Aquí están los detalles:"
   },
   "crm": {
     "activity": {

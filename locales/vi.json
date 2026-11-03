@@ -1,0 +1,1427 @@
+{
+  "common": {
+    "language": "Ngôn ngữ",
+    "optional": "không bắt buộc",
+    "back": "Quay lại",
+    "saving": "Đang lưu…",
+    "saveAndContinue": "Lưu và tiếp tục",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "skipToContent": "Chuyển đến nội dung chính",
+    "demoMode": "Chế độ dùng thử: chưa kết nối dịch vụ AI nên phần viết chỉ hiện nội dung mẫu. Hãy thêm khóa AI để viết nội dung thật.",
+    "yes": "Có",
+    "no": "Không",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "search": "Tìm kiếm",
+    "none": "Không có"
+  },
+  "nav": {
+    "main": "Menu chính",
+    "menu": "Menu",
+    "home": "Trang chủ",
+    "listings": "Nhà đang bán của tôi",
+    "create": "Tạo nội dung",
+    "coach": "Trợ lý theo dõi khách",
+    "contacts": "Danh bạ khách",
+    "pipeline": "Tiến trình giao dịch",
+    "tasks": "Công việc",
+    "cma": "Phân tích giá (CMA)",
+    "team": "Nhóm",
+    "settings": "Cài đặt",
+    "help": "Trợ giúp",
+    "admin": "Quản trị",
+    "signOut": "Đăng xuất",
+    "locked": "Nâng cấp để dùng"
+  },
+  "errors": {
+    "required": "Xin điền vào ô này.",
+    "tooShort": "Nội dung này quá ngắn.",
+    "tooLong": "Nội dung này quá dài. Xin rút ngắn lại.",
+    "invalidFormat": "Nội dung này có vẻ chưa đúng. Xin kiểm tra lại.",
+    "invalid": "Xin kiểm tra lại ô này.",
+    "fixFields": "Có vài ô cần bạn xem lại. Các ô đó được đánh dấu màu đỏ bên dưới.",
+    "notFound": "Chúng tôi không tìm thấy mục này. Có thể nó đã bị xóa.",
+    "generic": "Có trục trặc từ phía chúng tôi. Xin thử lại sau ít phút."
+  },
+  "auth": {
+    "email": "Địa chỉ email",
+    "password": "Mật khẩu",
+    "passwordHint": "Ít nhất 8 ký tự.",
+    "name": "Họ và tên đầy đủ của bạn",
+    "nameHint": "Tên bạn muốn hiện trên các nội dung quảng cáo.",
+    "signInTitle": "Chào mừng bạn trở lại",
+    "signInSubtitle": "Đăng nhập vào tài khoản RealtyBoost của bạn.",
+    "signInButton": "Đăng nhập",
+    "signingIn": "Đang đăng nhập…",
+    "signIn": "Đăng nhập",
+    "noAccount": "Bạn mới dùng lần đầu?",
+    "startTrial": "Dùng thử miễn phí 14 ngày",
+    "signUpTitle": "Bắt đầu dùng thử miễn phí",
+    "signUpSubtitle": "Miễn phí 14 ngày. Không cần thẻ tín dụng để bắt đầu.",
+    "createAccountButton": "Tạo tài khoản của tôi",
+    "creatingAccount": "Đang tạo tài khoản…",
+    "trialNote": "Bản dùng thử có đầy đủ mọi tính năng của gói Pro.",
+    "haveAccount": "Bạn đã có tài khoản?",
+    "errors": {
+      "emailTaken": "Email này đã có tài khoản. Bạn hãy thử đăng nhập.",
+      "wrongLogin": "Email và mật khẩu chưa khớp. Xin kiểm tra và thử lại."
+    }
+  },
+  "setup": {
+    "title": "Thiết lập tài khoản",
+    "stepOf": "Bước {step} trên {total}",
+    "error": "Xin kiểm tra lại các câu trả lời và thử lại.",
+    "step1": {
+      "title": "Về bạn",
+      "subtitle": "Thông tin này sẽ hiện trên các nội dung quảng cáo. Bạn có thể đổi bất cứ lúc nào.",
+      "displayName": "Tên của bạn",
+      "displayNameHint": "Tên mà khách hàng vẫn gọi bạn.",
+      "phone": "Số điện thoại di động",
+      "brokerage": "Công ty môi giới",
+      "brokerageHint": "Nhiều tiểu bang yêu cầu ghi tên công ty môi giới trên quảng cáo.",
+      "license": "Số giấy phép",
+      "state": "Tiểu bang"
+    },
+    "step2": {
+      "title": "Ngôn ngữ của bạn",
+      "subtitle": "Chọn ngôn ngữ cho ứng dụng này, và các ngôn ngữ bạn muốn dùng để viết quảng cáo.",
+      "uiLanguage": "Ngôn ngữ của ứng dụng",
+      "uiLanguageHint": "Các nút bấm, menu và phần hướng dẫn.",
+      "contentLanguage": "Ngôn ngữ chính cho quảng cáo",
+      "contentLanguageHint": "Tin đăng bán nhà và bài đăng sẽ được viết bằng ngôn ngữ này.",
+      "extraLanguages": "Các ngôn ngữ khác bạn phục vụ (tối đa {count})",
+      "extraLanguagesHint": "Viết cùng một tin đăng bằng nhiều ngôn ngữ cùng lúc.",
+      "soloLimit": "Gói của bạn có một ngôn ngữ quảng cáo. Gói Pro có ba ngôn ngữ."
+    },
+    "step3": {
+      "title": "Giọng văn của bạn",
+      "subtitle": "Chọn phong cách giống bạn nhất. Mọi nội dung chúng tôi viết sẽ theo phong cách đó.",
+      "tone": "Phong cách của bạn",
+      "tones": {
+        "warm": {
+          "name": "Ấm áp và thân thiện",
+          "example": "Nắng sớm tràn vào gian bếp, và hiên sau đã sẵn sàng cho những cuối tuần thong thả bên gia đình."
+        },
+        "professional": {
+          "name": "Chỉn chu và chuyên nghiệp",
+          "example": "Căn nhà ba phòng ngủ được bảo trì tốt, có bếp mới cải tạo và garage hai xe."
+        },
+        "luxury": {
+          "name": "Tinh tế và sang trọng",
+          "example": "Sàn gỗ sồi bản rộng và đồ mộc đặt riêng tạo nên không gian thanh nhã, tinh tế khắp căn nhà."
+        },
+        "friendly": {
+          "name": "Thoải mái và vui tươi",
+          "example": "Sân sau rộng thênh thang, mái nhà mới, và một gian bếp bạn sẽ muốn vào nấu mỗi ngày!"
+        },
+        "straightforward": {
+          "name": "Đơn giản và rõ ràng",
+          "example": "3 phòng ngủ. 2 phòng tắm. Mái nhà mới năm 2022. Sân có rào."
+        }
+      },
+      "voiceNotes": "Bạn còn muốn nói gì thêm về phong cách của mình không?",
+      "voiceNotesHint": "Ví dụ: \"Tôi luôn nhắc đến thời gian đi làm\" hoặc \"Viết ngắn gọn thôi.\"",
+      "wordsToAvoid": "Những từ bạn không muốn thấy",
+      "wordsToAvoidHint": "Cách nhau bằng dấu phẩy. Ví dụ: ấm cúng, đáng xem, không thể bỏ lỡ."
+    },
+    "step4": {
+      "title": "Điện thoại và khu vực của bạn",
+      "subtitle": "Chúng tôi dùng loại điện thoại của bạn để hướng dẫn chính xác cách cài đặt máy ảnh khi chụp ảnh nhà.",
+      "phone": "Bạn chụp ảnh bằng điện thoại nào?",
+      "phoneHint": "Không chắc? Trên iPhone: Cài đặt → Cài đặt chung → Giới thiệu.",
+      "phonePick": "Chọn điện thoại của bạn",
+      "markets": "Khu vực bạn phục vụ",
+      "marketsHint": "Tên thành phố hoặc khu dân cư, cách nhau bằng dấu phẩy."
+    },
+    "step5": {
+      "title": "Xong rồi!",
+      "subtitle": "Đây là những gì chúng tôi đã lưu. Bạn có thể đổi bất kỳ mục nào trong phần Cài đặt.",
+      "name": "Tên: {name}",
+      "language": "Ngôn ngữ quảng cáo: {language}",
+      "tone": "Phong cách: {tone}",
+      "phone": "Điện thoại: {phone}",
+      "notSet": "chưa chọn",
+      "goDashboard": "Đến trang chủ của tôi",
+      "addListing": "Thêm căn nhà đầu tiên"
+    }
+  },
+  "dashboard": {
+    "title": "Trang chủ",
+    "morning": "Chào buổi sáng, {name}",
+    "afternoon": "Chào buổi chiều, {name}",
+    "evening": "Chào buổi tối, {name}",
+    "subtitle": "Hôm nay bạn muốn làm gì?",
+    "quickActions": "Làm nhanh",
+    "addListing": "Thêm một căn nhà",
+    "addListingBody": "Nhập thông tin căn nhà một lần. Dùng cho mọi việc.",
+    "createContent": "Tạo nội dung",
+    "createContentBody": "Tin đăng bán nhà, bài mạng xã hội, video, email và hướng dẫn chụp ảnh.",
+    "coachMe": "Tôi nên nói gì với khách này?",
+    "coachMeBody": "Có ngay kịch bản gọi điện, tin nhắn và email trong vài giây.",
+    "listingUsage": "Tháng này bạn đã thêm {used} trên {limit} căn nhà.",
+    "unlimitedUpgrade": "Dùng không giới hạn số căn nhà",
+    "todayTasks": "Đến hạn hôm nay",
+    "noTasks": "Hôm nay không có việc nào đến hạn. Bạn làm tốt lắm!",
+    "newLeads": "Khách mới",
+    "noLeads": "Chưa có khách mới. Hãy đăng một trang giới thiệu nhà để bắt đầu nhận khách.",
+    "seeAll": "Xem tất cả",
+    "activeDeals": "{count, plural, =0 {Chưa có giao dịch đang làm} one {# giao dịch đang làm} other {# giao dịch đang làm}}",
+    "openPipeline": "Mở tiến trình giao dịch",
+    "crmPitch": "Bạn muốn theo dõi người mua và người bán, nhận nhắc việc, và thu thập khách từ các trang giới thiệu nhà? Tất cả đều có trong gói Pro.",
+    "seePro": "Xem gói Pro",
+    "recentContent": "Mới tạo gần đây",
+    "welcome": "Chào mừng bạn trở lại, {name}"
+  },
+  "properties": {
+    "title": "Nhà đang bán của tôi",
+    "subtitle": "Tất cả những căn nhà bạn đang quảng cáo. Bấm vào một căn để tạo nội dung cho căn đó.",
+    "addListing": "Thêm một căn nhà",
+    "addFirstListing": "Thêm căn nhà đầu tiên",
+    "emptyTitle": "Chưa có căn nhà nào",
+    "emptyBody": "Nhập thông tin căn nhà một lần — rồi tạo tin đăng, bài đăng, video và kế hoạch chụp ảnh chỉ với một cú bấm cho mỗi thứ.",
+    "newTitle": "Thêm một căn nhà",
+    "newSubtitle": "Điền những gì bạn biết. Chỉ cần địa chỉ là bắt buộc — thông tin càng nhiều, bài viết càng hay.",
+    "editTitle": "Sửa thông tin căn nhà",
+    "backToListings": "Quay lại danh sách nhà của tôi",
+    "backToListing": "Quay lại căn nhà này",
+    "bedsShort": "{count} pn",
+    "bathsShort": "{count} pt",
+    "sqftShort": "{count, number} sq ft",
+    "builtIn": "Xây năm {year}",
+    "piecesCount": "{count, plural, =0 {Chưa có nội dung} one {# nội dung} other {# nội dung}}",
+    "pageLive": "Trang đang hiển thị",
+    "pageDraft": "Trang còn là bản nháp",
+    "pageViews": "{count, plural, =0 {Chưa có lượt xem} one {# lượt xem} other {# lượt xem}}",
+    "deleted": "Căn nhà đã được xóa.",
+    "saved": "Các thay đổi của bạn đã được lưu.",
+    "createdTitle": "Đã lưu căn nhà!",
+    "createdBody": "Bây giờ hãy chọn bên dưới những gì bạn muốn tạo cho căn nhà này.",
+    "editDetails": "Sửa thông tin",
+    "addDetailsTip": "Mẹo: hãy thêm các điểm nổi bật và phần nâng cấp (như \"mặt bàn đá quartz\" hoặc \"mái nhà mới 2022\") để bài viết hay hơn nhiều.",
+    "createForListing": "Tạo cho căn nhà này",
+    "locked": "Đã khóa — nâng cấp để dùng",
+    "micrositeTitle": "Trang giới thiệu nhà",
+    "micrositePitch": "Một trang web đơn giản cho căn nhà này, có biểu mẫu đưa người mua quan tâm thẳng vào danh bạ của bạn.",
+    "createPage": "Tạo trang",
+    "editPage": "Sửa trang",
+    "viewPage": "Xem trang",
+    "openHouseKiosk": "Đăng ký khách ghé xem nhà mở",
+    "dealsTitle": "Các giao dịch của căn nhà này",
+    "addDeal": "Thêm giao dịch",
+    "noDeals": "Chưa có giao dịch nào gắn với căn nhà này.",
+    "cmaTitle": "Các bản phân tích giá",
+    "newCma": "Phân tích giá mới",
+    "historyTitle": "Tất cả nội dung đã tạo cho căn nhà này",
+    "limitReached": "Bạn đã dùng hết số căn nhà được thêm trong tháng này của gói hiện tại. Nâng cấp lên Pro để thêm không giới hạn.",
+    "deleteTitle": "Xóa căn nhà này",
+    "deleteWarning": "Việc này sẽ xóa căn nhà, trang giới thiệu và toàn bộ nội dung đã tạo cho căn nhà. Không thể hoàn tác.",
+    "deleteConfirm": "Vâng, tôi muốn xóa căn nhà này",
+    "deleteButton": "Xóa căn nhà",
+    "deleting": "Đang xóa…",
+    "form": {
+      "addressSection": "Địa chỉ",
+      "address": "Số nhà và tên đường",
+      "unit": "Số căn hộ hoặc unit",
+      "city": "Thành phố",
+      "state": "Tiểu bang",
+      "zip": "Mã ZIP",
+      "basicsSection": "Thông tin cơ bản",
+      "status": "Tình trạng",
+      "propertyType": "Loại nhà",
+      "price": "Giá niêm yết ($)",
+      "beds": "Phòng ngủ",
+      "baths": "Phòng tắm",
+      "bathsHint": "Dùng .5 cho phòng tắm nhỏ (nửa phòng), ví dụ 2.5",
+      "sqft": "Diện tích (sq ft)",
+      "lotSize": "Diện tích lô đất",
+      "yearBuilt": "Năm xây",
+      "stories": "Số tầng",
+      "garage": "Garage hoặc chỗ đậu xe",
+      "garagePlaceholder": "Garage liền nhà 2 xe",
+      "hoaFee": "Phí HOA ($ mỗi tháng)",
+      "detailsSection": "Điều làm căn nhà đặc biệt",
+      "detailsIntro": "Xin chỉ ghi sự thật — bài viết dùng đúng những gì bạn nhập ở đây và không bao giờ tự bịa thêm.",
+      "features": "Điểm nổi bật",
+      "featuresHint": "Phòng ốc, vật liệu, cách bố trí. Cách nhau bằng dấu phẩy hoặc xuống dòng đều được.",
+      "featuresPlaceholder": "Bếp mở với mặt bàn đá quartz, bếp gas, phòng ngủ chính ở tầng trệt, phòng khách trần cao",
+      "upgrades": "Nâng cấp gần đây (ghi rõ năm)",
+      "upgradesHint": "Người mua thích có ngày tháng: \"mái nhà mới 2022\" tốt hơn \"mái nhà khá mới\".",
+      "upgradesPlaceholder": "Mái nhà mới 2022, máy điều hòa HVAC 2021, sơn nội thất mới 2024",
+      "outdoor": "Không gian ngoài trời",
+      "outdoorPlaceholder": "Sân sau có rào, hiên có mái che, cây sồi lâu năm, luống vườn",
+      "neighborhood": "Vị trí và các nơi gần đó",
+      "neighborhoodHint": "Chỉ ghi về địa điểm, không ghi về con người: công viên, cửa hàng, thời gian đi làm, tên học khu.",
+      "neighborhoodPlaceholder": "Cách Lakeside Park 2 dãy nhà, 10 phút đến trung tâm thành phố, Plano ISD",
+      "photoSection": "Ảnh và nhà mở",
+      "facing": "Mặt trước căn nhà hướng về phía nào?",
+      "facingHint": "Đứng ở cửa trước, quay mặt ra đường rồi xem la bàn trên điện thoại. Điều này giúp chọn giờ chụp ảnh đẹp nhất.",
+      "facingUnknown": "Tôi không chắc",
+      "phoneModel": "Điện thoại dùng cho buổi chụp này",
+      "phoneModelHint": "Để nguyên nếu dùng điện thoại đã chọn trong phần cài đặt.",
+      "phoneModelDefault": "Dùng điện thoại thường dùng của tôi",
+      "heroImageUrl": "Đường link ảnh chính",
+      "heroImageUrlHint": "Dán đường link của ảnh chính (ví dụ từ MLS hoặc Google Photos). Ảnh sẽ hiện trên trang giới thiệu nhà.",
+      "openHouseAt": "Nhà mở bắt đầu lúc",
+      "openHouseEnd": "Nhà mở kết thúc lúc",
+      "privateSection": "Riêng tư (không bao giờ hiển thị hay đưa vào quảng cáo)",
+      "soldPrice": "Giá bán ($)",
+      "privateNotes": "Ghi chú riêng",
+      "privateNotesHint": "Mã lockbox, ghi chú của người bán — chỉ mình bạn xem.",
+      "saveListing": "Lưu căn nhà",
+      "saveChanges": "Lưu thay đổi",
+      "statuses": {
+        "COMING_SOON": "Sắp niêm yết",
+        "ACTIVE": "Đang bán",
+        "PENDING": "Đang chờ đóng hồ sơ",
+        "SOLD": "Đã bán",
+        "OFF_MARKET": "Ngưng bán"
+      },
+      "types": {
+        "single_family": "Nhà riêng một gia đình",
+        "condo": "Condo",
+        "townhouse": "Townhouse",
+        "multi_family": "Nhà nhiều gia đình",
+        "manufactured": "Nhà lắp ghép (manufactured)",
+        "land": "Đất / lô đất",
+        "other": "Khác"
+      },
+      "facings": {
+        "N": "Bắc",
+        "NE": "Đông Bắc",
+        "E": "Đông",
+        "SE": "Đông Nam",
+        "S": "Nam",
+        "SW": "Tây Nam",
+        "W": "Tây",
+        "NW": "Tây Bắc"
+      }
+    },
+    "matchingBuyers": "Người mua có thể thích căn nhà này",
+    "matchingBuyersHint": "Dựa trên ngân sách và diện tích mà mỗi người mua đã cho bạn biết."
+  },
+  "create": {
+    "title": "Tạo nội dung",
+    "subtitle": "Chọn thứ bạn muốn làm. Mọi nội dung đều được viết từ thông tin thật của căn nhà, theo phong cách của bạn.",
+    "recent": "Mới tạo gần đây",
+    "locked": "Đã khóa — nâng cấp để dùng",
+    "chooseListing": "Nội dung này dành cho căn nhà nào?",
+    "backToCreate": "Quay lại Tạo nội dung",
+    "noListingsTitle": "Hãy thêm một căn nhà trước",
+    "noListingsBody": "Việc này cần thông tin của một căn nhà để làm.",
+    "addListing": "Thêm một căn nhà",
+    "forListing": "Cho",
+    "changeListing": "Chọn căn nhà khác",
+    "optionalListing": "Nội dung này có nói về một căn nhà cụ thể không?",
+    "pickListing": "Chọn căn nhà",
+    "form": {
+      "contact": "Nội dung này dành cho ai?",
+      "contactHint": "Chọn một người trong danh bạ để dùng thông tin của họ, hoặc để trống.",
+      "noContact": "Không có trong danh bạ của tôi",
+      "languages": "Viết bằng",
+      "languagesHint": "Chọn nhiều ngôn ngữ để có cùng nội dung bằng nhiều thứ tiếng. Gói của bạn cho phép {count, plural, one {# ngôn ngữ} other {# ngôn ngữ}}.",
+      "languageLocked": "Hãy thêm ngôn ngữ này trong phần Cài đặt, hoặc nâng cấp để dùng thêm ngôn ngữ.",
+      "generateButton": "Viết giúp tôi",
+      "writing": "Đang viết… mất khoảng 30 giây",
+      "timeNote": "Bạn sẽ thấy toàn bộ nội dung ở màn hình kế tiếp. Sẽ không có gì được đăng đi đâu cho đến khi bạn sao chép."
+    },
+    "errors": {
+      "unknown_module": "Chúng tôi không tìm thấy loại nội dung đó.",
+      "property_required": "Xin chọn một căn nhà trước.",
+      "language_not_allowed": "Có một ngôn ngữ không nằm trong gói hoặc cài đặt của bạn.",
+      "invalid_options": "Có vài lựa chọn chưa hợp lệ. Xin kiểm tra lại.",
+      "ai": "Phần viết chưa hoàn tất."
+    }
+  },
+  "generation": {
+    "title": "Nội dung của bạn",
+    "backToCreate": "Quay lại Tạo nội dung",
+    "print": "In",
+    "emailMe": "Gửi email cho tôi",
+    "sending": "Đang gửi…",
+    "emailed": "Đã gửi! Xin kiểm tra hộp thư của bạn.",
+    "emailNotConfigured": "Tài khoản này chưa thiết lập email nên chưa gửi được. Bạn có thể in hoặc sao chép thay thế.",
+    "regenerate": "Viết bản mới",
+    "rewriting": "Đang viết bản mới…",
+    "changeOptions": "Đổi các lựa chọn",
+    "languages": "Ngôn ngữ",
+    "needsReview": "Xin xem lại",
+    "failed": "Chưa hoàn tất",
+    "failedTitle": "Phần này chưa hoàn tất",
+    "failedBody": "Xin thử lại sau ít phút.",
+    "noHistory": "Chưa tạo gì cả.",
+    "reviewNote": "Hãy luôn đọc kỹ nội dung do AI viết trước khi dùng. Bạn chịu trách nhiệm về những gì bạn đăng."
+  },
+  "output": {
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "chars": "{count, plural, one {# ký tự} other {# ký tự}}",
+    "charsOfLimit": "{count} trên {limit} ký tự",
+    "overLimit": "{count} ký tự — vượt {over} ký tự so với giới hạn {limit}. Xin rút ngắn trước khi đăng."
+  },
+  "fairHousing": {
+    "title": "Kiểm tra Luật Nhà Ở Công Bằng (Fair Housing)",
+    "clean": "Đã qua kiểm tra Fair Housing. Nội dung này mô tả căn nhà, không nói về con người.",
+    "removedTitle": "{count, plural, one {Chúng tôi đã bỏ # câu} other {Chúng tôi đã bỏ # câu}}",
+    "removedItem": "\"{phrase}\" — {reason}",
+    "flaggedTitle": "{count, plural, one {Xin xem lại # cụm từ} other {Xin xem lại # cụm từ}}",
+    "flaggedItem": "\"{phrase}\" — {reason}",
+    "rewrittenTitle": "{count, plural, one {Chúng tôi đã cải thiện # cụm từ} other {Chúng tôi đã cải thiện # cụm từ}}",
+    "rewrittenItem": "\"{from}\" → \"{to}\"",
+    "disclaimer": "Công cụ kiểm tra tự động này có ích nhưng không phải là tư vấn pháp lý. Khi còn nghi ngờ, hãy hỏi broker của bạn.",
+    "classes": {
+      "familial_status": "nhắc đến gia đình hoặc trẻ em, là đối tượng được luật Fair Housing bảo vệ",
+      "age": "nhắc đến tuổi tác, là điều nhiều tiểu bang bảo vệ",
+      "marital_status": "nhắc đến tình trạng hôn nhân, là điều nhiều tiểu bang bảo vệ",
+      "sex": "gợi ý sự ưu tiên về giới tính",
+      "disability": "có thể loại trừ người khuyết tật",
+      "source_of_income": "từ chối phiếu hỗ trợ nhà ở (housing voucher), điều này là bất hợp pháp ở nhiều tiểu bang",
+      "race_national_origin": "mô tả chủng tộc, sắc tộc hoặc nguồn gốc quốc gia",
+      "religion": "gợi ý sự ưu tiên về tôn giáo",
+      "military_status": "nhắc đến tình trạng quân nhân, là điều một số tiểu bang bảo vệ",
+      "steering": "có thể hướng người mua đến hoặc tránh một khu vực (như \"an toàn\", xếp hạng trường học)",
+      "style_guideline": "là cách viết mà nhiều MLS yêu cầu agent tránh dùng"
+    }
+  },
+  "billing": {
+    "title": "Gói dịch vụ và thanh toán",
+    "subtitle": "Giá theo tháng, đơn giản. Hủy bất cứ lúc nào.",
+    "backToSettings": "Quay lại Cài đặt",
+    "currentPlan": "Gói của bạn",
+    "noPlan": "Chưa có gói nào đang dùng",
+    "trialDaysLeft": "{days, plural, =0 {Bản dùng thử của bạn kết thúc hôm nay.} one {Còn # ngày dùng thử miễn phí.} other {Còn # ngày dùng thử miễn phí.}}",
+    "renewsOn": "Gia hạn vào ngày {date}",
+    "manageBilling": "Quản lý thanh toán và hóa đơn",
+    "opening": "Đang mở…",
+    "perMonth": "mỗi tháng",
+    "mostPopular": "Nhiều người chọn nhất",
+    "yourPlan": "Đây là gói của bạn",
+    "choosePlanButton": "Chọn {plan}",
+    "choosePlan": "Chọn một gói",
+    "trialBanner": "{days, plural, =0 {Bản dùng thử miễn phí của bạn kết thúc hôm nay.} one {Còn # ngày dùng thử miễn phí.} other {Còn # ngày dùng thử miễn phí.}}",
+    "inactiveBanner": "Gói của bạn hiện chưa hoạt động nên hầu hết tính năng đang tạm dừng.",
+    "successTitle": "Cảm ơn bạn!",
+    "successBody": "Gói của bạn đã hoạt động. Mọi tính năng trong gói đã được mở.",
+    "canceledBody": "Không sao cả — bạn chưa bị tính tiền.",
+    "testCardNote": "Đang thử nghiệm? Dùng thẻ thử của Stripe: 4242 4242 4242 4242, với ngày hết hạn bất kỳ trong tương lai và 3 chữ số bất kỳ.",
+    "devModeTitle": "Chế độ thanh toán thử nghiệm",
+    "devModeBody": "Stripe chưa được kết nối, nên khi chọn gói, gói sẽ đổi ngay mà không cần thanh toán. Cách này chỉ dùng được trên máy chủ thử nghiệm.",
+    "status": {
+      "TRIALING": "Dùng thử miễn phí",
+      "ACTIVE": "Đang hoạt động",
+      "PAST_DUE": "Có trục trặc thanh toán",
+      "CANCELED": "Đã hủy",
+      "NONE": "Chưa hoạt động"
+    },
+    "errors": {
+      "owner": "Chỉ chủ tài khoản mới đổi được gói.",
+      "not_configured": "Phần thanh toán chưa được thiết lập. Xin liên hệ bộ phận hỗ trợ.",
+      "generic": "Chúng tôi không mở được trang thanh toán. Xin thử lại."
+    },
+    "plans": {
+      "SOLO": {
+        "name": "Solo",
+        "tagline": "Quảng cáo dễ dàng"
+      },
+      "PRO": {
+        "name": "Pro",
+        "tagline": "Quảng cáo cộng với toàn bộ danh sách khách hàng"
+      },
+      "TEAM": {
+        "name": "Team",
+        "tagline": "Dành cho nhóm và công ty môi giới nhỏ"
+      }
+    },
+    "features": {
+      "marketing": "Tin đăng bán nhà, bài mạng xã hội, kịch bản Reel và email",
+      "photoGuide": "Hướng dẫn chụp ảnh và quay video bằng điện thoại",
+      "coach": "Trợ lý theo dõi khách: nên nói gì với từng khách",
+      "oneLanguage": "1 ngôn ngữ quảng cáo",
+      "tenListings": "10 căn nhà mỗi tháng",
+      "emailSupport": "Hỗ trợ qua email",
+      "everythingSolo": "Có mọi thứ trong gói Solo",
+      "crm": "Danh bạ khách, tiến trình giao dịch, công việc và nhắc việc",
+      "microsites": "Trang giới thiệu nhà thu thập khách",
+      "cma": "Trợ lý phân tích giá (CMA)",
+      "transactions": "Danh sách việc cần làm và hạn chót của giao dịch",
+      "threeLanguages": "3 ngôn ngữ quảng cáo",
+      "unlimitedListings": "Không giới hạn số căn nhà",
+      "chatSupport": "Hỗ trợ qua trò chuyện (chat)",
+      "everythingPro": "Có mọi thứ trong gói Pro",
+      "fiveSeats": "5 thành viên trong nhóm",
+      "allLanguages": "Cả 8 ngôn ngữ quảng cáo",
+      "whiteLabel": "Tên thương hiệu và logo riêng của bạn",
+      "teamDashboard": "Bảng theo dõi hoạt động của nhóm",
+      "leadRouting": "Tự động chia khách",
+      "prioritySupport": "Hỗ trợ ưu tiên"
+    }
+  },
+  "locked": {
+    "includedIn": "Có trong gói {plan} — ${price} mỗi tháng",
+    "upgradeButton": "Nâng cấp lên {plan}",
+    "generic": "Tính năng này không có trong gói của bạn.",
+    "features": {
+      "MARKETING": {
+        "title": "Bộ công cụ quảng cáo",
+        "pitch": "Tin đăng bán nhà, bài mạng xã hội, kịch bản Reel và email được viết theo phong cách của bạn."
+      },
+      "PHOTO_GUIDE": {
+        "title": "Hướng dẫn chụp ảnh",
+        "pitch": "Chụp ảnh nhà đẹp như người chuyên nghiệp ngay bằng điện thoại của bạn."
+      },
+      "FOLLOW_UP_COACH": {
+        "title": "Trợ lý theo dõi khách",
+        "pitch": "Biết chính xác nên nói gì với từng khách."
+      },
+      "CRM": {
+        "title": "Danh sách khách hàng gọn gàng",
+        "pitch": "Giữ mọi người mua và người bán ở một nơi, nhìn lướt là thấy các giao dịch, và không bao giờ quên theo dõi khách."
+      },
+      "MICROSITES": {
+        "title": "Trang giới thiệu nhà mang khách đến cho bạn",
+        "pitch": "Một cú bấm là có trang cho căn nhà của bạn. Người mua quan tâm sẽ vào thẳng danh bạ của bạn."
+      },
+      "CMA": {
+        "title": "Trợ lý phân tích giá (CMA)",
+        "pitch": "Nhập các căn nhà so sánh (comps) và nhận bản phân tích giá rõ ràng, sẵn sàng đưa khách xem, kèm các ý để trao đổi."
+      },
+      "TRANSACTIONS": {
+        "title": "Danh sách việc cần làm của giao dịch",
+        "pitch": "Theo dõi mọi hạn chót từ lúc ký hợp đồng đến khi đóng hồ sơ."
+      },
+      "TEAM_DASHBOARD": {
+        "title": "Bảng theo dõi của nhóm",
+        "pitch": "Xem cả nhóm của bạn đang làm việc ra sao."
+      },
+      "LEAD_ROUTING": {
+        "title": "Tự động chia khách",
+        "pitch": "Tự động chuyển khách mới cho đúng người trong nhóm."
+      },
+      "WHITE_LABEL": {
+        "title": "Thương hiệu riêng của bạn",
+        "pitch": "Hiện tên và logo của nhóm bạn thay vì của chúng tôi."
+      }
+    }
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "subtitle": "Thông tin của bạn, phong cách viết và ngôn ngữ.",
+    "saved": "Đã lưu!",
+    "billingLink": "Gói dịch vụ và thanh toán",
+    "profileSection": "Thông tin của bạn",
+    "publicEmail": "Email dành cho khách hàng",
+    "publicEmailHint": "Hiện trên các trang giới thiệu nhà và dùng trong chữ ký.",
+    "brokeragePhone": "Điện thoại công ty môi giới",
+    "mlsId": "Mã agent MLS",
+    "headshotUrl": "Đường link ảnh chân dung",
+    "headshotUrlHint": "Dán đường link ảnh của bạn. Ảnh sẽ hiện trên các trang giới thiệu nhà.",
+    "bio": "Giới thiệu ngắn",
+    "bioHint": "2–3 câu về bạn. Hiện trên các trang giới thiệu nhà.",
+    "voiceSection": "Phong cách viết của bạn",
+    "signature": "Lời chào cuối email",
+    "signatureHint": "Cách bạn thích ký tên cuối email.",
+    "languagesSection": "Ngôn ngữ và điện thoại",
+    "saveButton": "Lưu cài đặt",
+    "whiteLabelSection": "Thương hiệu của bạn",
+    "whiteLabelIntro": "Thay tên RealtyBoost bằng tên và logo của nhóm bạn.",
+    "brandName": "Tên nhóm hoặc công ty môi giới",
+    "brandColor": "Màu thương hiệu",
+    "brandColorHint": "Mã màu, ví dụ #1d4ed8",
+    "logoUrl": "Đường link logo",
+    "saveBrand": "Lưu thương hiệu"
+  },
+  "modules": {
+    "mls-listing": {
+      "name": "Mô tả tin đăng MLS",
+      "description": "Ba phiên bản, mỗi bản có tiêu đề, mô tả ngắn và mô tả dài.",
+      "longLimit": "Giới hạn ký tự của MLS bạn dùng",
+      "longLimitHint": "Xin xem quy định của MLS. Nếu không chắc, 1,000 là mức an toàn cho hầu hết các MLS.",
+      "chars500": "500 ký tự",
+      "chars1000": "1,000 ký tự",
+      "chars1500": "1,500 ký tự",
+      "chars2000": "2,000 ký tự",
+      "chars4000": "4,000 ký tự",
+      "emphasis": "Bạn có muốn nhấn mạnh điều gì đặc biệt không?",
+      "emphasisPlaceholder": "Gian bếp mới",
+      "view": {
+        "variants": "Ba phiên bản của bạn",
+        "headline": "Tiêu đề",
+        "short": "Mô tả ngắn",
+        "long": "Mô tả MLS đầy đủ",
+        "bullets": "Danh sách điểm nổi bật",
+        "bulletsCopy": "Danh sách điểm nổi bật (sẵn sàng sao chép)",
+        "checklist": "Trước khi đăng"
+      }
+    },
+    "social-posts": {
+      "name": "Bài đăng mạng xã hội",
+      "description": "Instagram, Facebook, LinkedIn và X — mỗi nơi được viết đúng kiểu mà nền tảng đó ưa chuộng.",
+      "occasion": "Có tin gì mới?",
+      "occasions": {
+        "just_listed": "Vừa niêm yết",
+        "open_house": "Nhà mở",
+        "coming_soon": "Sắp niêm yết",
+        "price_improvement": "Điều chỉnh giá",
+        "under_contract": "Đã có hợp đồng",
+        "just_sold": "Vừa bán xong"
+      },
+      "useEmoji": "Dùng vài biểu tượng cảm xúc (emoji)",
+      "view": {
+        "caption": "Nội dung bài đăng",
+        "hashtags": "Hashtag",
+        "hashtagsHint": "Instagram cho phép tối đa 5 hashtag mỗi bài.",
+        "captionWithTags": "Nội dung kèm hashtag (sẵn sàng sao chép)",
+        "altText": "Mô tả ảnh (alt text)",
+        "altTextHint": "Dán nội dung này vào mục \"Trợ năng\" (Accessibility) của Instagram để những người không nhìn thấy ảnh biết trong ảnh có gì.",
+        "stories": "Các trang Story"
+      }
+    },
+    "reel-script": {
+      "name": "Kế hoạch video Reel / TikTok",
+      "description": "Câu mở đầu thu hút, kịch bản từng cảnh, danh sách cảnh quay, lời thuyết minh và nội dung bài đăng.",
+      "duration": "Dài bao lâu?",
+      "seconds15": "15 giây",
+      "seconds30": "30 giây",
+      "seconds60": "60 giây",
+      "style": "Kiểu video",
+      "styles": {
+        "tour": "Dạo quanh căn nhà",
+        "top_features": "Đếm ngược các điểm nổi bật",
+        "reveal": "Giới thiệu căn nhà vừa niêm yết",
+        "detail_montage": "Chi tiết và vật liệu hoàn thiện"
+      },
+      "onCamera": "Tôi sẽ xuất hiện trước ống kính ở phần mở đầu và kết thúc",
+      "view": {
+        "length": "{seconds} giây",
+        "scenes": "{count} cảnh",
+        "hook": "Câu mở đầu thu hút (2 giây đầu)",
+        "storyboard": "Kịch bản từng cảnh",
+        "scene": "Cảnh {number}",
+        "seconds": "{seconds} giây",
+        "shot": "Quay gì",
+        "cameraMove": "Di chuyển máy thế nào",
+        "overlay": "Chữ hiện trên màn hình",
+        "voiceover": "Nói",
+        "totalSeconds": "Tổng cộng: khoảng {seconds} giây",
+        "voiceoverScript": "Toàn bộ lời thuyết minh",
+        "shotList": "Danh sách cảnh quay cho ngày quay",
+        "editing": "Hoàn thiện bằng CapCut (miễn phí)",
+        "caption": "Nội dung bài đăng"
+      }
+    },
+    "email-blast": {
+      "name": "Email giới thiệu nhà",
+      "description": "Vừa niêm yết, nhà mở, điều chỉnh giá hoặc vừa bán xong — sẵn sàng để dán vào email.",
+      "emailType": "Loại email",
+      "types": {
+        "just_listed": "Vừa niêm yết",
+        "open_house": "Thư mời nhà mở",
+        "price_improvement": "Điều chỉnh giá",
+        "just_sold": "Vừa bán xong"
+      },
+      "audience": "Gửi cho ai?",
+      "audiences": {
+        "sphere": "Bạn bè, hàng xóm và khách hàng cũ",
+        "buyers": "Người mua đang tìm căn nhà như thế này",
+        "agents": "Các agent khác"
+      },
+      "view": {
+        "subjects": "Các dòng tiêu đề",
+        "subjectOption": "Lựa chọn {number}",
+        "preview": "Dòng xem trước",
+        "email": "Nội dung email",
+        "copyAll": "Toàn bộ email (sẵn sàng sao chép)",
+        "canSpam": "Hãy gửi email này từ công cụ gửi email quảng cáo của bạn để có kèm địa chỉ gửi thư và đường link hủy đăng ký (luật CAN-SPAM yêu cầu)."
+      }
+    },
+    "photo-guide": {
+      "name": "Hướng dẫn tự chụp ảnh và quay video",
+      "description": "Tự chụp căn nhà này bằng điện thoại: cài đặt máy, danh sách cảnh chụp, ánh sáng tốt nhất, chỉnh sửa ảnh.",
+      "phone": "Dùng điện thoại nào?",
+      "phoneHint": "Chúng tôi sẽ hướng dẫn cài đặt cho đúng loại điện thoại này.",
+      "phoneDefault": "Điện thoại thường dùng của tôi (theo phần cài đặt)",
+      "time": "Bạn có bao nhiêu thời gian?",
+      "times": {
+        "quick": "Khoảng 20 phút",
+        "afternoon": "Một buổi chiều (1–2 giờ)",
+        "weekend": "Một cuối tuần (gói cao cấp)"
+      },
+      "style": "Bạn muốn ảnh có vẻ đẹp thế nào?",
+      "styles": {
+        "bright_airy": "Sáng và thoáng",
+        "warm_cozy": "Ấm áp và ấm cúng",
+        "modern_crisp": "Hiện đại và sắc nét",
+        "luxury": "Sang trọng"
+      },
+      "detail": "Chi tiết đến mức nào?",
+      "details": {
+        "quick": "Nhanh — một trang tóm tắt",
+        "pro": "Chuyên sâu — hướng dẫn đầy đủ từng bước"
+      },
+      "includeVideo": "Kèm kế hoạch quay video dạo quanh nhà",
+      "view": {
+        "bestTime": "Giờ chụp đẹp nhất",
+        "totalTime": "Thời gian cần",
+        "roomOrder": "Chụp theo thứ tự này",
+        "beforeYouStart": "Trước khi bắt đầu",
+        "phoneSettings": "Cài đặt cho {phone} của bạn",
+        "setting": "Mục cài đặt",
+        "value": "Đặt thành",
+        "why": "Lý do",
+        "lighting": "Kế hoạch ánh sáng",
+        "shotList": "Danh sách cảnh chụp",
+        "lens": "Ống kính",
+        "staging": "Chuẩn bị căn nhà",
+        "composition": "Quy tắc khung hình",
+        "editing": "Chỉnh sửa bằng {app} (miễn phí)",
+        "video": "Video dạo quanh nhà",
+        "seconds": "{seconds} giây",
+        "troubleshooting": "Nếu có gì trục trặc"
+      }
+    },
+    "follow-up-coach": {
+      "name": "Trợ lý theo dõi khách",
+      "description": "Nên nói gì với khách: kịch bản gọi điện, cách trả lời câu hỏi khó, tin nhắn, email và kế hoạch 2 tuần.",
+      "situation": "Khách liên lạc với bạn bằng cách nào?",
+      "situations": {
+        "portal_inquiry": "Zillow, Realtor.com hoặc trang web khác",
+        "listing_page": "Biểu mẫu trên trang giới thiệu nhà của tôi",
+        "open_house": "Nhà mở của tôi",
+        "sign_call": "Khách gọi từ bảng rao bán trước sân nhà",
+        "referral": "Có người giới thiệu",
+        "past_client": "Khách hàng cũ",
+        "gone_quiet": "Khách đã ngưng trả lời"
+      },
+      "goal": "Bước tiếp theo bạn muốn là gì?",
+      "goals": {
+        "showing": "Hẹn đi xem nhà",
+        "consultation": "Hẹn gặp người mua",
+        "preapproval": "Giúp họ xin pre-approval (chấp thuận vay sơ bộ)",
+        "listing_appointment": "Hẹn gặp người bán để nhận niêm yết",
+        "stay_in_touch": "Giữ liên lạc cho đến khi họ sẵn sàng"
+      },
+      "leadName": "Tên của khách",
+      "leadNameHint": "Để trống nếu bạn đã chọn một người trong danh bạ ở trên.",
+      "whatTheySaid": "Khách đã nói hoặc hỏi gì?",
+      "whatTheySaidPlaceholder": "\"Giá có thương lượng được không? Chúng tôi chuyển từ Ohio đến vào tháng Ba.\"",
+      "experience": "Kinh nghiệm của bạn",
+      "experiences": {
+        "new": "Tôi mới vào nghề (chưa đầy một năm)",
+        "experienced": "Tôi có kinh nghiệm"
+      },
+      "view": {
+        "callScript": "Cuộc gọi điện thoại",
+        "callNow": "Gọi ngay",
+        "opening": "Mở đầu bằng",
+        "questions": "Hãy hỏi những câu này",
+        "keyPoints": "Hãy chia sẻ những điểm này",
+        "askForAppointment": "Đề nghị bước tiếp theo",
+        "voicemail": "Nếu khách không nghe máy và bạn để lại lời nhắn",
+        "objections": "Nếu khách nói…",
+        "theySay": "Khách nói",
+        "youSay": "Bạn nói",
+        "text": "Tin nhắn",
+        "openTextApp": "Mở trong ứng dụng nhắn tin của tôi",
+        "textConsent": "Chỉ nhắn tin cho người đã liên lạc với bạn hoặc đã đồng ý nhận tin nhắn. Nếu họ yêu cầu ngưng, hãy ngưng ngay.",
+        "email": "Email",
+        "subject": "Tiêu đề",
+        "body": "Nội dung",
+        "openEmailApp": "Mở trong ứng dụng email của tôi",
+        "plan": "Kế hoạch theo dõi khách trong 2 tuần",
+        "day": "Ngày {day}",
+        "tips": "Lời khuyên",
+        "avoid": "Nên tránh"
+      }
+    },
+    "microsite-copy": {
+      "name": "Nội dung trang giới thiệu nhà",
+      "description": "Tiêu đề, lời chào và các điểm nổi bật cho trang giới thiệu nhà của bạn."
+    },
+    "cma-narrative": {
+      "name": "Bài viết phân tích giá",
+      "description": "Phần giải thích dễ hiểu, sẵn sàng đưa khách xem, về các căn nhà đã bán để so sánh."
+    }
+  },
+  "landing": {
+    "metaTitle": "RealtyBoost — Quảng cáo nhà, hướng dẫn chụp ảnh và theo dõi khách dành cho agent địa ốc",
+    "metaDescription": "Viết mô tả MLS, bài mạng xã hội, kế hoạch video và email theo giọng văn của bạn, tự chụp ảnh nhà đẹp bằng điện thoại, và biết nên nói gì với từng khách. Bằng năm ngôn ngữ.",
+    "signIn": "Đăng nhập",
+    "eyebrow": "Dành cho agent địa ốc muốn bán nhà hơn là vật lộn với phần mềm",
+    "heroTitle": "Quảng cáo mỗi căn nhà trong vài phút — theo giọng của bạn, bằng ngôn ngữ của khách hàng.",
+    "heroBody": "Nhập thông tin căn nhà một lần. Nhận ngay mô tả MLS, bài mạng xã hội, kế hoạch Reel, email giới thiệu nhà và hướng dẫn chụp ảnh bằng điện thoại từng bước. Rồi biết chính xác nên nói gì khi người mua gọi đến.",
+    "ctaTrial": "Dùng thử miễn phí 14 ngày",
+    "ctaTrialShort": "Dùng thử miễn phí",
+    "ctaHow": "Xem cách hoạt động",
+    "ctaNote": "Không cần thẻ tín dụng để bắt đầu. Hủy bất cứ lúc nào.",
+    "photoTitle": "Không có thợ chụp ảnh? Không sao cả.",
+    "photoBody": "Ảnh nhà chuyên nghiệp có thể tốn hàng trăm đô la cho mỗi căn. Với những căn nhà đơn giản hơn, RealtyBoost cho bạn một kế hoạch chụp ảnh làm riêng cho đúng căn nhà đó và đúng chiếc điện thoại của bạn.",
+    "photoPoints": {
+      "settings": "Cài đặt máy ảnh cho đúng dòng điện thoại của bạn — iPhone, Samsung Galaxy hoặc Google Pixel",
+      "light": "Giờ chụp đẹp nhất trong ngày, tùy theo hướng của căn nhà",
+      "shots": "Danh sách cảnh chụp từng phòng và danh sách việc chuẩn bị nhà",
+      "editing": "Các bước chỉnh ảnh bằng ứng dụng miễn phí, kèm thông số để bắt đầu",
+      "video": "Kế hoạch quay video dạo quanh nhà đơn giản — chỉ 20 phút hoặc trọn một cuối tuần"
+    },
+    "howTitle": "Cách hoạt động",
+    "how": {
+      "one": {
+        "title": "Nhập căn nhà một lần",
+        "body": "Địa chỉ, số phòng ngủ, phòng tắm và điều làm căn nhà đặc biệt. Chỉ ghi sự thật — chúng tôi không bao giờ bịa thêm."
+      },
+      "two": {
+        "title": "Bấm vào thứ bạn cần",
+        "body": "Mô tả MLS, bài đăng, kế hoạch video, email, hướng dẫn chụp ảnh, hoặc kịch bản gọi điện cho khách mới."
+      },
+      "three": {
+        "title": "Sao chép và dùng",
+        "body": "Nút sao chép lớn, đếm ký tự cho từng nền tảng, và nút in cho các danh sách việc cần làm."
+      }
+    },
+    "featuresTitle": "Mọi thứ một agent cần, trong một nơi đơn giản",
+    "featuresBody": "Thay vì năm công cụ khác nhau với năm mật khẩu.",
+    "features": {
+      "mls": {
+        "title": "Mô tả MLS",
+        "body": "Ba phiên bản có tiêu đề, vừa với giới hạn ký tự của MLS bạn dùng."
+      },
+      "social": {
+        "title": "Bài mạng xã hội",
+        "body": "Instagram, Facebook, LinkedIn và X — mỗi nơi được viết đúng kiểu mà nền tảng đó ưa chuộng."
+      },
+      "reels": {
+        "title": "Kế hoạch Reel và TikTok",
+        "body": "Câu mở đầu thu hút, kịch bản, danh sách cảnh quay và lời thuyết minh bạn có thể quay xong trong 30 phút."
+      },
+      "email": {
+        "title": "Email giới thiệu nhà",
+        "body": "Vừa niêm yết, nhà mở, điều chỉnh giá và vừa bán xong."
+      },
+      "coach": {
+        "title": "Trợ lý theo dõi khách",
+        "body": "Nên nói gì khi khách gọi đến: kịch bản, cách trả lời câu hỏi khó, tin nhắn, email và kế hoạch 2 tuần."
+      },
+      "pages": {
+        "title": "Trang giới thiệu nhà",
+        "body": "Một cú bấm là có trang cho căn nhà của bạn, đưa người mua quan tâm vào danh bạ của bạn."
+      },
+      "crm": {
+        "title": "Danh sách khách đơn giản",
+        "body": "Danh bạ khách, tiến trình giao dịch kéo và thả, công việc và nhắc việc."
+      },
+      "cma": {
+        "title": "Trợ lý phân tích giá",
+        "body": "Nhập các căn nhà so sánh (comps); nhận phép tính rõ ràng và các ý trao đổi sẵn sàng cho khách."
+      },
+      "checklists": {
+        "title": "Danh sách việc cần làm của giao dịch",
+        "body": "Mọi hạn chót từ lúc ký hợp đồng đến khi đóng hồ sơ, trong một danh sách."
+      }
+    },
+    "trust": {
+      "fairHousing": {
+        "title": "Đã kiểm tra Fair Housing",
+        "body": "Từng chữ đều được kiểm tra về Luật Nhà Ở Công Bằng (Fair Housing) trước khi bạn thấy — và chúng tôi cho bạn biết đã sửa gì."
+      },
+      "languages": {
+        "title": "Năm ngôn ngữ",
+        "body": "Tiếng Anh, Tây Ban Nha, Trung Hoa, Việt Nam và Hàn Quốc — cả ứng dụng và mọi thứ nó viết ra."
+      },
+      "easy": {
+        "title": "Làm ra để dễ dùng",
+        "body": "Chữ lớn, nút bấm rõ ràng, lời lẽ dễ hiểu. Mỗi màn hình chỉ một việc. Không có cuốn hướng dẫn 40 trang."
+      }
+    },
+    "pricingTitle": "Giá đơn giản",
+    "pricingBody": "Mọi gói đều bắt đầu bằng 14 ngày dùng thử gói Pro miễn phí.",
+    "faqTitle": "Những câu agent thường hỏi",
+    "faq": {
+      "computers": {
+        "q": "Tôi không rành máy tính. Tôi có dùng được không?",
+        "a": "Được. Ứng dụng được thiết kế cho các agent bận rộn: chữ lớn, nút bấm rõ ràng và mỗi lần chỉ một bước. Nếu bạn điền được một biểu mẫu, bạn dùng được RealtyBoost."
+      },
+      "accuracy": {
+        "q": "AI có bịa ra điều gì về căn nhà không?",
+        "a": "AI chỉ viết từ những thông tin bạn nhập, và chúng tôi dặn nó không bao giờ bịa thêm đặc điểm. Dù vậy bạn vẫn nên đọc kỹ mọi thứ trước khi dùng — bạn mới là người rành nghề."
+      },
+      "posting": {
+        "q": "Ứng dụng có tự đăng lên mạng xã hội giúp tôi không?",
+        "a": "Chưa có. Bạn sao chép và dán chỉ với một cú bấm, nên bạn luôn kiểm soát được những gì được đăng đi."
+      },
+      "privacy": {
+        "q": "Ai xem được khách hàng và các căn nhà của tôi?",
+        "a": "Chỉ có bạn (và đồng nghiệp trong nhóm nếu bạn dùng gói Team). Dữ liệu của bạn được tách riêng khỏi mọi tài khoản khác."
+      },
+      "cancel": {
+        "q": "Tôi có thể hủy bất cứ lúc nào không?",
+        "a": "Được. Không có hợp đồng ràng buộc. Bạn hủy ngay trong trang thanh toán chỉ với hai cú bấm."
+      },
+      "languages": {
+        "q": "Ứng dụng có viết cùng một tin đăng bằng hai ngôn ngữ được không?",
+        "a": "Được. Chọn nhiều hơn một ngôn ngữ và bạn sẽ nhận được từng phiên bản đặt cạnh nhau."
+      }
+    },
+    "comingTitle": "Sắp có",
+    "coming": {
+      "mls": "Nhập tin đăng từ MLS của bạn",
+      "esign": "Chữ ký điện tử",
+      "sending": "Gửi email và tin nhắn ngay từ ứng dụng",
+      "showings": "Lịch hẹn xem nhà"
+    },
+    "finalTitle": "Căn nhà kế tiếp của bạn có thể được quảng cáo xong trước giờ ăn trưa.",
+    "finalBody": "Dùng thử mọi tính năng miễn phí trong 14 ngày.",
+    "footerNote": "RealtyBoost chỉ viết bản nháp. Hãy luôn xem lại trước khi đăng."
+  },
+  "microsite": {
+    "title": "Trang giới thiệu nhà",
+    "backToListing": "Quay lại căn nhà này",
+    "intro": "Tạo một trang web đơn giản cho căn nhà này. Chia sẻ đường link trong bài đăng, email và tin nhắn — ai điền biểu mẫu sẽ vào thẳng danh bạ của bạn, kèm nhắc việc theo dõi.",
+    "point1": "Ảnh, điện thoại và công ty môi giới của bạn trên mỗi trang",
+    "point2": "Biểu mẫu thu thập tên, email và điện thoại — kèm sự đồng ý đúng quy định",
+    "point3": "Màn hình đăng ký cho khách ghé nhà mở, để trên máy tính bảng ở cửa ra vào",
+    "createButton": "Tạo trang",
+    "creating": "Đang tạo…",
+    "liveAt": "Trang của bạn đã hiển thị. Hãy chia sẻ đường link này:",
+    "notLiveYet": "Trang của bạn chưa hiển thị. Hãy đánh dấu vào ô \"Đăng trang này\" bên dưới rồi lưu.",
+    "copyLink": "Sao chép đường link",
+    "open": "Mở trang",
+    "openHouseMode": "Đăng ký khách ghé xem nhà mở",
+    "writeHint": "Để chúng tôi viết tiêu đề, lời chào và các điểm nổi bật từ thông tin căn nhà của bạn.",
+    "writeButton": "Viết trang giúp tôi",
+    "writing": "Đang viết… khoảng 20 giây",
+    "written": "Chúng tôi đã viết xong trang. Hãy đọc lại, sửa bất cứ chỗ nào bạn muốn, rồi lưu.",
+    "writeFailed": "Lúc này chúng tôi chưa viết được trang. Xin thử lại.",
+    "headline": "Tiêu đề",
+    "introLabel": "Lời chào",
+    "highlights": "Điểm nổi bật",
+    "highlightsHint": "Mỗi dòng một điểm.",
+    "body": "Về căn nhà",
+    "language": "Ngôn ngữ của trang",
+    "languageHint": "Biểu mẫu và các nút bấm sẽ dùng ngôn ngữ này.",
+    "accentColor": "Màu nhấn",
+    "showPrice": "Hiển thị giá",
+    "published": "Đăng trang này",
+    "publishedHint": "Ai có đường link cũng xem được. Bỏ đánh dấu để ẩn trang.",
+    "saveButton": "Lưu trang",
+    "saved": "Đã lưu!",
+    "publishedNow": "Đã lưu — trang của bạn đã hiển thị!"
+  },
+  "publicPage": {
+    "beds": "{count} phòng ngủ",
+    "baths": "{count} phòng tắm",
+    "sqft": "{count, number} sq ft",
+    "built": "Xây năm {year}",
+    "photoAlt": "Ảnh của {address}",
+    "openHouse": "Nhà mở",
+    "highlights": "Điểm nổi bật",
+    "aboutHome": "Về căn nhà này",
+    "license": "Giấy phép {state} #{number}",
+    "equalHousing": "Equal Housing Opportunity (Cơ hội nhà ở bình đẳng). Chúng tôi tuân thủ Luật Nhà Ở Công Bằng của liên bang (Fair Housing Act) cùng mọi luật nhà ở công bằng của tiểu bang và địa phương.",
+    "disclaimer": "Thông tin được tin là chính xác nhưng không được bảo đảm. Người mua nên tự kiểm chứng mọi chi tiết.",
+    "listedBy": "Niêm yết bởi {agent}, {brokerage}.",
+    "formTitle": "Bạn quan tâm? Hãy liên lạc với chúng tôi",
+    "kioskTitle": "Xin vui lòng đăng ký",
+    "kioskWelcome": "Chào mừng bạn!",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "contactHint": "Xin cho chúng tôi một email hoặc một số điện thoại để liên lạc với bạn.",
+    "interest": "Tôi muốn",
+    "interests": {
+      "showing": "Hẹn xem nhà riêng",
+      "info": "Nhận thêm thông tin",
+      "openHouse": "Nghe về các buổi nhà mở",
+      "selling": "Trao đổi về việc bán nhà của tôi"
+    },
+    "message": "Câu hỏi hoặc ý kiến",
+    "emailOptIn": "Đồng ý, {agent} có thể gửi email cho tôi về căn nhà này và những căn nhà tương tự. Tôi có thể hủy đăng ký bất cứ lúc nào.",
+    "smsConsent": "Đồng ý, {agent} có thể gọi điện hoặc nhắn tin cho tôi theo số điện thoại ở trên về căn nhà này và các dịch vụ địa ốc, bao gồm cả tin nhắn tự động. Việc đồng ý không bắt buộc để mua bất cứ thứ gì. Có thể bị tính cước tin nhắn và dữ liệu. Trả lời STOP để ngưng nhận tin.",
+    "workingWithAgent": "Bạn có đang làm việc với một agent địa ốc không?",
+    "yes": "Có",
+    "no": "Không",
+    "submit": "Gửi yêu cầu của tôi",
+    "kioskSubmit": "Đăng ký",
+    "sending": "Đang gửi…",
+    "thanksTitle": "Cảm ơn bạn!",
+    "thanksBody": "{agent} sẽ sớm liên lạc với bạn.",
+    "kioskThanksTitle": "Cảm ơn bạn đã ghé thăm!",
+    "kioskThanksBody": "Chúc bạn tham quan vui vẻ. Xin cứ thoải mái xem quanh nhà.",
+    "nextVisitor": "Màn hình này sẽ tự làm mới cho khách kế tiếp sau vài giây.",
+    "optional": "không bắt buộc",
+    "errors": {
+      "missing": "Xin điền tên của bạn.",
+      "contact": "Xin cho một địa chỉ email hoặc một số điện thoại.",
+      "rate": "Có quá nhiều yêu cầu. Xin đợi vài phút rồi thử lại.",
+      "generic": "Xin lỗi, đã có trục trặc. Xin vui lòng gọi điện thay thế."
+    }
+  },
+  "contacts": {
+    "title": "Danh bạ khách",
+    "subtitle": "{count, plural, =0 {Tất cả những người bạn làm việc cùng, ở một nơi.} one {# người trong danh bạ của bạn.} other {# người trong danh bạ của bạn.}}",
+    "addContact": "Thêm một người",
+    "editTitle": "Sửa thông tin liên lạc",
+    "backToContacts": "Quay lại danh bạ",
+    "backToContact": "Quay lại người này",
+    "searchPlaceholder": "Tìm theo tên, email hoặc điện thoại",
+    "status": "Tình trạng",
+    "role": "Vai trò",
+    "source": "Đến từ",
+    "anyStatus": "Mọi tình trạng",
+    "anyRole": "Mọi vai trò",
+    "anySource": "Mọi nguồn",
+    "clearFilters": "Xóa bộ lọc",
+    "savedViews": "Danh sách đã lưu",
+    "viewName": "Đặt tên cho danh sách này",
+    "saveView": "Lưu danh sách này",
+    "deleteView": "Xóa danh sách đã lưu {name}",
+    "noMatches": "Không có ai khớp với các bộ lọc này.",
+    "emptyTitle": "Chưa có ai trong danh bạ",
+    "emptyBody": "Hãy thêm người mua, người bán và khách hàng cũ — hoặc đăng một trang giới thiệu nhà và khách mới sẽ tự động hiện ở đây.",
+    "deleted": "Người này đã được xóa khỏi danh bạ.",
+    "created": "Đã thêm vào danh bạ.",
+    "saved": "Đã lưu thay đổi.",
+    "edit": "Sửa",
+    "call": "Gọi",
+    "text": "Nhắn tin",
+    "email": "Email",
+    "coachButton": "Tôi nên nói gì?",
+    "added": "Ngày thêm",
+    "lastContacted": "Liên lạc lần cuối",
+    "consentTitle": "Sự cho phép liên lạc",
+    "consentEmail": "Đã đồng ý nhận email quảng cáo",
+    "consentSms": "Đã đồng ý nhận cuộc gọi và tin nhắn",
+    "consentGiven": "Đồng ý ngày {date} qua {source}",
+    "consentNone": "Chưa có sự cho phép bằng văn bản. Bạn vẫn có thể trả lời riêng từng người đã liên lạc với bạn; hãy hỏi ý họ trước khi thêm vào danh sách quảng cáo.",
+    "doNotContactTitle": "Không liên lạc",
+    "doNotContactBody": "Người này đã yêu cầu không liên lạc. Các nút gọi điện và nhắn tin đã được ẩn.",
+    "deals": "Giao dịch",
+    "addDeal": "Thêm giao dịch",
+    "noDeals": "Chưa có giao dịch nào.",
+    "tasks": "Công việc và nhắc việc",
+    "coachHistory": "Các kịch bản đã tạo cho người này",
+    "deleteTitle": "Xóa người này khỏi danh bạ",
+    "deleteWarning": "Việc này sẽ xóa người này cùng các giao dịch, công việc, ghi chú và lịch sử của họ. Không thể hoàn tác.",
+    "deleteConfirm": "Vâng, tôi muốn xóa người này",
+    "deleteButton": "Xóa khỏi danh bạ",
+    "deleting": "Đang xóa…",
+    "statuses": {
+      "NEW": "Khách mới",
+      "NURTURE": "Đang giữ liên lạc",
+      "ACTIVE": "Khách đang làm việc",
+      "PAST_CLIENT": "Khách hàng cũ",
+      "DO_NOT_CONTACT": "Không liên lạc"
+    },
+    "roles": {
+      "BUYER": "Người mua",
+      "SELLER": "Người bán",
+      "INVESTOR": "Nhà đầu tư",
+      "RENTER": "Người thuê nhà",
+      "PAST_CLIENT": "Khách hàng cũ",
+      "COOPERATING_AGENT": "Agent khác",
+      "LENDER": "Người cho vay (lender)",
+      "VENDOR": "Nhà cung cấp dịch vụ",
+      "OTHER": "Khác"
+    },
+    "sources": {
+      "MICROSITE": "Trang giới thiệu nhà của tôi",
+      "OPEN_HOUSE": "Nhà mở",
+      "ZILLOW": "Zillow",
+      "REALTOR_COM": "Realtor.com",
+      "FACEBOOK": "Facebook",
+      "INSTAGRAM": "Instagram",
+      "GOOGLE": "Google",
+      "WEBSITE": "Trang web của tôi",
+      "REFERRAL": "Người giới thiệu",
+      "PAST_CLIENT": "Khách hàng cũ",
+      "SPHERE": "Bạn bè và gia đình",
+      "SIGN_CALL": "Bảng rao bán trước sân nhà",
+      "OTHER": "Khác"
+    },
+    "stages": {
+      "NEW_LEAD": "Khách mới",
+      "NURTURE": "Đang giữ liên lạc",
+      "APPOINTMENT": "Đã hẹn gặp",
+      "ACTIVE": "Đang làm việc (đã ký hợp đồng môi giới)",
+      "UNDER_CONTRACT": "Đã có hợp đồng",
+      "CLOSED": "Đã đóng hồ sơ",
+      "LOST": "Không thành"
+    },
+    "form": {
+      "who": "Họ là ai",
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "roles": "Họ là…",
+      "language": "Ngôn ngữ ưa thích",
+      "sourceDetail": "Thêm về nơi họ đến từ",
+      "sourceDetailHint": "Ví dụ: \"Zillow — 1248 Maple Grove\" hoặc \"Do Linda K. giới thiệu\"",
+      "tags": "Nhãn",
+      "tagsHint": "Các nhãn ngắn, cách nhau bằng dấu phẩy, ví dụ: mua nhà lần đầu, mới chuyển đến",
+      "lookingFor": "Họ đang tìm gì",
+      "lookingForHint": "Dành cho người mua. Chúng tôi dùng thông tin này để cho thấy căn nhà nào của bạn phù hợp.",
+      "priceMin": "Ngân sách từ ($)",
+      "priceMax": "Ngân sách đến ($)",
+      "bedsMin": "Phòng ngủ (ít nhất)",
+      "bathsMin": "Phòng tắm (ít nhất)",
+      "bedsShort": "pn",
+      "bathsShort": "pt",
+      "timeline": "Khi nào họ muốn dọn nhà?",
+      "timelinePlaceholder": "Mùa xuân, trong vòng 3 tháng…",
+      "propertyTypes": "Loại nhà",
+      "areas": "Khu vực họ thích",
+      "mustHaves": "Điều bắt buộc phải có",
+      "preApproved": "Đã được pre-approval (chấp thuận vay sơ bộ)",
+      "lender": "Người cho vay (lender)",
+      "saveContact": "Lưu thông tin liên lạc",
+      "saveChanges": "Lưu thay đổi"
+    },
+    "matchingListings": "Nhà đang bán của bạn phù hợp với nhu cầu của khách",
+    "shareListing": "Gửi email căn nhà này",
+    "shareListingBody": "Chào {name}, căn nhà này có vẻ rất phù hợp với những gì bạn mô tả. Đây là thông tin chi tiết:"
+  },
+  "crm": {
+    "activity": {
+      "title": "Nhật ký trao đổi",
+      "type": "Đã xảy ra việc gì",
+      "direction": "Ai liên lạc trước",
+      "outbound": "Tôi liên lạc với họ",
+      "inbound": "Họ liên lạc với tôi",
+      "summary": "Tóm tắt ngắn",
+      "summaryPlaceholder": "Để lại lời nhắn về buổi xem nhà hôm thứ Bảy",
+      "logButton": "Thêm vào nhật ký",
+      "logging": "Đang thêm…",
+      "empty": "Chưa ghi gì vào nhật ký.",
+      "types": {
+        "CALL": "Cuộc gọi",
+        "EMAIL": "Email",
+        "TEXT": "Tin nhắn",
+        "MEETING": "Cuộc gặp",
+        "SHOWING": "Xem nhà",
+        "LEAD": "Khách mới",
+        "STAGE_CHANGE": "Giao dịch chuyển bước",
+        "OTHER": "Khác"
+      }
+    },
+    "notes": {
+      "title": "Ghi chú",
+      "placeholder": "Viết một ghi chú…",
+      "addButton": "Lưu ghi chú",
+      "adding": "Đang lưu…"
+    },
+    "tasks": {
+      "pageTitle": "Công việc và nhắc việc",
+      "pageSubtitle": "Mọi việc bạn cần làm, việc gấp nhất xếp trước.",
+      "newTask": "Công việc mới",
+      "placeholder": "Gọi cho Maria về buổi kiểm tra nhà (inspection)",
+      "due": "Khi nào",
+      "addButton": "Thêm công việc",
+      "adding": "Đang thêm…",
+      "empty": "Không có công việc nào ở đây.",
+      "overdue": "Quá hạn",
+      "noDueDate": "Không có ngày hạn",
+      "markDone": "Đánh dấu \"{title}\" là đã xong",
+      "markNotDone": "Đánh dấu \"{title}\" là chưa xong",
+      "allClear": "Bạn đã làm xong hết rồi!",
+      "groups": {
+        "overdue": "Quá hạn",
+        "today": "Hôm nay",
+        "upcoming": "Sắp đến",
+        "noDate": "Không có ngày hạn",
+        "done": "Mới làm xong"
+      }
+    }
+  },
+  "pipeline": {
+    "title": "Tiến trình giao dịch",
+    "subtitle": "{count, plural, =0 {Chưa có giao dịch đang làm.} one {# giao dịch đang làm, trị giá {value}.} other {# giao dịch đang làm, trị giá {value}.}}",
+    "addDeal": "Thêm giao dịch",
+    "hint": "Kéo một thẻ sang cột mới, hoặc dùng menu \"Chuyển đến\" trên mỗi thẻ.",
+    "dealCount": "{count, plural, =0 {Không có giao dịch} one {# giao dịch} other {# giao dịch}}",
+    "moveTo": "Chuyển đến",
+    "dropHere": "Thả giao dịch vào đây",
+    "overdue": "{count} quá hạn",
+    "stale": "{days} ngày ở bước này",
+    "deleted": "Giao dịch đã được xóa.",
+    "emptyTitle": "Chưa có giao dịch nào",
+    "emptyBody": "Một giao dịch là một khách hàng với một mục tiêu — như \"Maria mua nhà ở Plano\". Khách mới từ các trang giới thiệu nhà sẽ tự động tạo giao dịch.",
+    "sides": {
+      "BUYER": "Người mua",
+      "SELLER": "Người bán",
+      "BOTH": "Cả hai bên"
+    }
+  },
+  "deals": {
+    "title": "Giao dịch",
+    "newTitle": "Thêm giao dịch",
+    "newSubtitle": "Một khách hàng, một mục tiêu.",
+    "backToPipeline": "Quay lại tiến trình giao dịch",
+    "needContactTitle": "Hãy thêm một người vào danh bạ trước",
+    "needContactBody": "Mỗi giao dịch thuộc về một người trong danh bạ.",
+    "addContact": "Thêm một người",
+    "created": "Đã thêm giao dịch.",
+    "saved": "Đã lưu thay đổi.",
+    "coach": "Tôi nên nói gì?",
+    "value": "Giá",
+    "estCommission": "Tiền hoa hồng ước tính",
+    "nextDeadline": "Hạn chót kế tiếp",
+    "checklist": "Danh sách việc cần làm để đóng hồ sơ",
+    "checklistProgress": "Đã xong {done} trên {total}",
+    "checklistPitch": "Thêm danh sách việc cần làm từng bước, với các hạn chót thông thường từ lúc ký hợp đồng đến khi đóng hồ sơ. Bạn có thể đổi mọi ngày.",
+    "addChecklist": "Thêm danh sách việc đóng hồ sơ",
+    "adding": "Đang thêm…",
+    "optionalItem": "nếu áp dụng",
+    "overdue": "Quá hạn",
+    "dueDate": "Ngày hạn",
+    "setDate": "Đặt",
+    "addItem": "Thêm bước của riêng bạn",
+    "addItemButton": "Thêm bước",
+    "checklistNote": "Các hạn chót chỉ là ví dụ thông thường. Luôn dùng các ngày ghi trong hợp đồng đã ký và làm theo quy định của broker.",
+    "tasks": "Công việc",
+    "editTitle": "Chi tiết giao dịch",
+    "deleteConfirm": "Vâng, xóa giao dịch này",
+    "deleteButton": "Xóa giao dịch",
+    "deleting": "Đang xóa…",
+    "form": {
+      "title": "Tên giao dịch",
+      "titleHint": "Ví dụ: \"Maria — mua nhà ở Plano\".",
+      "contact": "Khách hàng",
+      "pickContact": "Chọn một người trong danh bạ",
+      "property": "Căn nhà",
+      "noProperty": "Chưa có căn nhà cụ thể",
+      "side": "Bạn đại diện cho",
+      "stage": "Bước hiện tại",
+      "value": "Giá ($)",
+      "valueHint": "Giá niêm yết, giá đặt (offer) hoặc ngân sách.",
+      "commission": "Hoa hồng của bạn (%)",
+      "contractDate": "Ngày ký hợp đồng",
+      "contractDateHint": "Dùng để điền các hạn chót trong danh sách việc cần làm.",
+      "expectedClose": "Ngày dự kiến đóng hồ sơ",
+      "lostReason": "Vì sao không thành?",
+      "lostReasonHint": "Chỉ điền nếu giao dịch được đánh dấu là Không thành.",
+      "withChecklist": "Thêm danh sách việc đóng hồ sơ",
+      "withChecklistHint": "Các bước và hạn chót thông thường. Bạn có thể đổi sau.",
+      "saveDeal": "Lưu giao dịch",
+      "saveChanges": "Lưu thay đổi"
+    }
+  },
+  "cma": {
+    "title": "Phân tích giá (CMA)",
+    "subtitle": "So sánh một căn nhà với các căn vừa bán gần đó và nhận các ý trao đổi rõ ràng, sẵn sàng cho khách. CMA là bản phân tích thị trường so sánh (Comparative Market Analysis).",
+    "newTitle": "Phân tích giá mới",
+    "newSubtitle": "Nhập căn nhà và 3–6 căn vừa bán để so sánh. Chúng tôi lo phần tính toán; bạn là người quyết định.",
+    "backToList": "Quay lại các bản phân tích giá",
+    "emptyTitle": "Chưa có bản phân tích giá nào",
+    "emptyBody": "CMA giúp bạn và người bán trao đổi về giá bằng những con số thật.",
+    "reportTitle": "Phân tích giá",
+    "defaultTitle": "Phân tích giá — {address}",
+    "defaultTitleBlank": "Phân tích giá",
+    "notAppraisalTitle": "Đây là CMA, không phải bản thẩm định giá (appraisal)",
+    "notAppraisalBody": "Bạn chọn các căn nhà so sánh (comps) và các mức điều chỉnh. Phần mềm chỉ tính toán và soạn phần giải thích. Chính bạn — không phải phần mềm — quyết định mức giá đề nghị.",
+    "print": "In hoặc lưu thành PDF",
+    "rewrite": "Viết lại phần giải thích",
+    "rewriting": "Đang viết lại…",
+    "rewritten": "Phần giải thích đã được viết lại.",
+    "preparedBy": "Do {name} soạn ngày {date}",
+    "license": "Giấy phép #{number}",
+    "subjectLine": "{beds} phòng ngủ · {baths} phòng tắm · {sqft, number} sq ft",
+    "suggestedRange": "Khoảng giá niêm yết đề nghị để thảo luận",
+    "adjustedRange": "Các căn đã bán sau điều chỉnh: từ {low} đến {high} (ở giữa: {median})",
+    "forDiscussion": "Đây là điểm khởi đầu cho cuộc trao đổi của bạn — hãy kiểm tra lại mọi con số trước khi chia sẻ.",
+    "noSold": "Hãy thêm ít nhất một căn đã bán để xem khoảng giá.",
+    "warnings": {
+      "fewer_than_three_sold": "Có ít hơn ba căn đã bán. Hãy thêm nữa để bản phân tích vững hơn.",
+      "weak_comps": "Có một hoặc nhiều căn so sánh phải điều chỉnh nhiều (hơn 25% giá). Hãy cân nhắc thay bằng những căn giống hơn."
+    },
+    "compsTable": "Các căn nhà so sánh",
+    "col": {
+      "address": "Địa chỉ",
+      "status": "Tình trạng",
+      "price": "Giá",
+      "size": "Pn/Pt · Sq ft",
+      "ppsf": "$/sq ft",
+      "adjustments": "Điều chỉnh",
+      "adjusted": "Giá sau điều chỉnh"
+    },
+    "status": {
+      "sold": "Đã bán",
+      "pending": "Đang chờ đóng hồ sơ",
+      "active": "Đang bán"
+    },
+    "adj": {
+      "size": "Diện tích",
+      "bedrooms": "Phòng ngủ",
+      "bathrooms": "Phòng tắm",
+      "garage": "Garage",
+      "pool": "Hồ bơi",
+      "condition": "Tình trạng nhà"
+    },
+    "milesAway": "Cách {miles} dặm",
+    "gross": "Tổng mức điều chỉnh: {pct}%",
+    "sqftRateUsed": "Mức điều chỉnh diện tích đã dùng: {rate} cho mỗi sq ft chênh lệch.",
+    "noNarrative": "Phần giải thích bằng lời chưa sẵn sàng. Hãy bấm \"Viết lại phần giải thích\" để thử lại.",
+    "disclaimerTitle": "Lưu ý quan trọng",
+    "disclaimer": "Bản phân tích thị trường so sánh (CMA) này do một chuyên viên địa ốc có giấy phép soạn ra để hỗ trợ việc quyết định giá. Đây không phải là bản thẩm định giá (appraisal) và không được dùng như vậy, chẳng hạn cho mục đích vay tiền. Bản phân tích dựa trên thông tin về các bất động sản so sánh mà agent đã thu thập và tin là đáng tin cậy, nhưng không được bảo đảm. Một thẩm định viên có giấy phép có thể đi đến kết luận khác. Đề nghị về giá cuối cùng là ý kiến chuyên môn của agent.",
+    "deleteConfirm": "Vâng, xóa bản phân tích này",
+    "delete": "Xóa",
+    "deleting": "Đang xóa…",
+    "errors": {
+      "invalid": "Có vài con số bị thiếu hoặc chưa đúng. Mỗi căn so sánh cần có địa chỉ, giá và diện tích (sq ft)."
+    },
+    "form": {
+      "subjectTitle": "Căn nhà bạn đang định giá",
+      "reportTitle": "Tên của bản phân tích này",
+      "address": "Địa chỉ",
+      "beds": "Phòng ngủ",
+      "baths": "Phòng tắm",
+      "sqft": "Diện tích (sq ft)",
+      "yearBuilt": "Năm xây",
+      "garage": "Chỗ đậu xe trong garage",
+      "condition": "Tình trạng nhà",
+      "conditions": {
+        "1": "1 — Cần sửa chữa lớn",
+        "2": "2 — Cần sửa chữa một ít",
+        "3": "3 — Trung bình",
+        "4": "4 — Đã nâng cấp",
+        "5": "5 — Như mới"
+      },
+      "pool": "Hồ bơi",
+      "compsTitle": "Các căn nhà so sánh",
+      "compsHint": "Chọn những căn ở gần, có diện tích và loại tương tự, đã bán trong 3–6 tháng qua. Các dòng để trống sẽ được bỏ qua.",
+      "compNumber": "Căn so sánh {number}",
+      "removeComp": "Bỏ",
+      "addComp": "Thêm một căn so sánh nữa",
+      "status": "Tình trạng",
+      "statuses": {
+        "sold": "Đã bán",
+        "pending": "Đang chờ đóng hồ sơ",
+        "active": "Đang bán (đối thủ cạnh tranh)"
+      },
+      "soldPrice": "Giá bán ($)",
+      "listPrice": "Giá niêm yết ($)",
+      "date": "Ngày bán hoặc ngày niêm yết",
+      "distance": "Cách bao nhiêu dặm",
+      "notes": "Ghi chú",
+      "notesPlaceholder": "Người bán trả $5k chi phí đóng hồ sơ; mái nhà mới",
+      "adjustmentsTitle": "Giá trị điều chỉnh (không bắt buộc)",
+      "adjustmentsHint": "Đây là các giá trị khởi đầu dùng cho mọi căn so sánh. Hãy đổi cho phù hợp với thị trường của bạn.",
+      "settings": {
+        "sqftRate": "$ cho mỗi sq ft chênh lệch",
+        "perBedroom": "$ cho mỗi phòng ngủ",
+        "perBathroom": "$ cho mỗi phòng tắm",
+        "perGarageSpace": "$ cho mỗi chỗ đậu xe trong garage",
+        "pool": "$ cho hồ bơi",
+        "conditionPct": "% cho mỗi mức tình trạng"
+      },
+      "sqftRateHint": "Để trống để dùng một nửa mức $/sq ft trung bình của các căn so sánh.",
+      "language": "Viết phần giải thích bằng",
+      "audience": "Ai sẽ đọc?",
+      "audiences": {
+        "seller": "Người bán",
+        "buyer": "Người mua"
+      },
+      "submit": "Phân tích và viết báo cáo",
+      "working": "Đang làm… khoảng 30 giây",
+      "submitHint": "{count, plural, =0 {Hãy điền ít nhất một căn so sánh có địa chỉ, giá và diện tích (sq ft).} one {# căn so sánh đã sẵn sàng.} other {# căn so sánh đã sẵn sàng.}}"
+    },
+    "narrative": {
+      "summary": "Tóm tắt",
+      "comps": "Về từng căn so sánh",
+      "adjustments": "Cách các mức điều chỉnh hoạt động",
+      "pricing": "Trao đổi về giá",
+      "talkingPoints": "Các ý để trao đổi",
+      "gaps": "Kiểm tra trước khi chia sẻ"
+    }
+  },
+  "help": {
+    "title": "Trợ giúp",
+    "subtitle": "Câu trả lời ngắn, dễ hiểu. Vẫn chưa rõ? Hãy gửi email cho chúng tôi — sẽ có người thật trả lời.",
+    "startTitle": "Bắt đầu trong 5 bước",
+    "steps": {
+      "listing": {
+        "title": "Thêm một căn nhà",
+        "body": "Vào Nhà đang bán của tôi và bấm \"Thêm một căn nhà\". Điền những gì bạn biết — chỉ cần địa chỉ là bắt buộc."
+      },
+      "create": {
+        "title": "Chọn thứ cần tạo",
+        "body": "Trên trang của căn nhà, bấm vào một ô: mô tả MLS, bài mạng xã hội, kế hoạch video, email hoặc hướng dẫn chụp ảnh."
+      },
+      "copy": {
+        "title": "Sao chép và dùng",
+        "body": "Bấm nút Sao chép lớn rồi dán vào MLS, Facebook hoặc email của bạn. Hãy đọc trước khi dùng — bạn mới là người rành nghề."
+      },
+      "page": {
+        "title": "Đăng trang giới thiệu nhà",
+        "body": "Trên trang của căn nhà, bấm \"Tạo trang\". Chia sẻ đường link trong các bài đăng của bạn. (Gói Pro)"
+      },
+      "leads": {
+        "title": "Theo dõi khách",
+        "body": "Khách mới sẽ hiện trong Danh bạ khách kèm nhắc việc. Bấm \"Tôi nên nói gì?\" để có kịch bản gọi điện, tin nhắn và email."
+      }
+    },
+    "startButton": "Thêm căn nhà đầu tiên",
+    "topicsTitle": "Những câu hỏi thường gặp",
+    "topics": {
+      "photos": {
+        "q": "Hướng dẫn chụp ảnh biết cần làm gì bằng cách nào?",
+        "a": "Nó dựa vào loại điện thoại của bạn, các phòng và đặc điểm bạn đã nhập, và hướng của căn nhà. Nó cho bạn biết giờ chụp đẹp nhất trong ngày, cách cài đặt điện thoại, nên chụp gì trong từng phòng, và cách chỉnh ảnh miễn phí.\n\nMẹo: hãy điền ô \"Mặt trước căn nhà hướng về phía nào?\" trong phần thông tin căn nhà để được lời khuyên về ánh sáng tốt nhất."
+      },
+      "languages": {
+        "q": "Làm sao để viết bằng tiếng Tây Ban Nha (hoặc ngôn ngữ khác)?",
+        "a": "Vào Cài đặt → Ngôn ngữ và chọn các ngôn ngữ của bạn. Sau đó, khi tạo nội dung, hãy đánh dấu mọi ngôn ngữ bạn muốn. Bạn sẽ nhận được từng phiên bản đặt cạnh nhau."
+      },
+      "fairHousing": {
+        "q": "Kiểm tra Fair Housing là gì?",
+        "a": "Luật Nhà Ở Công Bằng (Fair Housing) quy định quảng cáo phải mô tả căn nhà, không được nói về những người nên ở đó. Mọi bài viết đều được kiểm tra tự động. Nếu chúng tôi sửa hoặc bỏ điều gì, chúng tôi sẽ cho bạn biết chính xác là gì và vì sao. Đây là lưới an toàn, không phải tư vấn pháp lý — khi chưa chắc, hãy hỏi broker của bạn."
+      },
+      "coach": {
+        "q": "Trợ lý theo dõi khách là gì?",
+        "a": "Khi có khách liên lạc, Trợ lý sẽ viết sẵn những gì nên nói qua điện thoại, cách trả lời các câu hỏi thường gặp, một tin nhắn, một email và kế hoạch theo dõi trong 2 tuần. Rất tiện cho agent mới và cho những ngày bận rộn. Bạn tự gửi tin nhắn từ điện thoại hoặc email của mình."
+      },
+      "pipeline": {
+        "q": "Làm sao chuyển một giao dịch sang bước kế tiếp?",
+        "a": "Trong trang Tiến trình giao dịch, hãy kéo thẻ sang cột kế tiếp. Nếu kéo khó, hãy dùng menu \"Chuyển đến\" ở cuối mỗi thẻ."
+      },
+      "cma": {
+        "q": "Phân tích giá có phải là thẩm định giá (appraisal) không?",
+        "a": "Không. Bạn chọn các căn nhà so sánh và các giá trị điều chỉnh. Chúng tôi lo phần tính toán và soạn phần giải thích rõ ràng cho khách của bạn. Đề nghị về giá là của bạn."
+      },
+      "install": {
+        "q": "Tôi có thể đặt RealtyBoost trên màn hình chính của điện thoại không?",
+        "a": "Được.\niPhone hoặc iPad: mở RealtyBoost trong Safari, bấm nút Chia sẻ (Share), rồi chọn \"Thêm vào Màn hình chính\" (Add to Home Screen).\nAndroid: mở bằng Chrome, bấm menu ⋮, rồi chọn \"Cài đặt ứng dụng\" (Install app) hoặc \"Thêm vào màn hình chính\" (Add to Home screen).\nMáy tính: trong Chrome hoặc Edge, bấm biểu tượng cài đặt ở cuối bên phải thanh địa chỉ."
+      },
+      "privacy": {
+        "q": "Ai xem được danh bạ khách và các căn nhà của tôi?",
+        "a": "Chỉ có bạn — và đồng nghiệp trong nhóm nếu bạn dùng gói Team. Dữ liệu của mỗi tài khoản được lưu tách riêng trong hệ thống của chúng tôi. Các trang công khai duy nhất là những trang giới thiệu nhà do chính bạn chọn đăng."
+      },
+      "billing": {
+        "q": "Làm sao đổi hoặc hủy gói của tôi?",
+        "a": "Vào Cài đặt → Gói dịch vụ và thanh toán. Bạn có thể đổi gói hoặc hủy ngay tại đó. Không có hợp đồng ràng buộc."
+      }
+    },
+    "contactTitle": "Nói chuyện với người thật",
+    "contactBody": "Hãy gửi email cho chúng tôi bất kỳ câu hỏi nào. Thường chúng tôi trả lời trong vòng một ngày làm việc."
+  },
+  "team": {
+    "title": "Nhóm",
+    "subtitle": "Đã dùng {used} trên {seats} chỗ. Hoạt động trong 30 ngày qua.",
+    "member": "Thành viên nhóm",
+    "content30": "Nội dung đã tạo",
+    "contacts30": "Người đã thêm vào danh bạ",
+    "closed30": "Giao dịch đã đóng hồ sơ",
+    "lastSignIn": "Lần đăng nhập gần nhất",
+    "roles": {
+      "OWNER": "Chủ tài khoản",
+      "ADMIN": "Quản trị viên",
+      "AGENT": "Agent"
+    },
+    "addTitle": "Thêm một đồng nghiệp",
+    "name": "Tên của họ",
+    "email": "Email của họ",
+    "addButton": "Thêm đồng nghiệp",
+    "adding": "Đang thêm…",
+    "addedTitle": "Đã thêm đồng nghiệp!",
+    "addedBody": "Hãy gửi riêng mật khẩu tạm thời này cho họ. Họ có thể đăng nhập bằng email của họ và mật khẩu này:",
+    "seatsFull": "Đã dùng hết các chỗ. Hãy bỏ bớt một người hoặc liên hệ chúng tôi để có thêm chỗ."
+  }
+}

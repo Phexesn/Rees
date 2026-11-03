@@ -7,11 +7,13 @@ export type NavItem = { href: string; label: string; icon: string; locked?: bool
 
 export function NavLinks({ items, lockedLabel }: { items: NavItem[]; lockedLabel: string }) {
   const pathname = usePathname();
+  // Only the most specific matching item is active (e.g. /create/follow-up-coach, not also /create).
+  const matches = items.filter((item) => pathname === item.href || pathname.startsWith(`${item.href}/`));
+  const activeHref = matches.sort((a, b) => b.href.length - a.href.length)[0]?.href;
   return (
     <ul className="space-y-1">
       {items.map((item) => {
-        const active =
-          item.href === "/dashboard" ? pathname === "/dashboard" : pathname === item.href || pathname.startsWith(`${item.href}/`);
+        const active = item.href === activeHref;
         return (
           <li key={item.href}>
             <Link

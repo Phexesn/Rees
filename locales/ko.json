@@ -1,0 +1,1427 @@
+{
+  "common": {
+    "language": "언어",
+    "optional": "선택",
+    "back": "뒤로",
+    "saving": "저장하는 중…",
+    "saveAndContinue": "저장하고 계속",
+    "save": "저장",
+    "cancel": "취소",
+    "skipToContent": "본문으로 바로 가기",
+    "demoMode": "체험 모드: AI 서비스가 연결되어 있지 않아 샘플 글이 나타나요. 실제 글을 쓰려면 AI 키를 추가해 주세요.",
+    "yes": "예",
+    "no": "아니요",
+    "edit": "수정",
+    "delete": "삭제",
+    "search": "검색",
+    "none": "없음"
+  },
+  "nav": {
+    "main": "메인 메뉴",
+    "menu": "메뉴",
+    "home": "홈",
+    "listings": "내 매물",
+    "create": "콘텐츠 만들기",
+    "coach": "후속 연락 코치",
+    "contacts": "연락처",
+    "pipeline": "진행 현황",
+    "tasks": "할 일",
+    "cma": "가격 분석 (CMA)",
+    "team": "팀",
+    "settings": "설정",
+    "help": "도움말",
+    "admin": "관리자",
+    "signOut": "로그아웃",
+    "locked": "업그레이드하면 사용할 수 있어요"
+  },
+  "errors": {
+    "required": "내용을 입력해 주세요.",
+    "tooShort": "너무 짧아요.",
+    "tooLong": "너무 길어요. 조금 줄여 주세요.",
+    "invalidFormat": "형식이 맞지 않아요. 다시 확인해 주세요.",
+    "invalid": "이 항목을 확인해 주세요.",
+    "fixFields": "확인이 필요한 항목이 있어요. 아래에 빨간색으로 표시했어요.",
+    "notFound": "찾을 수 없어요. 이미 삭제되었을 수 있어요.",
+    "generic": "저희 쪽에 문제가 생겼어요. 잠시 후 다시 시도해 주세요."
+  },
+  "auth": {
+    "email": "이메일 주소",
+    "password": "비밀번호",
+    "passwordHint": "8자 이상으로 입력해 주세요.",
+    "name": "성함",
+    "nameHint": "홍보물에 표시하고 싶은 이름으로 적어 주세요.",
+    "signInTitle": "다시 오신 것을 환영해요",
+    "signInSubtitle": "RealtyBoost 계정으로 로그인해 주세요.",
+    "signInButton": "로그인",
+    "signingIn": "로그인하는 중…",
+    "signIn": "로그인",
+    "noAccount": "처음 오셨나요?",
+    "startTrial": "14일 무료 체험 시작하기",
+    "signUpTitle": "무료 체험 시작하기",
+    "signUpSubtitle": "14일 동안 무료예요. 시작할 때 신용카드는 필요 없어요.",
+    "createAccountButton": "계정 만들기",
+    "creatingAccount": "계정을 만드는 중…",
+    "trialNote": "체험 기간에는 Pro 플랜의 모든 기능을 쓸 수 있어요.",
+    "haveAccount": "이미 계정이 있으신가요?",
+    "errors": {
+      "emailTaken": "이 이메일로 만든 계정이 이미 있어요. 로그인해 보세요.",
+      "wrongLogin": "이메일과 비밀번호가 맞지 않아요. 확인하고 다시 시도해 주세요."
+    }
+  },
+  "setup": {
+    "title": "계정 설정",
+    "stepOf": "{total}단계 중 {step}단계",
+    "error": "입력하신 내용을 확인하고 다시 시도해 주세요.",
+    "step1": {
+      "title": "나에 대해서",
+      "subtitle": "홍보물에 들어가는 정보예요. 언제든 바꿀 수 있어요.",
+      "displayName": "이름",
+      "displayNameHint": "고객들이 알고 있는 이름으로 적어 주세요.",
+      "phone": "휴대폰 번호",
+      "brokerage": "브로커리지",
+      "brokerageHint": "많은 주에서 광고에 브로커리지 이름을 넣도록 요구해요.",
+      "license": "라이선스 번호",
+      "state": "주(State)"
+    },
+    "step2": {
+      "title": "사용 언어",
+      "subtitle": "앱에서 사용할 언어와 홍보 글을 쓸 언어를 골라 주세요.",
+      "uiLanguage": "앱 언어",
+      "uiLanguageHint": "버튼, 메뉴, 도움말에 쓰여요.",
+      "contentLanguage": "홍보 글의 기본 언어",
+      "contentLanguageHint": "매물 설명과 게시글을 이 언어로 써요.",
+      "extraLanguages": "함께 쓰는 다른 언어 (최대 {count}개)",
+      "extraLanguagesHint": "같은 매물 설명을 여러 언어로 한꺼번에 쓸 수 있어요.",
+      "soloLimit": "현재 플랜에서는 홍보 언어를 1개 쓸 수 있어요. Pro 플랜은 3개까지 쓸 수 있어요."
+    },
+    "step3": {
+      "title": "나의 말투",
+      "subtitle": "나와 가장 비슷한 스타일을 골라 주세요. 앞으로 쓰는 모든 글이 이 스타일을 따라요.",
+      "tone": "나의 스타일",
+      "tones": {
+        "warm": {
+          "name": "따뜻하고 포근하게",
+          "example": "아침 햇살이 부엌 가득 들어오고, 뒤쪽 베란다에서는 여유로운 주말을 보내실 수 있어요."
+        },
+        "professional": {
+          "name": "단정하고 전문적으로",
+          "example": "관리 상태가 좋은 침실 3개 주택입니다. 주방은 리모델링되었고 2대 차고가 있습니다."
+        },
+        "luxury": {
+          "name": "품격 있고 우아하게",
+          "example": "넓은 오크 마루와 맞춤 제작 목공 마감이 집 전체에 차분하고 격조 있는 분위기를 더합니다."
+        },
+        "friendly": {
+          "name": "편하고 활기차게",
+          "example": "넓은 뒷마당, 새 지붕, 그리고 요리하고 싶어지는 멋진 주방까지 다 갖췄어요!"
+        },
+        "straightforward": {
+          "name": "꾸밈없이 간단하게",
+          "example": "침실 3개. 욕실 2개. 2022년 새 지붕. 울타리 있는 마당."
+        }
+      },
+      "voiceNotes": "말투에 대해 더 알려 주실 것이 있나요?",
+      "voiceNotesHint": "예: \"출퇴근 거리는 꼭 언급해 주세요\" 또는 \"짧게 써 주세요.\"",
+      "wordsToAvoid": "쓰지 않았으면 하는 단어",
+      "wordsToAvoidHint": "쉼표로 구분해 주세요. 예: 아늑한, 꼭 보셔야 할, 숨은 보석."
+    },
+    "step4": {
+      "title": "휴대폰과 활동 지역",
+      "subtitle": "휴대폰 기종을 알면 매물 사진에 맞는 정확한 카메라 설정을 알려 드릴 수 있어요.",
+      "phone": "사진을 찍을 때 쓰는 휴대폰이 무엇인가요?",
+      "phoneHint": "잘 모르시나요? iPhone에서는 설정 → 일반 → 정보에서 확인할 수 있어요.",
+      "phonePick": "휴대폰 선택",
+      "markets": "활동 지역",
+      "marketsHint": "도시나 동네 이름을 쉼표로 구분해서 적어 주세요."
+    },
+    "step5": {
+      "title": "준비가 끝났어요!",
+      "subtitle": "저장된 내용이에요. 설정에서 언제든 바꿀 수 있어요.",
+      "name": "이름: {name}",
+      "language": "홍보 언어: {language}",
+      "tone": "스타일: {tone}",
+      "phone": "휴대폰: {phone}",
+      "notSet": "설정 안 됨",
+      "goDashboard": "홈으로 가기",
+      "addListing": "첫 매물 추가하기"
+    }
+  },
+  "dashboard": {
+    "title": "홈",
+    "morning": "좋은 아침이에요, {name}님",
+    "afternoon": "안녕하세요, {name}님",
+    "evening": "좋은 저녁이에요, {name}님",
+    "subtitle": "오늘은 무엇을 하고 싶으세요?",
+    "quickActions": "바로 하기",
+    "addListing": "매물 추가",
+    "addListingBody": "집 정보를 한 번만 입력하세요. 모든 곳에 쓸 수 있어요.",
+    "createContent": "콘텐츠 만들기",
+    "createContentBody": "매물 설명, SNS 글, 영상, 이메일, 사진 촬영 안내를 만들어 드려요.",
+    "coachMe": "이 고객에게 뭐라고 말하죠?",
+    "coachMeBody": "통화 대본, 문자, 이메일을 몇 초 만에 받아 보세요.",
+    "listingUsage": "이번 달에 매물 {limit}개 중 {used}개를 추가하셨어요.",
+    "unlimitedUpgrade": "매물을 무제한으로 추가하기",
+    "todayTasks": "오늘 할 일",
+    "noTasks": "오늘 할 일이 없어요. 잘하셨어요!",
+    "newLeads": "새 잠재 고객",
+    "noLeads": "아직 새 잠재 고객이 없어요. 매물 페이지를 공개하면 고객 정보를 받을 수 있어요.",
+    "seeAll": "모두 보기",
+    "activeDeals": "{count, plural, =0 {진행 중인 거래 없음} one {진행 중인 거래 #건} other {진행 중인 거래 #건}}",
+    "openPipeline": "진행 현황 열기",
+    "crmPitch": "구매자와 판매자를 관리하고, 알림을 받고, 매물 페이지에서 고객 정보를 모으고 싶으신가요? Pro 플랜에 모두 들어 있어요.",
+    "seePro": "Pro 플랜 보기",
+    "recentContent": "최근에 만든 것",
+    "welcome": "{name}님, 다시 오신 것을 환영해요"
+  },
+  "properties": {
+    "title": "내 매물",
+    "subtitle": "홍보 중인 모든 집이에요. 하나를 누르면 그 집의 콘텐츠를 만들 수 있어요.",
+    "addListing": "매물 추가",
+    "addFirstListing": "첫 매물 추가하기",
+    "emptyTitle": "아직 매물이 없어요",
+    "emptyBody": "집 정보를 한 번만 입력하세요. 그러면 매물 설명, 게시글, 영상, 사진 촬영 계획을 버튼 한 번으로 만들 수 있어요.",
+    "newTitle": "매물 추가",
+    "newSubtitle": "아는 만큼만 입력해 주세요. 주소만 꼭 필요해요. 정보가 많을수록 글이 더 좋아져요.",
+    "editTitle": "매물 수정",
+    "backToListings": "내 매물로 돌아가기",
+    "backToListing": "이 매물로 돌아가기",
+    "bedsShort": "침실 {count}",
+    "bathsShort": "욕실 {count}",
+    "sqftShort": "{count, number} sq ft",
+    "builtIn": "{year}년 건축",
+    "piecesCount": "{count, plural, =0 {아직 만든 콘텐츠 없음} one {콘텐츠 #개} other {콘텐츠 #개}}",
+    "pageLive": "페이지 공개 중",
+    "pageDraft": "페이지 작성 중",
+    "pageViews": "{count, plural, =0 {아직 방문 없음} one {방문 #회} other {방문 #회}}",
+    "deleted": "매물을 삭제했어요.",
+    "saved": "변경 내용을 저장했어요.",
+    "createdTitle": "매물을 저장했어요!",
+    "createdBody": "이제 아래에서 만들고 싶은 것을 골라 주세요.",
+    "editDetails": "정보 수정",
+    "addDetailsTip": "팁: 특징과 업그레이드 내용(예: \"쿼츠 카운터\", \"2022년 새 지붕\")을 넣으면 글이 훨씬 좋아져요.",
+    "createForListing": "이 매물로 만들기",
+    "locked": "잠겨 있어요 — 업그레이드하면 쓸 수 있어요",
+    "micrositeTitle": "매물 페이지",
+    "micrositePitch": "이 집을 소개하는 간단한 웹페이지예요. 관심 있는 구매자가 양식을 작성하면 바로 내 연락처에 들어와요.",
+    "createPage": "페이지 만들기",
+    "editPage": "페이지 수정",
+    "viewPage": "페이지 보기",
+    "openHouseKiosk": "오픈하우스 방문자 등록",
+    "dealsTitle": "이 집의 거래",
+    "addDeal": "거래 추가",
+    "noDeals": "이 집에 연결된 거래가 아직 없어요.",
+    "cmaTitle": "가격 분석",
+    "newCma": "새 가격 분석",
+    "historyTitle": "이 매물로 만든 모든 것",
+    "limitReached": "이번 달 플랜의 매물 한도에 도달했어요. Pro 플랜으로 업그레이드하면 매물을 무제한으로 추가할 수 있어요.",
+    "deleteTitle": "이 매물 삭제",
+    "deleteWarning": "매물과 매물 페이지, 그리고 이 매물로 만든 모든 콘텐츠가 삭제돼요. 되돌릴 수 없어요.",
+    "deleteConfirm": "네, 이 매물을 삭제할게요",
+    "deleteButton": "매물 삭제",
+    "deleting": "삭제하는 중…",
+    "form": {
+      "addressSection": "주소",
+      "address": "도로명 주소",
+      "unit": "유닛 또는 아파트 번호",
+      "city": "도시",
+      "state": "주(State)",
+      "zip": "우편번호 (ZIP)",
+      "basicsSection": "기본 정보",
+      "status": "상태",
+      "propertyType": "주택 종류",
+      "price": "리스팅 가격 ($)",
+      "beds": "침실 수",
+      "baths": "욕실 수",
+      "bathsHint": "하프 배스는 .5로 적어 주세요. 예: 2.5",
+      "sqft": "면적 (sq ft)",
+      "lotSize": "대지 크기",
+      "yearBuilt": "건축 연도",
+      "stories": "층수",
+      "garage": "차고 또는 주차",
+      "garagePlaceholder": "2대 어태치드 차고",
+      "hoaFee": "HOA 비용 (월 $)",
+      "detailsSection": "이 집의 특별한 점",
+      "detailsIntro": "사실만 적어 주세요. 글은 여기에 적은 내용만 사용하고, 없는 내용을 지어내지 않아요.",
+      "features": "주요 특징",
+      "featuresHint": "방, 자재, 구조 등을 적어 주세요. 쉼표나 줄바꿈으로 구분해도 돼요.",
+      "featuresPlaceholder": "쿼츠 카운터가 있는 오픈 주방, 가스레인지, 1층 마스터 스위트, 높은 천장의 거실",
+      "upgrades": "최근 업그레이드 (연도 포함)",
+      "upgradesHint": "구매자는 연도를 좋아해요. \"새 지붕\"보다 \"2022년 새 지붕\"이 더 좋아요.",
+      "upgradesPlaceholder": "2022년 새 지붕, 2021년 냉난방 시스템, 2024년 실내 페인트 새로 칠함",
+      "outdoor": "야외 공간",
+      "outdoorPlaceholder": "울타리 있는 뒷마당, 지붕 덮인 파티오, 오래된 오크나무, 정원 화단",
+      "neighborhood": "위치와 주변 시설",
+      "neighborhoodHint": "사람이 아니라 장소에 대한 사실만 적어 주세요. 공원, 상점, 출퇴근 시간, 학군 이름 등이에요.",
+      "neighborhoodPlaceholder": "레이크사이드 공원까지 2블록, 다운타운까지 10분, Plano ISD",
+      "photoSection": "사진과 오픈하우스",
+      "facing": "집 앞면은 어느 방향인가요?",
+      "facingHint": "현관 앞에서 도로를 바라보고 서서 휴대폰 나침반을 확인해 보세요. 사진 찍기 좋은 시간을 정하는 데 도움이 돼요.",
+      "facingUnknown": "잘 모르겠어요",
+      "phoneModel": "이번 촬영에 쓸 휴대폰",
+      "phoneModelHint": "그대로 두면 설정에 있는 휴대폰을 사용해요.",
+      "phoneModelDefault": "평소 쓰는 휴대폰 사용",
+      "heroImageUrl": "대표 사진 링크",
+      "heroImageUrlHint": "대표 사진의 링크를 붙여 넣어 주세요(예: MLS나 Google Photos). 매물 페이지에 표시돼요.",
+      "openHouseAt": "오픈하우스 시작",
+      "openHouseEnd": "오픈하우스 종료",
+      "privateSection": "비공개 (홍보물에 절대 표시되거나 쓰이지 않아요)",
+      "soldPrice": "판매 가격 ($)",
+      "privateNotes": "비공개 메모",
+      "privateNotesHint": "락박스 번호, 셀러 관련 메모 등 나만 보는 내용이에요.",
+      "saveListing": "매물 저장",
+      "saveChanges": "변경 내용 저장",
+      "statuses": {
+        "COMING_SOON": "오픈 예정",
+        "ACTIVE": "판매 중",
+        "PENDING": "계약 진행 중",
+        "SOLD": "판매 완료",
+        "OFF_MARKET": "시장에서 내림"
+      },
+      "types": {
+        "single_family": "단독주택",
+        "condo": "콘도",
+        "townhouse": "타운하우스",
+        "multi_family": "다세대 주택",
+        "manufactured": "모듈러 주택",
+        "land": "토지 / 대지",
+        "other": "기타"
+      },
+      "facings": {
+        "N": "북쪽",
+        "NE": "북동쪽",
+        "E": "동쪽",
+        "SE": "남동쪽",
+        "S": "남쪽",
+        "SW": "남서쪽",
+        "W": "서쪽",
+        "NW": "북서쪽"
+      }
+    },
+    "matchingBuyers": "이 집을 좋아할 만한 구매자",
+    "matchingBuyersHint": "각 구매자가 알려준 예산과 크기를 기준으로 합니다."
+  },
+  "create": {
+    "title": "콘텐츠 만들기",
+    "subtitle": "만들고 싶은 것을 골라 주세요. 모든 글은 매물의 실제 정보를 바탕으로 내 스타일로 써 드려요.",
+    "recent": "최근에 만든 것",
+    "locked": "잠겨 있어요 — 업그레이드하면 쓸 수 있어요",
+    "chooseListing": "어느 매물에 대한 건가요?",
+    "backToCreate": "만들기로 돌아가기",
+    "noListingsTitle": "먼저 매물을 추가해 주세요",
+    "noListingsBody": "집 정보가 있어야 글을 쓸 수 있어요.",
+    "addListing": "매물 추가",
+    "forListing": "대상 매물",
+    "changeListing": "다른 매물 선택",
+    "optionalListing": "특정 집에 관한 내용인가요?",
+    "pickListing": "매물 선택",
+    "form": {
+      "contact": "누구를 위한 것인가요?",
+      "contactHint": "연락처를 고르면 그 사람의 정보를 사용해요. 비워 두어도 돼요.",
+      "noContact": "내 연락처에 없는 사람",
+      "languages": "작성 언어",
+      "languagesHint": "둘 이상 선택하면 같은 내용을 여러 언어로 받을 수 있어요. 현재 플랜에서는 {count, plural, one {#개 언어} other {#개 언어}}를 쓸 수 있어요.",
+      "languageLocked": "설정에서 이 언어를 추가하거나, 업그레이드해서 더 많은 언어를 쓰세요.",
+      "generateButton": "써 주세요",
+      "writing": "쓰는 중… 약 30초 걸려요",
+      "timeNote": "다음 화면에서 모두 보실 수 있어요. 복사하기 전에는 어디에도 게시되지 않아요."
+    },
+    "errors": {
+      "unknown_module": "해당 종류의 콘텐츠를 찾을 수 없어요.",
+      "property_required": "먼저 매물을 선택해 주세요.",
+      "language_not_allowed": "선택한 언어 중 하나가 플랜이나 설정에 포함되어 있지 않아요.",
+      "invalid_options": "일부 옵션이 올바르지 않아요. 확인해 주세요.",
+      "ai": "글 작성이 끝나지 않았어요."
+    }
+  },
+  "generation": {
+    "title": "만든 콘텐츠",
+    "backToCreate": "만들기로 돌아가기",
+    "print": "인쇄",
+    "emailMe": "내 이메일로 보내기",
+    "sending": "보내는 중…",
+    "emailed": "보냈어요! 받은편지함을 확인해 주세요.",
+    "emailNotConfigured": "이 계정에는 아직 이메일이 설정되어 있지 않아서 보내지 못했어요. 인쇄하거나 복사해서 쓰세요.",
+    "regenerate": "새로 다시 쓰기",
+    "rewriting": "새로 쓰는 중…",
+    "changeOptions": "옵션 바꾸기",
+    "languages": "언어",
+    "needsReview": "확인이 필요해요",
+    "failed": "완료되지 않음",
+    "failedTitle": "이 글은 완료되지 않았어요",
+    "failedBody": "잠시 후 다시 시도해 주세요.",
+    "noHistory": "아직 만든 것이 없어요.",
+    "reviewNote": "AI가 쓴 글은 사용하기 전에 꼭 읽어 보세요. 게시하는 내용에 대한 책임은 본인에게 있어요."
+  },
+  "output": {
+    "copy": "복사",
+    "copied": "복사했어요!",
+    "chars": "{count, plural, one {#자} other {#자}}",
+    "charsOfLimit": "{limit}자 중 {count}자",
+    "overLimit": "{count}자 — 제한 {limit}자를 {over}자 넘었어요. 게시하기 전에 줄여 주세요."
+  },
+  "fairHousing": {
+    "title": "Fair Housing(공정주택법) 점검",
+    "clean": "Fair Housing 점검을 통과했어요. 이 글은 사람이 아니라 부동산 자체를 설명하고 있어요.",
+    "removedTitle": "{count, plural, one {문장 #개를 삭제했어요} other {문장 #개를 삭제했어요}}",
+    "removedItem": "\"{phrase}\" — {reason}",
+    "flaggedTitle": "{count, plural, one {표현 #개를 확인해 주세요} other {표현 #개를 확인해 주세요}}",
+    "flaggedItem": "\"{phrase}\" — {reason}",
+    "rewrittenTitle": "{count, plural, one {표현 #개를 고쳤어요} other {표현 #개를 고쳤어요}}",
+    "rewrittenItem": "\"{from}\" → \"{to}\"",
+    "disclaimer": "이 자동 점검은 도움이 되지만 법률 자문은 아니에요. 확실하지 않을 때는 브로커에게 물어보세요.",
+    "classes": {
+      "familial_status": "가족이나 자녀를 언급하고 있어요. Fair Housing 법이 보호하는 부분이에요",
+      "age": "나이를 언급하고 있어요. 많은 주에서 보호하는 부분이에요",
+      "marital_status": "결혼 여부를 언급하고 있어요. 많은 주에서 보호하는 부분이에요",
+      "sex": "특정 성별을 선호하는 것처럼 보일 수 있어요",
+      "disability": "장애가 있는 사람을 배제하는 것처럼 보일 수 있어요",
+      "source_of_income": "주택 바우처를 받지 않겠다고 하고 있어요. 많은 주에서 불법이에요",
+      "race_national_origin": "인종, 민족 또는 출신 국가를 설명하고 있어요",
+      "religion": "특정 종교를 선호하는 것처럼 보일 수 있어요",
+      "military_status": "군 복무 여부를 언급하고 있어요. 여러 주에서 보호하는 부분이에요",
+      "steering": "구매자를 특정 지역으로 유도하는 것처럼 보일 수 있어요(\"안전한\", 학교 평점 등)",
+      "style_guideline": "많은 MLS에서 에이전트에게 피하도록 요청하는 표현이에요"
+    }
+  },
+  "billing": {
+    "title": "플랜과 결제",
+    "subtitle": "간단한 월 요금제예요. 언제든 해지할 수 있어요.",
+    "backToSettings": "설정으로 돌아가기",
+    "currentPlan": "현재 플랜",
+    "noPlan": "사용 중인 플랜 없음",
+    "trialDaysLeft": "{days, plural, =0 {무료 체험이 오늘 끝나요.} one {무료 체험이 #일 남았어요.} other {무료 체험이 #일 남았어요.}}",
+    "renewsOn": "{date}에 갱신돼요",
+    "manageBilling": "결제 수단과 청구서 관리",
+    "opening": "여는 중…",
+    "perMonth": "월",
+    "mostPopular": "가장 인기 있는 플랜",
+    "yourPlan": "현재 사용 중인 플랜이에요",
+    "choosePlanButton": "{plan} 선택",
+    "choosePlan": "플랜 선택",
+    "trialBanner": "{days, plural, =0 {무료 체험이 오늘 끝나요.} one {무료 체험이 #일 남았어요.} other {무료 체험이 #일 남았어요.}}",
+    "inactiveBanner": "플랜이 활성화되어 있지 않아서 대부분의 기능이 멈췄어요.",
+    "successTitle": "감사합니다!",
+    "successBody": "플랜이 활성화되었어요. 포함된 모든 기능을 지금 바로 쓸 수 있어요.",
+    "canceledBody": "괜찮아요. 결제는 되지 않았어요.",
+    "testCardNote": "테스트 중이신가요? Stripe 테스트 카드 4242 4242 4242 4242를 쓰고, 유효기간은 미래의 아무 날짜, 보안 코드는 아무 숫자 3자리를 입력하세요.",
+    "devModeTitle": "테스트 결제 모드",
+    "devModeBody": "Stripe가 연결되어 있지 않아서, 플랜을 고르면 결제 없이 바로 바뀌어요. 테스트 서버에서만 작동해요.",
+    "status": {
+      "TRIALING": "무료 체험 중",
+      "ACTIVE": "사용 중",
+      "PAST_DUE": "결제에 문제가 있어요",
+      "CANCELED": "해지됨",
+      "NONE": "사용 안 함"
+    },
+    "errors": {
+      "owner": "계정 소유자만 플랜을 바꿀 수 있어요.",
+      "not_configured": "아직 결제가 설정되지 않았어요. 고객 지원팀에 문의해 주세요.",
+      "generic": "결제 창을 열지 못했어요. 다시 시도해 주세요."
+    },
+    "plans": {
+      "SOLO": {
+        "name": "Solo",
+        "tagline": "마케팅을 쉽게"
+      },
+      "PRO": {
+        "name": "Pro",
+        "tagline": "마케팅에 고객 관리까지"
+      },
+      "TEAM": {
+        "name": "Team",
+        "tagline": "팀과 작은 브로커리지를 위한 플랜"
+      }
+    },
+    "features": {
+      "marketing": "매물 설명, SNS 글, 릴스 대본, 이메일",
+      "photoGuide": "휴대폰 사진 및 영상 촬영 안내",
+      "coach": "후속 연락 코치: 모든 잠재 고객에게 할 말 안내",
+      "oneLanguage": "홍보 언어 1개",
+      "tenListings": "매달 매물 10개",
+      "emailSupport": "이메일 지원",
+      "everythingSolo": "Solo의 모든 기능",
+      "crm": "연락처, 진행 현황, 할 일, 알림",
+      "microsites": "고객 정보를 모으는 매물 페이지",
+      "cma": "가격 분석(CMA) 도우미",
+      "transactions": "거래 체크리스트와 마감일 관리",
+      "threeLanguages": "홍보 언어 3개",
+      "unlimitedListings": "매물 무제한",
+      "chatSupport": "채팅 지원",
+      "everythingPro": "Pro의 모든 기능",
+      "fiveSeats": "팀원 5명",
+      "allLanguages": "홍보 언어 8개 모두",
+      "whiteLabel": "나만의 브랜드 이름과 로고",
+      "teamDashboard": "팀 실적 현황판",
+      "leadRouting": "잠재 고객 자동 배정",
+      "prioritySupport": "우선 지원"
+    }
+  },
+  "locked": {
+    "includedIn": "{plan} 플랜에 포함 — 월 ${price}",
+    "upgradeButton": "{plan}으로 업그레이드",
+    "generic": "현재 플랜에는 이 기능이 포함되어 있지 않아요.",
+    "features": {
+      "MARKETING": {
+        "title": "마케팅 도구 모음",
+        "pitch": "매물 설명, SNS 글, 릴스 대본, 이메일을 내 스타일로 써 드려요."
+      },
+      "PHOTO_GUIDE": {
+        "title": "사진 촬영 안내",
+        "pitch": "내 휴대폰으로 전문가처럼 매물 사진을 찍어 보세요."
+      },
+      "FOLLOW_UP_COACH": {
+        "title": "후속 연락 코치",
+        "pitch": "모든 잠재 고객에게 무슨 말을 해야 할지 정확히 알려 드려요."
+      },
+      "CRM": {
+        "title": "깔끔하게 정리된 고객 목록",
+        "pitch": "모든 구매자와 판매자를 한곳에서 관리하고, 거래를 한눈에 보고, 후속 연락을 잊지 마세요."
+      },
+      "MICROSITES": {
+        "title": "고객을 모아 주는 매물 페이지",
+        "pitch": "버튼 한 번으로 매물 페이지가 만들어져요. 관심 있는 구매자가 바로 내 연락처에 들어와요."
+      },
+      "CMA": {
+        "title": "가격 분석(CMA) 도우미",
+        "pitch": "비교 매물을 입력하면 고객에게 바로 보여 드릴 수 있는 가격 분석과 설명 포인트를 받을 수 있어요."
+      },
+      "TRANSACTIONS": {
+        "title": "거래 체크리스트",
+        "pitch": "계약부터 클로징까지 모든 마감일을 챙기세요."
+      },
+      "TEAM_DASHBOARD": {
+        "title": "팀 현황판",
+        "pitch": "팀 전체의 실적을 한눈에 볼 수 있어요."
+      },
+      "LEAD_ROUTING": {
+        "title": "잠재 고객 자동 배정",
+        "pitch": "새 잠재 고객을 알맞은 팀원에게 자동으로 보내 드려요."
+      },
+      "WHITE_LABEL": {
+        "title": "나만의 브랜드",
+        "pitch": "저희 이름과 로고 대신 우리 팀의 이름과 로고를 보여 주세요."
+      }
+    }
+  },
+  "settings": {
+    "title": "설정",
+    "subtitle": "내 정보, 글쓰기 스타일, 사용 언어를 설정해요.",
+    "saved": "저장했어요!",
+    "billingLink": "플랜과 결제",
+    "profileSection": "내 정보",
+    "publicEmail": "고객용 이메일",
+    "publicEmailHint": "매물 페이지에 표시되고 서명에도 사용돼요.",
+    "brokeragePhone": "브로커리지 전화번호",
+    "mlsId": "MLS 에이전트 ID",
+    "headshotUrl": "프로필 사진 링크",
+    "headshotUrlHint": "내 사진의 링크를 붙여 넣어 주세요. 매물 페이지에 표시돼요.",
+    "bio": "짧은 소개",
+    "bioHint": "나를 소개하는 2~3문장을 적어 주세요. 매물 페이지에 표시돼요.",
+    "voiceSection": "나의 글쓰기 스타일",
+    "signature": "이메일 끝인사",
+    "signatureHint": "이메일을 마무리할 때 쓰는 인사말이에요.",
+    "languagesSection": "언어와 휴대폰",
+    "saveButton": "설정 저장",
+    "whiteLabelSection": "나의 브랜드",
+    "whiteLabelIntro": "RealtyBoost 이름 대신 우리 팀의 이름과 로고를 쓸 수 있어요.",
+    "brandName": "팀 또는 브로커리지 이름",
+    "brandColor": "브랜드 색상",
+    "brandColorHint": "#1d4ed8 같은 색상 코드를 입력하세요",
+    "logoUrl": "로고 링크",
+    "saveBrand": "브랜드 저장"
+  },
+  "modules": {
+    "mls-listing": {
+      "name": "MLS 매물 설명",
+      "description": "세 가지 버전을 만들어요. 각각 제목, 짧은 설명, 긴 설명이 있어요.",
+      "longLimit": "MLS 글자 수 제한",
+      "longLimitHint": "MLS 규정을 확인해 주세요. 잘 모르겠으면 대부분 1,000자면 안전해요.",
+      "chars500": "500자",
+      "chars1000": "1,000자",
+      "chars1500": "1,500자",
+      "chars2000": "2,000자",
+      "chars4000": "4,000자",
+      "emphasis": "특별히 강조하고 싶은 점이 있나요?",
+      "emphasisPlaceholder": "새로 단장한 주방",
+      "view": {
+        "variants": "세 가지 버전",
+        "headline": "제목",
+        "short": "짧은 설명",
+        "long": "MLS 전체 설명",
+        "bullets": "특징 목록",
+        "bulletsCopy": "특징 목록 (복사용)",
+        "checklist": "게시하기 전에 확인하세요"
+      }
+    },
+    "social-posts": {
+      "name": "SNS 게시글",
+      "description": "Instagram, Facebook, LinkedIn, X에 맞게 각각 그 플랫폼 스타일로 써 드려요.",
+      "occasion": "어떤 소식인가요?",
+      "occasions": {
+        "just_listed": "새 매물 등록",
+        "open_house": "오픈하우스",
+        "coming_soon": "오픈 예정",
+        "price_improvement": "가격 인하",
+        "under_contract": "계약 진행 중",
+        "just_sold": "판매 완료"
+      },
+      "useEmoji": "이모티콘 조금 사용하기",
+      "view": {
+        "caption": "게시글 문구",
+        "hashtags": "해시태그",
+        "hashtagsHint": "Instagram은 게시물 하나에 해시태그를 최대 5개까지 쓸 수 있어요.",
+        "captionWithTags": "해시태그를 포함한 문구 (복사용)",
+        "altText": "사진 설명 (대체 텍스트)",
+        "altTextHint": "Instagram의 \"접근성\" 설정에 붙여 넣으면, 사진을 볼 수 없는 분들도 사진 내용을 알 수 있어요.",
+        "stories": "스토리 슬라이드"
+      }
+    },
+    "reel-script": {
+      "name": "릴스 / TikTok 영상 계획",
+      "description": "첫 장면, 장면별 구성, 촬영 목록, 내레이션, 문구를 만들어 드려요.",
+      "duration": "길이는 어느 정도로 할까요?",
+      "seconds15": "15초",
+      "seconds30": "30초",
+      "seconds60": "60초",
+      "style": "스타일",
+      "styles": {
+        "tour": "집 안 둘러보기",
+        "top_features": "장점 순위 소개",
+        "reveal": "새 매물 공개",
+        "detail_montage": "디테일과 마감 소개"
+      },
+      "onCamera": "처음과 마지막에 제가 직접 출연할게요",
+      "view": {
+        "length": "{seconds}초",
+        "scenes": "장면 {count}개",
+        "hook": "첫 장면 (처음 2초)",
+        "storyboard": "장면별 구성",
+        "scene": "장면 {number}",
+        "seconds": "{seconds}초",
+        "shot": "촬영할 것",
+        "cameraMove": "카메라 움직임",
+        "overlay": "화면에 넣을 글자",
+        "voiceover": "말할 내용",
+        "totalSeconds": "합계: 약 {seconds}초",
+        "voiceoverScript": "전체 내레이션 대본",
+        "shotList": "촬영일 체크 목록",
+        "editing": "CapCut(무료)으로 마무리하기",
+        "caption": "게시글 문구"
+      }
+    },
+    "email-blast": {
+      "name": "매물 이메일",
+      "description": "새 매물, 오픈하우스, 가격 인하, 판매 완료 이메일을 바로 붙여 넣어 쓸 수 있게 만들어 드려요.",
+      "emailType": "이메일 종류",
+      "types": {
+        "just_listed": "새 매물 등록",
+        "open_house": "오픈하우스 초대",
+        "price_improvement": "가격 인하",
+        "just_sold": "판매 완료"
+      },
+      "audience": "누구에게 보내나요?",
+      "audiences": {
+        "sphere": "지인, 이웃, 이전 고객",
+        "buyers": "이런 집을 찾는 구매자",
+        "agents": "다른 에이전트"
+      },
+      "view": {
+        "subjects": "제목 후보",
+        "subjectOption": "{number}번",
+        "preview": "미리보기 문구",
+        "email": "이메일 본문",
+        "copyAll": "이메일 전체 (복사용)",
+        "canSpam": "이메일 마케팅 도구로 보내 주세요. 그래야 우편 주소와 수신 거부 링크가 들어가요. (CAN-SPAM 법에서 요구해요.)"
+      }
+    },
+    "photo-guide": {
+      "name": "직접 찍는 사진·영상 안내",
+      "description": "내 휴대폰으로 이 매물을 직접 촬영해 보세요. 설정, 촬영 목록, 가장 좋은 빛, 편집 방법을 알려 드려요.",
+      "phone": "어떤 휴대폰인가요?",
+      "phoneHint": "그 기종에 딱 맞는 설정을 알려 드려요.",
+      "phoneDefault": "평소 쓰는 휴대폰 (설정에 있는 것)",
+      "time": "시간이 얼마나 있나요?",
+      "times": {
+        "quick": "약 20분",
+        "afternoon": "한나절 (1~2시간)",
+        "weekend": "주말 하루 (프리미엄 촬영)"
+      },
+      "style": "어떤 느낌을 원하세요?",
+      "styles": {
+        "bright_airy": "밝고 산뜻하게",
+        "warm_cozy": "따뜻하고 아늑하게",
+        "modern_crisp": "모던하고 깔끔하게",
+        "luxury": "고급스럽게"
+      },
+      "detail": "얼마나 자세히 볼까요?",
+      "details": {
+        "quick": "간단히 — 한 장짜리 요약",
+        "pro": "전문가용 — 단계별 전체 안내"
+      },
+      "includeVideo": "집 안 둘러보기 영상 계획 포함하기",
+      "view": {
+        "bestTime": "촬영하기 가장 좋은 시간",
+        "totalTime": "필요한 시간",
+        "roomOrder": "이 순서대로 찍으세요",
+        "beforeYouStart": "시작하기 전에",
+        "phoneSettings": "{phone} 설정",
+        "setting": "항목",
+        "value": "설정값",
+        "why": "이유",
+        "lighting": "조명 계획",
+        "shotList": "촬영 목록",
+        "lens": "렌즈",
+        "staging": "집 정리하기",
+        "composition": "구도 규칙",
+        "editing": "{app}(무료)으로 편집하기",
+        "video": "집 안 둘러보기 영상",
+        "seconds": "{seconds}초",
+        "troubleshooting": "문제가 생겼을 때"
+      }
+    },
+    "follow-up-coach": {
+      "name": "후속 연락 코치",
+      "description": "잠재 고객에게 할 말을 알려 드려요. 통화 대본, 까다로운 질문에 대한 답변, 문자, 이메일, 2주 연락 계획이 들어 있어요.",
+      "situation": "어떻게 연락이 왔나요?",
+      "situations": {
+        "portal_inquiry": "Zillow, Realtor.com 등 다른 웹사이트",
+        "listing_page": "내 매물 페이지의 양식",
+        "open_house": "내 오픈하우스",
+        "sign_call": "마당의 안내 표지판을 보고 전화함",
+        "referral": "누군가 소개해 줌",
+        "past_client": "이전 고객",
+        "gone_quiet": "답이 끊긴 잠재 고객"
+      },
+      "goal": "다음에 무엇을 원하세요?",
+      "goals": {
+        "showing": "집 보기 약속 잡기",
+        "consultation": "구매자 상담 약속 잡기",
+        "preapproval": "융자 사전 승인 도와주기",
+        "listing_appointment": "매물 의뢰 상담 약속 잡기",
+        "stay_in_touch": "준비될 때까지 연락 유지하기"
+      },
+      "leadName": "이름 (성 제외)",
+      "leadNameHint": "위에서 연락처를 골랐다면 비워 두세요.",
+      "whatTheySaid": "그 사람이 뭐라고 말하거나 물어봤나요?",
+      "whatTheySaidPlaceholder": "\"가격 협상이 가능한가요? 저희는 3월에 오하이오에서 이사 와요.\"",
+      "experience": "나의 경력",
+      "experiences": {
+        "new": "신입이에요 (1년 미만)",
+        "experienced": "경력이 있어요"
+      },
+      "view": {
+        "callScript": "전화 통화",
+        "callNow": "지금 전화하기",
+        "opening": "이렇게 시작하세요",
+        "questions": "이런 질문을 해 보세요",
+        "keyPoints": "이런 내용을 전하세요",
+        "askForAppointment": "다음 단계를 제안하세요",
+        "voicemail": "음성 메시지로 넘어갈 때",
+        "objections": "이렇게 말하면…",
+        "theySay": "고객의 말",
+        "youSay": "나의 답변",
+        "text": "문자 메시지",
+        "openTextApp": "내 문자 앱에서 열기",
+        "textConsent": "먼저 연락해 온 분이나 문자를 받겠다고 동의한 분에게만 보내세요. 그만 보내 달라고 하면 바로 멈추세요.",
+        "email": "이메일",
+        "subject": "제목",
+        "body": "내용",
+        "openEmailApp": "내 이메일 앱에서 열기",
+        "plan": "2주 후속 연락 계획",
+        "day": "{day}일째",
+        "tips": "코칭 팁",
+        "avoid": "이건 피하세요"
+      }
+    },
+    "microsite-copy": {
+      "name": "매물 페이지 문구",
+      "description": "매물 페이지에 들어갈 제목, 환영 인사, 주요 특징을 써 드려요."
+    },
+    "cma-narrative": {
+      "name": "가격 분석 설명글",
+      "description": "비교 매물의 판매 내역을 고객이 이해하기 쉽게 설명해 드려요."
+    }
+  },
+  "landing": {
+    "metaTitle": "RealtyBoost — 부동산 에이전트를 위한 매물 마케팅, 사진 촬영 안내, 후속 연락",
+    "metaDescription": "MLS 설명, SNS 글, 영상 계획, 이메일을 내 말투로 쓰고, 내 휴대폰으로 멋진 매물 사진을 찍고, 모든 잠재 고객에게 무슨 말을 할지 알아보세요. 5개 언어를 지원해요.",
+    "signIn": "로그인",
+    "eyebrow": "프로그램과 씨름하기보다 집을 파는 일에 집중하고 싶은 부동산 에이전트를 위해",
+    "heroTitle": "모든 매물을 몇 분 만에 홍보하세요. 내 말투로, 고객이 쓰는 언어로.",
+    "heroBody": "집 정보를 한 번만 입력하세요. MLS 설명, SNS 글, 릴스 계획, 매물 이메일, 단계별 휴대폰 사진 안내를 받을 수 있어요. 구매자에게 전화가 왔을 때 무슨 말을 할지도 알려 드려요.",
+    "ctaTrial": "14일 무료 체험 시작하기",
+    "ctaTrialShort": "무료 체험 시작",
+    "ctaHow": "사용 방법 보기",
+    "ctaNote": "시작할 때 신용카드는 필요 없어요. 언제든 해지할 수 있어요.",
+    "photoTitle": "사진작가가 없어도 괜찮아요.",
+    "photoBody": "전문 매물 사진은 집마다 수백 달러가 들기도 해요. 비교적 간단한 매물이라면 RealtyBoost가 그 집과 내 휴대폰에 딱 맞는 촬영 계획을 알려 드려요.",
+    "photoPoints": {
+      "settings": "내 휴대폰 기종에 맞는 카메라 설정 — iPhone, Samsung Galaxy, Google Pixel",
+      "light": "집이 바라보는 방향에 따라 촬영하기 가장 좋은 시간대",
+      "shots": "방별 촬영 목록과 집 정리 체크리스트",
+      "editing": "무료 앱으로 편집하는 방법과 시작 값",
+      "video": "간단한 집 안 둘러보기 영상 계획 — 20분짜리부터 주말 하루짜리까지"
+    },
+    "howTitle": "이렇게 사용해요",
+    "how": {
+      "one": {
+        "title": "집 정보를 한 번만 입력",
+        "body": "주소, 침실, 욕실, 그리고 이 집의 특별한 점을 입력하세요. 사실만 사용하고 없는 내용은 절대 지어내지 않아요."
+      },
+      "two": {
+        "title": "필요한 것을 누르기",
+        "body": "MLS 설명, 게시글, 영상 계획, 이메일, 사진 안내, 새 잠재 고객을 위한 통화 대본을 만들 수 있어요."
+      },
+      "three": {
+        "title": "복사해서 사용하기",
+        "body": "큼직한 복사 버튼, 플랫폼별 글자 수 표시, 체크리스트용 인쇄 버튼이 있어요."
+      }
+    },
+    "featuresTitle": "에이전트에게 필요한 모든 것을 한곳에",
+    "featuresBody": "비밀번호가 다섯 개씩 필요한 서로 다른 프로그램 다섯 개 대신에요.",
+    "features": {
+      "mls": {
+        "title": "MLS 매물 설명",
+        "body": "제목이 있는 세 가지 버전을 MLS의 글자 수 제한에 맞춰 써 드려요."
+      },
+      "social": {
+        "title": "SNS 게시글",
+        "body": "Instagram, Facebook, LinkedIn, X에 맞게 각각 그 플랫폼 스타일로 써 드려요."
+      },
+      "reels": {
+        "title": "릴스와 TikTok 계획",
+        "body": "30분이면 찍을 수 있는 첫 장면, 장면별 구성, 촬영 목록, 내레이션을 만들어 드려요."
+      },
+      "email": {
+        "title": "매물 이메일",
+        "body": "새 매물, 오픈하우스, 가격 인하, 판매 완료 이메일을 써 드려요."
+      },
+      "coach": {
+        "title": "후속 연락 코치",
+        "body": "잠재 고객에게 전화가 왔을 때 할 말을 알려 드려요. 대본, 까다로운 질문에 대한 답변, 문자, 이메일, 2주 연락 계획이 들어 있어요."
+      },
+      "pages": {
+        "title": "매물 페이지",
+        "body": "버튼 한 번으로 매물 페이지가 만들어지고, 관심 있는 구매자가 내 연락처로 바로 들어와요."
+      },
+      "crm": {
+        "title": "간단한 고객 목록",
+        "body": "연락처, 끌어서 옮기는 진행 현황, 할 일, 알림이 있어요."
+      },
+      "cma": {
+        "title": "가격 분석 도우미",
+        "body": "비교 매물을 입력하면 계산은 저희가 하고, 고객에게 설명할 포인트도 정리해 드려요."
+      },
+      "checklists": {
+        "title": "거래 체크리스트",
+        "body": "계약부터 클로징까지 모든 마감일을 한 목록으로 볼 수 있어요."
+      }
+    },
+    "trust": {
+      "fairHousing": {
+        "title": "Fair Housing 점검",
+        "body": "글을 보여 드리기 전에 모든 단어를 Fair Housing 문제가 없는지 확인하고, 무엇을 바꿨는지도 알려 드려요."
+      },
+      "languages": {
+        "title": "5개 언어 지원",
+        "body": "영어, 스페인어, 중국어, 베트남어, 한국어를 지원해요. 앱 전체와 앱이 쓰는 모든 글에 적용돼요."
+      },
+      "easy": {
+        "title": "쉽게 쓰도록 만들었어요",
+        "body": "큰 글씨, 알아보기 쉬운 버튼, 쉬운 말. 한 화면에 한 가지씩. 40쪽짜리 설명서는 없어요."
+      }
+    },
+    "pricingTitle": "간단한 요금",
+    "pricingBody": "모든 플랜은 Pro 14일 무료 체험으로 시작해요.",
+    "faqTitle": "에이전트분들이 자주 묻는 질문",
+    "faq": {
+      "computers": {
+        "q": "컴퓨터를 잘 못하는데 쓸 수 있을까요?",
+        "a": "네, 쓸 수 있어요. 바쁜 에이전트를 위해 만들었어요. 큰 글씨, 알아보기 쉬운 버튼, 한 번에 한 단계씩이에요. 양식을 작성할 수 있다면 RealtyBoost도 쓰실 수 있어요."
+      },
+      "accuracy": {
+        "q": "AI가 집에 대해 없는 내용을 지어내지는 않나요?",
+        "a": "입력하신 사실만 바탕으로 쓰고, 없는 특징을 지어내지 않도록 안내해 두었어요. 그래도 사용하기 전에 꼭 읽어 보세요. 전문가는 바로 에이전트님이니까요."
+      },
+      "posting": {
+        "q": "내 SNS에 대신 올려 주나요?",
+        "a": "아직은 아니에요. 버튼 한 번으로 복사해서 붙여 넣으시면 되니, 올라가는 내용을 직접 관리하실 수 있어요."
+      },
+      "privacy": {
+        "q": "내 고객과 매물은 누가 볼 수 있나요?",
+        "a": "본인만 볼 수 있어요(Team 플랜에서는 팀원도 볼 수 있어요). 데이터는 다른 계정과 완전히 분리되어 보관돼요."
+      },
+      "cancel": {
+        "q": "언제든 해지할 수 있나요?",
+        "a": "네. 계약 기간이 없어요. 결제 페이지에서 두 번만 누르면 해지돼요."
+      },
+      "languages": {
+        "q": "같은 매물 설명을 두 가지 언어로 쓸 수 있나요?",
+        "a": "네. 언어를 둘 이상 선택하면 각 언어 버전을 나란히 볼 수 있어요."
+      }
+    },
+    "comingTitle": "곧 나올 기능",
+    "coming": {
+      "mls": "MLS에서 매물 가져오기",
+      "esign": "전자 서명",
+      "sending": "앱에서 이메일과 문자 보내기",
+      "showings": "집 보기 일정 관리"
+    },
+    "finalTitle": "다음 매물, 점심 전에 홍보를 끝낼 수 있어요.",
+    "finalBody": "14일 동안 모든 기능을 무료로 써 보세요.",
+    "footerNote": "RealtyBoost는 초안을 써 드려요. 게시하기 전에 꼭 확인해 주세요."
+  },
+  "microsite": {
+    "title": "매물 페이지",
+    "backToListing": "이 매물로 돌아가기",
+    "intro": "이 집을 소개하는 간단한 웹페이지를 만들어 보세요. 게시글, 이메일, 문자에 링크를 공유하세요. 양식을 작성한 사람은 바로 내 연락처에 들어오고, 후속 연락 알림도 받을 수 있어요.",
+    "point1": "모든 페이지에 내 사진, 전화번호, 브로커리지가 표시돼요",
+    "point2": "이름, 이메일, 전화번호를 받는 양식이 있고, 동의 절차도 갖추고 있어요",
+    "point3": "문 앞에 둔 태블릿에서 쓸 수 있는 오픈하우스 방문자 등록 화면이 있어요",
+    "createButton": "페이지 만들기",
+    "creating": "만드는 중…",
+    "liveAt": "페이지가 공개되었어요. 이 링크를 공유하세요:",
+    "notLiveYet": "페이지가 아직 공개되지 않았어요. 아래에서 \"이 페이지 공개하기\"를 체크하고 저장해 주세요.",
+    "copyLink": "링크 복사",
+    "open": "페이지 열기",
+    "openHouseMode": "오픈하우스 방문자 등록",
+    "writeHint": "매물 정보를 바탕으로 제목, 환영 인사, 주요 특징을 저희가 써 드릴게요.",
+    "writeButton": "페이지 글 써 주세요",
+    "writing": "쓰는 중… 약 20초 걸려요",
+    "written": "페이지 글을 썼어요. 읽어 보시고 원하는 대로 고친 다음 저장해 주세요.",
+    "writeFailed": "지금은 페이지 글을 쓰지 못했어요. 다시 시도해 주세요.",
+    "headline": "제목",
+    "introLabel": "환영 문구",
+    "highlights": "주요 특징",
+    "highlightsHint": "한 줄에 하나씩 적어 주세요.",
+    "body": "이 집 소개",
+    "language": "페이지 언어",
+    "languageHint": "양식과 버튼이 이 언어로 표시돼요.",
+    "accentColor": "강조 색상",
+    "showPrice": "가격 표시하기",
+    "published": "이 페이지 공개하기",
+    "publishedHint": "링크가 있는 사람은 누구나 볼 수 있어요. 체크를 풀면 숨겨져요.",
+    "saveButton": "페이지 저장",
+    "saved": "저장했어요!",
+    "publishedNow": "저장했어요. 페이지가 공개되었어요!"
+  },
+  "publicPage": {
+    "beds": "침실 {count}개",
+    "baths": "욕실 {count}개",
+    "sqft": "{count, number} sq ft",
+    "built": "{year}년 건축",
+    "photoAlt": "{address} 사진",
+    "openHouse": "오픈하우스",
+    "highlights": "주요 특징",
+    "aboutHome": "이 집 소개",
+    "license": "{state} 라이선스 #{number}",
+    "equalHousing": "Equal Housing Opportunity(평등 주거 기회). 저희는 연방 Fair Housing Act(공정주택법)와 모든 주 및 지역의 공정주택 관련 법을 준수합니다.",
+    "disclaimer": "이 정보는 정확하다고 믿지만 보증하지는 않습니다. 구매자는 모든 세부 사항을 직접 확인하셔야 합니다.",
+    "listedBy": "매물 등록: {agent}, {brokerage}.",
+    "formTitle": "관심이 있으신가요? 연락 주세요",
+    "kioskTitle": "방문자 등록을 해 주세요",
+    "kioskWelcome": "어서 오세요!",
+    "firstName": "이름",
+    "lastName": "성",
+    "email": "이메일",
+    "phone": "전화번호",
+    "contactHint": "연락드릴 수 있도록 이메일이나 전화번호를 적어 주세요.",
+    "interest": "원하시는 것",
+    "interests": {
+      "showing": "개별 집 보기 예약",
+      "info": "더 자세한 정보 받기",
+      "openHouse": "오픈하우스 소식 받기",
+      "selling": "제 집을 파는 것에 대해 상담하기"
+    },
+    "message": "질문이나 남기실 말씀",
+    "emailOptIn": "네, {agent}이(가) 이 집과 비슷한 집에 대해 이메일로 연락해도 좋습니다. 언제든 수신을 거부할 수 있습니다.",
+    "smsConsent": "네, {agent}이(가) 이 집과 부동산 서비스에 관해 위에 적은 번호로 전화하거나 문자(자동 발송 문자 포함)를 보내도 좋습니다. 무언가를 구매하기 위해 동의가 필요한 것은 아닙니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 수신을 거부하려면 STOP이라고 답장하세요.",
+    "workingWithAgent": "함께 일하는 부동산 에이전트가 있으신가요?",
+    "yes": "예",
+    "no": "아니요",
+    "submit": "문의 보내기",
+    "kioskSubmit": "등록하기",
+    "sending": "보내는 중…",
+    "thanksTitle": "감사합니다!",
+    "thanksBody": "{agent}이(가) 곧 연락드리겠습니다.",
+    "kioskThanksTitle": "방문해 주셔서 감사합니다!",
+    "kioskThanksBody": "즐거운 관람 되세요. 편하게 둘러보세요.",
+    "nextVisitor": "몇 초 후에 다음 방문자를 위해 이 화면이 처음으로 돌아갑니다.",
+    "optional": "선택",
+    "errors": {
+      "missing": "이름을 입력해 주세요.",
+      "contact": "이메일 주소나 전화번호를 입력해 주세요.",
+      "rate": "요청이 너무 많습니다. 몇 분 후에 다시 시도해 주세요.",
+      "generic": "죄송합니다. 문제가 생겼습니다. 전화로 연락해 주세요."
+    }
+  },
+  "contacts": {
+    "title": "연락처",
+    "subtitle": "{count, plural, =0 {함께 일하는 모든 분을 한곳에서 관리해요.} one {연락처에 #명이 있어요.} other {연락처에 #명이 있어요.}}",
+    "addContact": "연락처 추가",
+    "editTitle": "연락처 수정",
+    "backToContacts": "연락처로 돌아가기",
+    "backToContact": "이 연락처로 돌아가기",
+    "searchPlaceholder": "이름, 이메일, 전화번호로 검색",
+    "status": "상태",
+    "role": "역할",
+    "source": "유입 경로",
+    "anyStatus": "모든 상태",
+    "anyRole": "모든 역할",
+    "anySource": "모든 경로",
+    "clearFilters": "필터 지우기",
+    "savedViews": "저장한 목록",
+    "viewName": "이 목록의 이름",
+    "saveView": "이 목록 저장",
+    "deleteView": "저장한 목록 {name} 삭제",
+    "noMatches": "조건에 맞는 연락처가 없어요.",
+    "emptyTitle": "아직 연락처가 없어요",
+    "emptyBody": "구매자, 판매자, 이전 고객을 추가해 보세요. 매물 페이지를 공개하면 새 잠재 고객이 여기에 자동으로 나타나요.",
+    "deleted": "연락처를 삭제했어요.",
+    "created": "연락처를 추가했어요.",
+    "saved": "변경 내용을 저장했어요.",
+    "edit": "수정",
+    "call": "전화",
+    "text": "문자",
+    "email": "이메일",
+    "coachButton": "뭐라고 말하죠?",
+    "added": "추가한 날",
+    "lastContacted": "마지막 연락",
+    "consentTitle": "연락 허락",
+    "consentEmail": "마케팅 이메일에 동의함",
+    "consentSms": "전화와 문자에 동의함",
+    "consentGiven": "{date}에 {source}을(를) 통해 동의함",
+    "consentNone": "서면 동의가 없어요. 먼저 연락해 온 분에게 개인적으로 답장하는 것은 괜찮지만, 마케팅 대상에 넣기 전에는 꼭 동의를 구하세요.",
+    "doNotContactTitle": "연락 금지",
+    "doNotContactBody": "이 분은 연락을 원하지 않는다고 했어요. 전화와 문자 버튼이 숨겨져 있어요.",
+    "deals": "거래",
+    "addDeal": "거래 추가",
+    "noDeals": "아직 거래가 없어요.",
+    "tasks": "할 일과 알림",
+    "coachHistory": "이 분을 위해 만든 대본",
+    "deleteTitle": "이 연락처 삭제",
+    "deleteWarning": "연락처와 그 사람의 거래, 할 일, 메모, 기록이 모두 삭제돼요. 되돌릴 수 없어요.",
+    "deleteConfirm": "네, 이 연락처를 삭제할게요",
+    "deleteButton": "연락처 삭제",
+    "deleting": "삭제하는 중…",
+    "statuses": {
+      "NEW": "새 잠재 고객",
+      "NURTURE": "연락 유지 중",
+      "ACTIVE": "진행 중인 고객",
+      "PAST_CLIENT": "이전 고객",
+      "DO_NOT_CONTACT": "연락 금지"
+    },
+    "roles": {
+      "BUYER": "구매자",
+      "SELLER": "판매자",
+      "INVESTOR": "투자자",
+      "RENTER": "임차인",
+      "PAST_CLIENT": "이전 고객",
+      "COOPERATING_AGENT": "다른 에이전트",
+      "LENDER": "융자 담당자",
+      "VENDOR": "협력 업체",
+      "OTHER": "기타"
+    },
+    "sources": {
+      "MICROSITE": "내 매물 페이지",
+      "OPEN_HOUSE": "오픈하우스",
+      "ZILLOW": "Zillow",
+      "REALTOR_COM": "Realtor.com",
+      "FACEBOOK": "Facebook",
+      "INSTAGRAM": "Instagram",
+      "GOOGLE": "Google",
+      "WEBSITE": "내 웹사이트",
+      "REFERRAL": "소개",
+      "PAST_CLIENT": "이전 고객",
+      "SPHERE": "친구와 가족",
+      "SIGN_CALL": "마당 표지판",
+      "OTHER": "기타"
+    },
+    "stages": {
+      "NEW_LEAD": "새 잠재 고객",
+      "NURTURE": "연락 유지 중",
+      "APPOINTMENT": "약속 잡음",
+      "ACTIVE": "진행 중 (계약서 서명 완료)",
+      "UNDER_CONTRACT": "계약 진행 중",
+      "CLOSED": "클로징 완료",
+      "LOST": "무산됨"
+    },
+    "form": {
+      "who": "어떤 분인가요",
+      "firstName": "이름",
+      "lastName": "성",
+      "email": "이메일",
+      "phone": "전화번호",
+      "roles": "이 분은…",
+      "language": "선호하는 언어",
+      "sourceDetail": "어떻게 알게 되었는지 자세히",
+      "sourceDetailHint": "예: \"Zillow — 1248 Maple Grove\" 또는 \"Linda K.님 소개\"",
+      "tags": "태그",
+      "tagsHint": "쉼표로 구분한 짧은 단어를 적어 주세요. 예: 첫 집 구매, 이주 예정",
+      "lookingFor": "찾고 있는 집",
+      "lookingForHint": "구매자용이에요. 내 매물 중 어떤 것이 맞는지 보여 드리는 데 쓰여요.",
+      "priceMin": "예산 최소 ($)",
+      "priceMax": "예산 최대 ($)",
+      "bedsMin": "침실 (최소)",
+      "bathsMin": "욕실 (최소)",
+      "bedsShort": "침실",
+      "bathsShort": "욕실",
+      "timeline": "언제 이사하고 싶어 하나요?",
+      "timelinePlaceholder": "봄, 3개월 이내…",
+      "propertyTypes": "원하는 주택 종류",
+      "areas": "원하는 지역",
+      "mustHaves": "꼭 필요한 조건",
+      "preApproved": "융자 사전 승인 받음",
+      "lender": "융자 담당자",
+      "saveContact": "연락처 저장",
+      "saveChanges": "변경 내용 저장"
+    },
+    "matchingListings": "고객이 원하는 조건에 맞는 내 매물",
+    "shareListing": "이 매물을 이메일로 보내기",
+    "shareListingBody": "{name}님, 안녕하세요. 이 집이 말씀하신 조건에 잘 맞는 것 같아요. 자세한 내용은 다음과 같습니다:"
+  },
+  "crm": {
+    "activity": {
+      "title": "대화 기록",
+      "type": "어떤 일이 있었나요",
+      "direction": "누가 먼저 연락했나요",
+      "outbound": "제가 연락했어요",
+      "inbound": "그쪽에서 연락했어요",
+      "summary": "짧은 요약",
+      "summaryPlaceholder": "토요일 집 보기에 대해 음성 메시지를 남김",
+      "logButton": "기록에 추가",
+      "logging": "추가하는 중…",
+      "empty": "아직 기록이 없어요.",
+      "types": {
+        "CALL": "전화",
+        "EMAIL": "이메일",
+        "TEXT": "문자",
+        "MEETING": "미팅",
+        "SHOWING": "집 보기",
+        "LEAD": "새 잠재 고객",
+        "STAGE_CHANGE": "거래 단계 변경",
+        "OTHER": "기타"
+      }
+    },
+    "notes": {
+      "title": "메모",
+      "placeholder": "메모를 적어 주세요…",
+      "addButton": "메모 저장",
+      "adding": "저장하는 중…"
+    },
+    "tasks": {
+      "pageTitle": "할 일과 알림",
+      "pageSubtitle": "해야 할 모든 일을 급한 순서대로 보여 드려요.",
+      "newTask": "새 할 일",
+      "placeholder": "검사 건으로 Maria에게 전화하기",
+      "due": "언제까지",
+      "addButton": "할 일 추가",
+      "adding": "추가하는 중…",
+      "empty": "할 일이 없어요.",
+      "overdue": "기한 지남",
+      "noDueDate": "기한 없음",
+      "markDone": "\"{title}\" 완료로 표시",
+      "markNotDone": "\"{title}\" 완료 취소",
+      "allClear": "밀린 일이 없어요!",
+      "groups": {
+        "overdue": "기한 지남",
+        "today": "오늘",
+        "upcoming": "다가오는 일정",
+        "noDate": "기한 없음",
+        "done": "최근에 끝낸 일"
+      }
+    }
+  },
+  "pipeline": {
+    "title": "진행 현황",
+    "subtitle": "{count, plural, =0 {진행 중인 거래가 아직 없어요.} one {진행 중인 거래 #건, 총 {value}.} other {진행 중인 거래 #건, 총 {value}.}}",
+    "addDeal": "거래 추가",
+    "hint": "카드를 다른 칸으로 끌어다 놓거나, 각 카드의 \"이동\" 메뉴를 사용하세요.",
+    "dealCount": "{count, plural, =0 {거래 없음} one {거래 #건} other {거래 #건}}",
+    "moveTo": "이동",
+    "dropHere": "여기에 거래를 놓으세요",
+    "overdue": "기한 지남 {count}건",
+    "stale": "{days}일째 이 단계",
+    "deleted": "거래를 삭제했어요.",
+    "emptyTitle": "아직 거래가 없어요",
+    "emptyBody": "거래는 고객 한 분과 목표 하나예요. 예를 들면 \"Maria — Plano에서 집 구매\"처럼요. 매물 페이지로 들어온 새 잠재 고객은 거래로 자동 등록돼요.",
+    "sides": {
+      "BUYER": "구매자",
+      "SELLER": "판매자",
+      "BOTH": "양쪽 모두"
+    }
+  },
+  "deals": {
+    "title": "거래",
+    "newTitle": "거래 추가",
+    "newSubtitle": "고객 한 분, 목표 하나.",
+    "backToPipeline": "진행 현황으로 돌아가기",
+    "needContactTitle": "먼저 연락처를 추가해 주세요",
+    "needContactBody": "모든 거래는 연락처에 속해요.",
+    "addContact": "연락처 추가",
+    "created": "거래를 추가했어요.",
+    "saved": "변경 내용을 저장했어요.",
+    "coach": "뭐라고 말하죠?",
+    "value": "가격",
+    "estCommission": "예상 커미션",
+    "nextDeadline": "다음 마감일",
+    "checklist": "클로징 체크리스트",
+    "checklistProgress": "{total}개 중 {done}개 완료",
+    "checklistPitch": "계약부터 클로징까지 일반적인 마감일이 담긴 단계별 체크리스트를 추가해 보세요. 날짜는 모두 바꿀 수 있어요.",
+    "addChecklist": "클로징 체크리스트 추가",
+    "adding": "추가하는 중…",
+    "optionalItem": "해당되는 경우",
+    "overdue": "기한 지남",
+    "dueDate": "마감일",
+    "setDate": "설정",
+    "addItem": "직접 단계 추가",
+    "addItemButton": "단계 추가",
+    "checklistNote": "마감일은 일반적인 예시일 뿐이에요. 항상 서명한 계약서의 날짜를 따르고, 브로커의 규정을 지켜 주세요.",
+    "tasks": "할 일",
+    "editTitle": "거래 정보",
+    "deleteConfirm": "네, 이 거래를 삭제할게요",
+    "deleteButton": "거래 삭제",
+    "deleting": "삭제하는 중…",
+    "form": {
+      "title": "거래 이름",
+      "titleHint": "예: \"Maria — Plano에서 집 구매\".",
+      "contact": "고객",
+      "pickContact": "연락처 선택",
+      "property": "집",
+      "noProperty": "아직 정해진 집 없음",
+      "side": "내가 대리하는 쪽",
+      "stage": "단계",
+      "value": "가격 ($)",
+      "valueHint": "리스팅 가격, 오퍼 금액 또는 예산을 적어 주세요.",
+      "commission": "내 커미션 (%)",
+      "contractDate": "계약일",
+      "contractDateHint": "체크리스트의 마감일을 채우는 데 쓰여요.",
+      "expectedClose": "예상 클로징 날짜",
+      "lostReason": "무산된 이유",
+      "lostReasonHint": "거래를 '무산됨'으로 표시한 경우에만 적어 주세요.",
+      "withChecklist": "클로징 체크리스트 추가",
+      "withChecklistHint": "일반적인 단계와 마감일이 들어 있어요. 나중에 바꿀 수 있어요.",
+      "saveDeal": "거래 저장",
+      "saveChanges": "변경 내용 저장"
+    }
+  },
+  "cma": {
+    "title": "가격 분석 (CMA)",
+    "subtitle": "이 집을 최근 주변 판매 사례와 비교하고, 고객에게 설명할 포인트를 정리해 보세요.",
+    "newTitle": "새 가격 분석",
+    "newSubtitle": "집 정보와 최근 비교 판매 사례 3~6개를 입력하세요. 계산은 저희가 하고, 결정은 에이전트님이 하세요.",
+    "backToList": "가격 분석 목록으로 돌아가기",
+    "emptyTitle": "아직 가격 분석이 없어요",
+    "emptyBody": "CMA(비교 시장 분석)는 셀러와 가격 이야기를 할 때 실제 숫자로 설명할 수 있게 도와줘요.",
+    "reportTitle": "가격 분석",
+    "defaultTitle": "가격 분석 — {address}",
+    "defaultTitleBlank": "가격 분석",
+    "notAppraisalTitle": "이것은 CMA이며 감정평가가 아니에요",
+    "notAppraisalBody": "비교 매물과 조정 금액은 에이전트님이 정해요. 프로그램은 계산하고 설명 초안을 쓸 뿐이에요. 추천 가격은 프로그램이 아니라 에이전트님이 정해요.",
+    "print": "인쇄 또는 PDF로 저장",
+    "rewrite": "설명 다시 쓰기",
+    "rewriting": "다시 쓰는 중…",
+    "rewritten": "설명을 다시 썼어요.",
+    "preparedBy": "{date}에 {name} 작성",
+    "license": "라이선스 #{number}",
+    "subjectLine": "침실 {beds}개 · 욕실 {baths}개 · {sqft, number} sq ft",
+    "suggestedRange": "논의해 볼 만한 리스팅 가격 범위",
+    "adjustedRange": "조정된 판매 비교 가격: {low}에서 {high} (중간값: {median})",
+    "forDiscussion": "대화를 시작하기 위한 참고 자료예요. 공유하기 전에 모든 숫자를 꼭 확인하세요.",
+    "noSold": "가격 범위를 보려면 판매 완료된 비교 매물을 하나 이상 추가해 주세요.",
+    "warnings": {
+      "fewer_than_three_sold": "판매 완료된 비교 매물이 3개 미만이에요. 더 정확한 분석을 위해 추가해 주세요.",
+      "weak_comps": "비교 매물 중 하나 이상에서 큰 폭의 조정(가격의 25% 초과)이 필요했어요. 더 비슷한 집으로 바꿔 보세요."
+    },
+    "compsTable": "비교 매물",
+    "col": {
+      "address": "주소",
+      "status": "상태",
+      "price": "가격",
+      "size": "침실/욕실 · sq ft",
+      "ppsf": "$/sq ft",
+      "adjustments": "조정 내역",
+      "adjusted": "조정된 가격"
+    },
+    "status": {
+      "sold": "판매 완료",
+      "pending": "계약 진행 중",
+      "active": "판매 중"
+    },
+    "adj": {
+      "size": "면적",
+      "bedrooms": "침실",
+      "bathrooms": "욕실",
+      "garage": "차고",
+      "pool": "수영장",
+      "condition": "상태"
+    },
+    "milesAway": "{miles}마일 거리",
+    "gross": "조정 합계: {pct}%",
+    "sqftRateUsed": "적용한 면적 조정: 면적 차이 1 sq ft당 {rate}.",
+    "noNarrative": "설명글이 아직 준비되지 않았어요. \"설명 다시 쓰기\"를 눌러 다시 시도해 주세요.",
+    "disclaimerTitle": "중요 안내",
+    "disclaimer": "이 비교 시장 분석(CMA)은 가격 결정을 돕기 위해 부동산 면허 소지자가 작성했습니다. 이는 감정평가가 아니며, 융자 목적 등으로 감정평가처럼 사용해서는 안 됩니다. 이 분석은 에이전트가 수집했고 신뢰할 수 있다고 판단한 비교 매물 정보를 바탕으로 하지만, 정확성은 보증되지 않습니다. 면허를 가진 감정평가사는 다른 결론에 이를 수 있습니다. 최종 가격 제안은 에이전트의 전문가적 의견입니다.",
+    "deleteConfirm": "네, 이 분석을 삭제할게요",
+    "delete": "삭제",
+    "deleting": "삭제하는 중…",
+    "errors": {
+      "invalid": "빠졌거나 올바르지 않은 숫자가 있어요. 각 비교 매물에는 주소, 가격, 면적(sq ft)이 필요해요."
+    },
+    "form": {
+      "subjectTitle": "가격을 정하려는 집",
+      "reportTitle": "이 분석의 이름",
+      "address": "주소",
+      "beds": "침실 수",
+      "baths": "욕실 수",
+      "sqft": "면적 (sq ft)",
+      "yearBuilt": "건축 연도",
+      "garage": "차고 주차 대수",
+      "condition": "상태",
+      "conditions": {
+        "1": "1 — 대대적인 수리 필요",
+        "2": "2 — 어느 정도 수리 필요",
+        "3": "3 — 보통",
+        "4": "4 — 새로 단장함",
+        "5": "5 — 새 집 같음"
+      },
+      "pool": "수영장",
+      "compsTitle": "비교 매물",
+      "compsHint": "가까운 곳에 있고, 크기와 종류가 비슷하며, 최근 3~6개월 안에 판매된 집을 사용하세요. 빈 줄은 무시돼요.",
+      "compNumber": "비교 매물 {number}",
+      "removeComp": "삭제",
+      "addComp": "비교 매물 더 추가",
+      "status": "상태",
+      "statuses": {
+        "sold": "판매 완료",
+        "pending": "계약 진행 중",
+        "active": "판매 중 (경쟁 매물)"
+      },
+      "soldPrice": "판매 가격 ($)",
+      "listPrice": "리스팅 가격 ($)",
+      "date": "판매일 또는 등록일",
+      "distance": "거리 (마일)",
+      "notes": "메모",
+      "notesPlaceholder": "셀러가 클로징 비용 $5k 부담, 새 지붕",
+      "adjustmentsTitle": "조정 금액 (선택)",
+      "adjustmentsHint": "모든 비교 매물에 적용되는 기본값이에요. 우리 지역 시장에 맞게 바꾸세요.",
+      "settings": {
+        "sqftRate": "추가 1 sq ft당 $",
+        "perBedroom": "침실 1개당 $",
+        "perBathroom": "욕실 1개당 $",
+        "perGarageSpace": "차고 1대당 $",
+        "pool": "수영장 $",
+        "conditionPct": "상태 한 단계당 %"
+      },
+      "sqftRateHint": "비워 두면 비교 매물 평균 $/sq ft의 절반을 사용해요.",
+      "language": "설명을 쓸 언어",
+      "audience": "누가 읽나요?",
+      "audiences": {
+        "seller": "판매자",
+        "buyer": "구매자"
+      },
+      "submit": "분석하고 보고서 쓰기",
+      "working": "작업 중… 약 30초 걸려요",
+      "submitHint": "{count, plural, =0 {주소, 가격, 면적(sq ft)을 갖춘 비교 매물을 하나 이상 입력해 주세요.} one {비교 매물 #개 준비됨.} other {비교 매물 #개 준비됨.}}"
+    },
+    "narrative": {
+      "summary": "요약",
+      "comps": "비교 매물별 설명",
+      "adjustments": "조정 방법",
+      "pricing": "가격 이야기하기",
+      "talkingPoints": "설명 포인트",
+      "gaps": "공유하기 전에 확인하세요"
+    }
+  },
+  "help": {
+    "title": "도움말",
+    "subtitle": "쉬운 말로 짧게 답해 드려요. 그래도 어려우시면 이메일 주세요. 실제 사람이 답해 드려요.",
+    "startTitle": "5단계로 시작하기",
+    "steps": {
+      "listing": {
+        "title": "매물 추가",
+        "body": "내 매물로 가서 \"매물 추가\"를 누르세요. 아는 만큼만 입력하시면 돼요. 꼭 필요한 것은 주소뿐이에요."
+      },
+      "create": {
+        "title": "만들 것 고르기",
+        "body": "매물 페이지에서 원하는 상자를 누르세요. MLS 설명, SNS 글, 영상 계획, 이메일, 사진 안내가 있어요."
+      },
+      "copy": {
+        "title": "복사해서 사용하기",
+        "body": "큰 복사 버튼을 누르고 MLS, Facebook, 이메일에 붙여 넣으세요. 먼저 읽어 보세요. 전문가는 바로 에이전트님이에요."
+      },
+      "page": {
+        "title": "매물 페이지 공개하기",
+        "body": "매물 페이지에서 \"페이지 만들기\"를 누르세요. 링크를 게시글에 공유하세요. (Pro 플랜)"
+      },
+      "leads": {
+        "title": "잠재 고객에게 후속 연락하기",
+        "body": "새 잠재 고객은 알림과 함께 연락처에 나타나요. \"뭐라고 말하죠?\"를 누르면 통화 대본, 문자, 이메일을 받을 수 있어요."
+      }
+    },
+    "startButton": "첫 매물 추가하기",
+    "topicsTitle": "자주 묻는 질문",
+    "topics": {
+      "photos": {
+        "q": "사진 촬영 안내는 어떻게 무엇을 할지 알려 주나요?",
+        "a": "내 휴대폰 기종, 입력한 방과 특징, 그리고 집이 바라보는 방향을 바탕으로 해요. 촬영하기 좋은 시간, 휴대폰 설정, 방마다 찍을 것, 무료로 편집하는 방법을 알려 드려요.\n\n팁: 가장 좋은 조명 조언을 받으려면 매물에 \"집 앞면은 어느 방향인가요?\"를 꼭 입력하세요."
+      },
+      "languages": {
+        "q": "스페인어(또는 다른 언어)로 쓰려면 어떻게 하나요?",
+        "a": "설정 → 언어에서 사용할 언어를 고르세요. 그 다음 무언가를 만들 때 원하는 언어를 모두 체크하세요. 각 언어 버전을 나란히 받을 수 있어요."
+      },
+      "fairHousing": {
+        "q": "Fair Housing 점검이 무엇인가요?",
+        "a": "Fair Housing 법(공정주택법)에 따르면 광고는 어떤 사람이 살아야 하는지가 아니라 부동산 자체를 설명해야 해요. 모든 글은 자동으로 점검돼요. 무언가를 바꾸거나 삭제했다면 무엇을 왜 그랬는지 정확히 알려 드려요. 안전장치일 뿐 법률 자문은 아니에요. 확실하지 않을 때는 브로커에게 물어보세요."
+      },
+      "coach": {
+        "q": "후속 연락 코치가 무엇인가요?",
+        "a": "잠재 고객이 연락해 오면, 코치가 통화에서 할 말, 자주 나오는 질문에 대한 답변, 문자, 이메일, 2주 후속 연락 계획을 써 드려요. 신입 에이전트나 바쁜 날에 큰 도움이 돼요. 메시지는 에이전트님이 직접 내 휴대폰이나 이메일에서 보내세요."
+      },
+      "pipeline": {
+        "q": "거래를 다음 단계로 옮기려면 어떻게 하나요?",
+        "a": "진행 현황 페이지에서 카드를 다음 칸으로 끌어다 놓으세요. 끌기가 불편하면 각 카드 아래의 \"이동\" 메뉴를 사용하세요."
+      },
+      "cma": {
+        "q": "가격 분석은 감정평가인가요?",
+        "a": "아니에요. 비교 매물과 조정 금액은 에이전트님이 정하세요. 저희는 계산을 하고 고객에게 보여 줄 설명 초안을 써 드려요. 가격 추천은 에이전트님의 몫이에요."
+      },
+      "install": {
+        "q": "RealtyBoost를 휴대폰 홈 화면에 둘 수 있나요?",
+        "a": "네, 가능해요.\niPhone 또는 iPad: Safari에서 RealtyBoost를 열고 공유 버튼을 누른 다음 \"홈 화면에 추가\"를 누르세요.\nAndroid: Chrome에서 열고 ⋮ 메뉴를 누른 다음 \"앱 설치\" 또는 \"홈 화면에 추가\"를 누르세요.\n컴퓨터: Chrome이나 Edge에서 주소창 오른쪽 끝에 있는 설치 아이콘을 누르세요."
+      },
+      "privacy": {
+        "q": "내 연락처와 매물은 누가 볼 수 있나요?",
+        "a": "본인만 볼 수 있어요. Team 플랜이면 팀원도 볼 수 있어요. 모든 계정의 데이터는 저희 데이터베이스에서 따로 보관돼요. 공개되는 페이지는 직접 공개하기로 한 매물 페이지뿐이에요."
+      },
+      "billing": {
+        "q": "플랜을 바꾸거나 해지하려면 어떻게 하나요?",
+        "a": "설정 → 플랜과 결제로 가세요. 거기서 플랜을 바꾸거나 해지할 수 있어요. 계약 기간은 없어요."
+      }
+    },
+    "contactTitle": "사람과 이야기하기",
+    "contactBody": "궁금한 점은 무엇이든 이메일로 보내 주세요. 보통 영업일 기준 하루 안에 답해 드려요."
+  },
+  "team": {
+    "title": "팀",
+    "subtitle": "{seats}석 중 {used}석 사용 중. 최근 30일간의 활동이에요.",
+    "member": "팀원",
+    "content30": "만든 콘텐츠",
+    "contacts30": "추가한 연락처",
+    "closed30": "클로징한 거래",
+    "lastSignIn": "마지막 로그인",
+    "roles": {
+      "OWNER": "소유자",
+      "ADMIN": "관리자",
+      "AGENT": "에이전트"
+    },
+    "addTitle": "팀원 추가",
+    "name": "팀원 이름",
+    "email": "팀원 이메일",
+    "addButton": "팀원 추가",
+    "adding": "추가하는 중…",
+    "addedTitle": "팀원을 추가했어요!",
+    "addedBody": "이 임시 비밀번호를 그분에게 개인적으로 전달해 주세요. 이메일과 이 비밀번호로 로그인할 수 있어요:",
+    "seatsFull": "모든 자리가 사용 중이에요. 누군가를 삭제하거나 저희에게 문의해서 자리를 늘리세요."
+  }
+}

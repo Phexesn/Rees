@@ -170,7 +170,8 @@
     "openPipeline": "Open pipeline",
     "crmPitch": "Want to keep track of buyers and sellers, get reminders, and collect leads from your listing pages? That's included in Pro.",
     "seePro": "See the Pro plan",
-    "recentContent": "Recently created"
+    "recentContent": "Recently created",
+    "welcome": "Welcome back, {name}"
   },
   "properties": {
     "title": "My listings",
@@ -295,7 +296,9 @@
         "W": "West",
         "NW": "Northwest"
       }
-    }
+    },
+    "matchingBuyers": "Buyers who might like this home",
+    "matchingBuyersHint": "Based on the budget and size each buyer told you."
   },
   "create": {
     "title": "Create content",
@@ -1072,7 +1075,10 @@
       "lender": "Lender",
       "saveContact": "Save contact",
       "saveChanges": "Save changes"
-    }
+    },
+    "matchingListings": "Your listings that fit what they want",
+    "shareListing": "Email this listing",
+    "shareListingBody": "Hi {name}, this home looks like a good fit for what you described. Here are the details:"
   },
   "crm": {
     "activity": {

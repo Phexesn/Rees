@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getFormatter, getTranslations } from "next-intl/server";
+import { Greeting } from "@/app/(app)/dashboard/Greeting";
 import { BatchList } from "@/components/BatchList";
 import { Card, LinkButton } from "@/components/ui";
 import { requireSetupContext } from "@/lib/auth/context";
@@ -46,13 +47,11 @@ export default async function DashboardPage() {
   const plan = effectivePlan(ctx.tenant);
   const limit = plan ? PLANS[plan].listingsPerMonth : null;
   const firstName = (ctx.profile?.displayName ?? ctx.user.name).split(" ")[0];
-  const hour = now.getHours();
-  const greeting = hour < 12 ? t("morning", { name: firstName }) : hour < 18 ? t("afternoon", { name: firstName }) : t("evening", { name: firstName });
 
   return (
     <div className="space-y-10">
       <header className="space-y-2">
-        <h1 className="text-3xl font-bold md:text-4xl">{greeting}</h1>
+        <Greeting name={firstName} />
         <p className="text-xl text-slate-700">{t("subtitle")}</p>
       </header>
 
