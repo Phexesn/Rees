@@ -58,17 +58,26 @@ const topLevel = new Set(Object.keys(en));
 const used = new Map<string, string>();
 for (const file of walk(path.join(root, "src"))) {
   const src = readFileSync(file, "utf8");
-  const namespaces = new Map<string, string>();
-  for (const m of src.matchAll(/(?:const|let)\s+(\w+)\s*=\s*(?:await\s+)?(?:getTranslations|useTranslations)\(\s*(?:"([^"]*)")?\s*\)/g)) {
-    namespaces.set(m[1], m[2] ?? "");
-  }
-  for (const [variable, ns] of namespaces) {
-    const re = new RegExp(`\\b${variable}\\(\\s*"([^"]+)"`, "g");
-    for (const m of src.matchAll(re)) used.set(ns ? `${ns}.${m[1]}` : m[1], path.relative(root, file));
+  // Declarations, in source order: const t = useTranslations("ns") | getTranslations({ namespace: "ns" }).
+  const declarations = [
+    ...src.matchAll(
+      /(?:const|let)\s+(\w+)\s*=\s*(?:await\s+)?(?:getTranslations|useTranslations)\(\s*(?:"([^"]*)"|\{[^}]*namespace:\s*"([^"]*)"[^}]*\})?\s*\)/g,
+    ),
+  ].map((m) => ({ variable: m[1], ns: m[2] ?? m[3] ?? "", index: m.index ?? 0 }));
+  for (const name of new Set(declarations.map((d) => d.variable))) {
+    const re = new RegExp(`\\b${name}\\(\\s*"([^"]+)"`, "g");
+    for (const m of src.matchAll(re)) {
+      // The nearest declaration of this variable above the call decides the namespace.
+      const decl = declarations.filter((d) => d.variable === name && d.index < (m.index ?? 0)).at(-1);
+      if (!decl) continue;
+      used.set(decl.ns ? `${decl.ns}.${m[1]}` : m[1], path.relative(root, file));
+    }
   }
   // Keys passed around as plain strings (labelKey, error keys).
   for (const m of src.matchAll(/"([a-z][A-Za-z]*\.[A-Za-z0-9_.-]+)"/g)) {
     const key = m[1];
+    // Direct translator calls like t("a.b") were already resolved above with their namespace.
+    if (/\b\w+\(\s*$/.test(src.slice(Math.max(0, (m.index ?? 0) - 40), m.index))) continue;
     if (topLevel.has(key.split(".")[0]) && !key.endsWith(".")) used.set(key, path.relative(root, file));
   }
 }

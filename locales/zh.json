@@ -1,0 +1,1421 @@
+{
+  "common": {
+    "language": "语言",
+    "optional": "选填",
+    "back": "返回",
+    "saving": "正在保存…",
+    "saveAndContinue": "保存并继续",
+    "save": "保存",
+    "cancel": "取消",
+    "skipToContent": "跳到主要内容",
+    "demoMode": "演示模式：尚未连接 AI 服务，所以写出的是示例文字。添加 AI 密钥后才能生成真实内容。",
+    "yes": "是",
+    "no": "否",
+    "edit": "编辑",
+    "delete": "删除",
+    "search": "搜索",
+    "none": "无"
+  },
+  "nav": {
+    "main": "主菜单",
+    "menu": "菜单",
+    "home": "首页",
+    "listings": "我的房源",
+    "create": "创建内容",
+    "coach": "跟进助手",
+    "contacts": "客户联系人",
+    "pipeline": "交易进度",
+    "tasks": "待办事项",
+    "cma": "房价分析（CMA）",
+    "team": "团队",
+    "settings": "设置",
+    "help": "帮助",
+    "admin": "管理",
+    "signOut": "退出登录",
+    "locked": "升级后即可使用"
+  },
+  "errors": {
+    "required": "请填写此项。",
+    "tooShort": "内容太短了。",
+    "tooLong": "内容太长了，请缩短一些。",
+    "invalidFormat": "格式好像不对，请检查一下。",
+    "invalid": "请检查此项。",
+    "fixFields": "有几项需要您留意，已在下方用红色标出。",
+    "notFound": "找不到您要的内容，可能已被删除。",
+    "generic": "我们这边出了点问题，请稍后再试。"
+  },
+  "auth": {
+    "email": "电子邮箱",
+    "password": "密码",
+    "passwordHint": "至少 8 个字符。",
+    "name": "您的全名",
+    "nameHint": "请填写您希望在宣传材料上显示的名字。",
+    "signInTitle": "欢迎回来",
+    "signInSubtitle": "请登录您的 RealtyBoost 账户。",
+    "signInButton": "登录",
+    "signingIn": "正在登录…",
+    "signIn": "登录",
+    "noAccount": "第一次使用？",
+    "startTrial": "免费试用 14 天",
+    "signUpTitle": "开始免费试用",
+    "signUpSubtitle": "免费 14 天，开始时无需信用卡。",
+    "createAccountButton": "创建我的账户",
+    "creatingAccount": "正在创建您的账户…",
+    "trialNote": "试用期内可使用 Pro 计划的全部功能。",
+    "haveAccount": "已经有账户了？",
+    "errors": {
+      "emailTaken": "这个邮箱已经注册过了，请直接登录。",
+      "wrongLogin": "邮箱和密码不匹配，请检查后再试一次。"
+    }
+  },
+  "setup": {
+    "title": "设置您的账户",
+    "stepOf": "第 {step} 步，共 {total} 步",
+    "error": "请检查您的填写内容，然后再试一次。",
+    "step1": {
+      "title": "关于您",
+      "subtitle": "这些信息会显示在您的宣传材料上，随时可以修改。",
+      "displayName": "您的名字",
+      "displayNameHint": "客户平时称呼您的名字。",
+      "phone": "手机号码",
+      "brokerage": "经纪公司",
+      "brokerageHint": "很多州规定广告上必须写明经纪公司名称。",
+      "license": "执照号码",
+      "state": "州"
+    },
+    "step2": {
+      "title": "您使用的语言",
+      "subtitle": "请选择本应用使用的语言，以及您宣传材料要用的语言。",
+      "uiLanguage": "本应用的语言",
+      "uiLanguageHint": "按钮、菜单和帮助文字。",
+      "contentLanguage": "宣传材料的主要语言",
+      "contentLanguageHint": "房源介绍和帖子会用这种语言来写。",
+      "extraLanguages": "您服务的其他语言（最多 {count} 种）",
+      "extraLanguagesHint": "可以同时用多种语言写同一个房源。",
+      "soloLimit": "您的计划包含一种宣传语言。Pro 计划包含三种。"
+    },
+    "step3": {
+      "title": "您的文字风格",
+      "subtitle": "请选择最像您的风格。我们写的所有内容都会按这个风格来。",
+      "tone": "您的风格",
+      "tones": {
+        "warm": {
+          "name": "温馨亲切",
+          "example": "清晨的阳光洒满厨房，后院的走廊正适合悠闲的周末时光。"
+        },
+        "professional": {
+          "name": "专业得体",
+          "example": "保养良好的三卧室住宅，厨房已翻新，另配双车位车库。"
+        },
+        "luxury": {
+          "name": "优雅高端",
+          "example": "宽条橡木地板与定制木作，处处流露低调而考究的品味。"
+        },
+        "friendly": {
+          "name": "轻松活泼",
+          "example": "超大后院，屋顶全新，还有一个让您忍不住想下厨的好厨房！"
+        },
+        "straightforward": {
+          "name": "简单直接",
+          "example": "3 间卧室，2 间浴室。2022 年换新屋顶。带围栏的院子。"
+        }
+      },
+      "voiceNotes": "还有什么想说明的风格要求吗？",
+      "voiceNotesHint": "例如：“我总是会提到上班通勤”或“请写得简短一些”。",
+      "wordsToAvoid": "您不想看到的词语",
+      "wordsToAvoidHint": "用逗号分隔。例如：依偎、温馨、必看。"
+    },
+    "step4": {
+      "title": "您的手机和服务地区",
+      "subtitle": "我们会根据您的手机型号，告诉您拍摄房源照片的准确相机设置。",
+      "phone": "您用哪款手机拍照？",
+      "phoneHint": "不确定？iPhone 可以这样看：设置 → 通用 → 关于本机。",
+      "phonePick": "选择您的手机",
+      "markets": "您服务的地区",
+      "marketsHint": "城市或社区，用逗号分隔。"
+    },
+    "step5": {
+      "title": "全部设置好了！",
+      "subtitle": "以下是我们保存的内容。您随时可以在“设置”里修改。",
+      "name": "姓名：{name}",
+      "language": "宣传语言：{language}",
+      "tone": "风格：{tone}",
+      "phone": "手机：{phone}",
+      "notSet": "未设置",
+      "goDashboard": "前往我的首页",
+      "addListing": "添加我的第一个房源"
+    }
+  },
+  "dashboard": {
+    "title": "首页",
+    "morning": "早上好，{name}",
+    "afternoon": "下午好，{name}",
+    "evening": "晚上好，{name}",
+    "subtitle": "今天您想做什么？",
+    "quickActions": "快捷操作",
+    "addListing": "添加房源",
+    "addListingBody": "房屋资料只需填写一次，所有内容都能用。",
+    "createContent": "创建内容",
+    "createContentBody": "房源介绍、社交媒体帖子、视频、邮件和拍照指南。",
+    "coachMe": "我该怎么回复这位客户？",
+    "coachMeBody": "几秒钟就能得到电话话术、短信和邮件。",
+    "listingUsage": "本月您已添加 {used} 个房源，上限为 {limit} 个。",
+    "unlimitedUpgrade": "升级后房源不限数量",
+    "todayTasks": "今天到期",
+    "noTasks": "今天没有待办事项，真棒！",
+    "newLeads": "新客户线索",
+    "noLeads": "还没有新的客户线索。发布房源页面后，线索就会出现在这里。",
+    "seeAll": "查看全部",
+    "activeDeals": "{count, plural, =0 {没有进行中的交易} one {# 笔进行中的交易} other {# 笔进行中的交易}}",
+    "openPipeline": "打开交易进度",
+    "crmPitch": "想记录买家和卖家的信息、收到提醒，还能从房源页面收集客户线索吗？Pro 计划都包含这些功能。",
+    "seePro": "了解 Pro 计划",
+    "recentContent": "最近创建的内容"
+  },
+  "properties": {
+    "title": "我的房源",
+    "subtitle": "您正在推广的所有房子。点开一个，就可以为它创建内容。",
+    "addListing": "添加房源",
+    "addFirstListing": "添加您的第一个房源",
+    "emptyTitle": "还没有房源",
+    "emptyBody": "房屋资料只需填写一次，然后点一下就能生成房源介绍、帖子、视频和拍照计划。",
+    "newTitle": "添加房源",
+    "newSubtitle": "把您知道的填进来就行。只有地址是必填的，资料越多，写出来的内容越好。",
+    "editTitle": "编辑房源",
+    "backToListings": "返回我的房源",
+    "backToListing": "返回此房源",
+    "bedsShort": "{count} 卧",
+    "bathsShort": "{count} 卫",
+    "sqftShort": "{count, number} 平方英尺",
+    "builtIn": "{year} 年建",
+    "piecesCount": "{count, plural, =0 {还没有内容} one {# 篇内容} other {# 篇内容}}",
+    "pageLive": "页面已发布",
+    "pageDraft": "页面是草稿",
+    "pageViews": "{count, plural, =0 {还没有访问} one {# 次访问} other {# 次访问}}",
+    "deleted": "房源已删除。",
+    "saved": "您的修改已保存。",
+    "createdTitle": "房源已保存！",
+    "createdBody": "请在下方选择您想为它创建的内容。",
+    "editDetails": "编辑资料",
+    "addDetailsTip": "小提示：多添加一些特色和翻新项目（例如“石英石台面”或“2022 年换新屋顶”），写出来的内容会好很多。",
+    "createForListing": "为此房源创建",
+    "locked": "已锁定，升级后可使用",
+    "micrositeTitle": "房源页面",
+    "micrositePitch": "为这套房子做一个简单的网页，有意向的买家填写表单后，会直接进入您的联系人。",
+    "createPage": "创建页面",
+    "editPage": "编辑页面",
+    "viewPage": "查看页面",
+    "openHouseKiosk": "开放日签到",
+    "dealsTitle": "这套房子的交易",
+    "addDeal": "添加交易",
+    "noDeals": "这套房子还没有关联的交易。",
+    "cmaTitle": "房价分析",
+    "newCma": "新建房价分析",
+    "historyTitle": "为此房源创建的所有内容",
+    "limitReached": "您已达到当前计划本月的房源数量上限。升级到 Pro 即可不限数量。",
+    "deleteTitle": "删除此房源",
+    "deleteWarning": "这会删除房源、它的房源页面以及为它创建的所有内容，删除后无法恢复。",
+    "deleteConfirm": "是的，我要删除这个房源",
+    "deleteButton": "删除房源",
+    "deleting": "正在删除…",
+    "form": {
+      "addressSection": "地址",
+      "address": "街道地址",
+      "unit": "单元号或公寓号",
+      "city": "城市",
+      "state": "州",
+      "zip": "邮政编码",
+      "basicsSection": "基本信息",
+      "status": "状态",
+      "propertyType": "房屋类型",
+      "price": "挂牌价（$）",
+      "beds": "卧室数",
+      "baths": "浴室数",
+      "bathsHint": "半间浴室用 .5 表示，例如 2.5",
+      "sqft": "面积（平方英尺）",
+      "lotSize": "地块大小",
+      "yearBuilt": "建造年份",
+      "stories": "楼层数",
+      "garage": "车库或停车位",
+      "garagePlaceholder": "2 车位连体车库",
+      "hoaFee": "HOA 费用（$ 每月）",
+      "detailsSection": "房子的特别之处",
+      "detailsIntro": "请只填写真实情况。写出来的内容完全依据您在这里填的资料，绝不会编造。",
+      "features": "主要特色",
+      "featuresHint": "房间、材料、格局。用逗号或换行分隔都可以。",
+      "featuresPlaceholder": "开放式厨房配石英石台面、燃气灶、主卧在一楼、挑高客厅",
+      "upgrades": "近期翻新（请写年份）",
+      "upgradesHint": "买家喜欢具体日期：“2022 年换新屋顶”比“较新的屋顶”更好。",
+      "upgradesPlaceholder": "2022 年换新屋顶，2021 年换空调暖气系统，2024 年室内重新粉刷",
+      "outdoor": "户外空间",
+      "outdoorPlaceholder": "带围栏的后院、有顶棚的露台、成年橡树、花圃",
+      "neighborhood": "位置和附近设施",
+      "neighborhoodHint": "请写地点方面的事实，不要写人：公园、商店、通勤时间、学区名称。",
+      "neighborhoodPlaceholder": "距 Lakeside 公园 2 个街区，开车 10 分钟到市中心，Plano ISD",
+      "photoSection": "照片和开放日",
+      "facing": "房子正面朝哪个方向？",
+      "facingHint": "站在前门口面向街道，用手机指南针看一下。这能帮助安排最佳的拍照时间。",
+      "facingUnknown": "我不确定",
+      "phoneModel": "这次拍摄用的手机",
+      "phoneModelHint": "保持不变，就会使用您在设置里填的手机。",
+      "phoneModelDefault": "用我平时的手机",
+      "heroImageUrl": "主照片链接",
+      "heroImageUrlHint": "粘贴主照片的链接（例如来自 MLS 或 Google 相册）。会显示在房源页面上。",
+      "openHouseAt": "开放日开始时间",
+      "openHouseEnd": "开放日结束时间",
+      "privateSection": "私密信息（不会显示，也不会写进宣传内容）",
+      "soldPrice": "成交价（$）",
+      "privateNotes": "私人备注",
+      "privateNotesHint": "钥匙盒密码、卖家备注，只有您自己能看到。",
+      "saveListing": "保存房源",
+      "saveChanges": "保存修改",
+      "statuses": {
+        "COMING_SOON": "即将挂牌",
+        "ACTIVE": "在售",
+        "PENDING": "待成交",
+        "SOLD": "已售出",
+        "OFF_MARKET": "已下架"
+      },
+      "types": {
+        "single_family": "独立屋",
+        "condo": "公寓（Condo）",
+        "townhouse": "联排别墅",
+        "multi_family": "多户住宅",
+        "manufactured": "预制房屋",
+        "land": "土地",
+        "other": "其他"
+      },
+      "facings": {
+        "N": "北",
+        "NE": "东北",
+        "E": "东",
+        "SE": "东南",
+        "S": "南",
+        "SW": "西南",
+        "W": "西",
+        "NW": "西北"
+      }
+    }
+  },
+  "create": {
+    "title": "创建内容",
+    "subtitle": "请选择您想做的内容。所有内容都根据您房源的真实资料，按您的风格来写。",
+    "recent": "最近创建的内容",
+    "locked": "已锁定，升级后可使用",
+    "chooseListing": "这是为哪个房源做的？",
+    "backToCreate": "返回创建内容",
+    "noListingsTitle": "请先添加一个房源",
+    "noListingsBody": "需要有房屋资料，才能开始写。",
+    "addListing": "添加房源",
+    "forListing": "房源",
+    "changeListing": "选择其他房源",
+    "optionalListing": "这是关于某一套具体的房子吗？",
+    "pickListing": "选择房源",
+    "form": {
+      "contact": "这是写给谁的？",
+      "contactHint": "选择一位联系人，就会用到他的资料；也可以不选。",
+      "noContact": "不在我的联系人里",
+      "languages": "用这些语言来写",
+      "languagesHint": "勾选多种语言，就能同时得到多种语言的同一份内容。您的计划最多可选 {count, plural, one {# 种语言} other {# 种语言}}。",
+      "languageLocked": "请在“设置”里添加这种语言，或升级以使用更多语言。",
+      "generateButton": "帮我写",
+      "writing": "正在写…大约需要 30 秒",
+      "timeNote": "写好后会在下一页显示。您复制之前，不会发布到任何地方。"
+    },
+    "errors": {
+      "unknown_module": "找不到这种类型的内容。",
+      "property_required": "请先选择一个房源。",
+      "language_not_allowed": "其中一种语言不在您的计划或设置范围内。",
+      "invalid_options": "有些选项无效，请检查一下。",
+      "ai": "内容没有写完。"
+    }
+  },
+  "generation": {
+    "title": "您的内容",
+    "backToCreate": "返回创建内容",
+    "print": "打印",
+    "emailMe": "发到我的邮箱",
+    "sending": "正在发送…",
+    "emailed": "已发送！请查看您的收件箱。",
+    "emailNotConfigured": "此账户还没有设置邮件功能，所以没有发送。您可以改用打印或复制。",
+    "regenerate": "重新写一个版本",
+    "rewriting": "正在重新写…",
+    "changeOptions": "更改选项",
+    "languages": "语言",
+    "needsReview": "请检查一下",
+    "failed": "没有完成",
+    "failedTitle": "这一项没有完成",
+    "failedBody": "请稍后再试一次。",
+    "noHistory": "还没有创建过内容。",
+    "reviewNote": "使用 AI 写的内容之前，请务必先看一遍。您要对自己发布的内容负责。"
+  },
+  "output": {
+    "copy": "复制",
+    "copied": "已复制！",
+    "chars": "{count, plural, one {# 个字符} other {# 个字符}}",
+    "charsOfLimit": "{count} / {limit} 个字符",
+    "overLimit": "{count} 个字符，比 {limit} 个字符的上限多了 {over} 个。发布前请缩短。"
+  },
+  "fairHousing": {
+    "title": "公平住房（Fair Housing）检查",
+    "clean": "已通过公平住房检查。这段文字描述的是房产本身，而不是人。",
+    "removedTitle": "{count, plural, one {我们删除了 # 句话} other {我们删除了 # 句话}}",
+    "removedItem": "“{phrase}”：{reason}",
+    "flaggedTitle": "{count, plural, one {请检查 # 处用语} other {请检查 # 处用语}}",
+    "flaggedItem": "“{phrase}”：{reason}",
+    "rewrittenTitle": "{count, plural, one {我们改进了 # 处用语} other {我们改进了 # 处用语}}",
+    "rewrittenItem": "“{from}” → “{to}”",
+    "disclaimer": "这项自动检查只能起到辅助作用，不构成法律意见。有疑问时，请询问您的经纪公司负责人（broker）。",
+    "classes": {
+      "familial_status": "提到了家庭或儿童，而这是公平住房法保护的内容",
+      "age": "提到了年龄，而很多州对此有保护",
+      "marital_status": "提到了婚姻状况，而很多州对此有保护",
+      "sex": "暗示了对性别的偏好",
+      "disability": "可能会把残障人士排除在外",
+      "source_of_income": "拒绝接受住房补助券，这在很多州是违法的",
+      "race_national_origin": "描述了种族、族裔或原国籍",
+      "religion": "暗示了对宗教的偏好",
+      "military_status": "提到了军人身份，而一些州对此有保护",
+      "steering": "可能会误导买家的选择（例如“安全”、学校评分）",
+      "style_guideline": "是很多 MLS 要求经纪人避免使用的措辞"
+    }
+  },
+  "billing": {
+    "title": "计划与付款",
+    "subtitle": "按月收费，简单明了。随时可以取消。",
+    "backToSettings": "返回设置",
+    "currentPlan": "您的计划",
+    "noPlan": "没有有效的计划",
+    "trialDaysLeft": "{days, plural, =0 {您的试用期今天结束。} one {免费试用还剩 # 天。} other {免费试用还剩 # 天。}}",
+    "renewsOn": "续订日期：{date}",
+    "manageBilling": "管理付款方式和账单",
+    "opening": "正在打开…",
+    "perMonth": "每月",
+    "mostPopular": "最受欢迎",
+    "yourPlan": "这是您目前的计划",
+    "choosePlanButton": "选择 {plan}",
+    "choosePlan": "选择计划",
+    "trialBanner": "{days, plural, =0 {您的免费试用今天结束。} one {免费试用还剩 # 天。} other {免费试用还剩 # 天。}}",
+    "inactiveBanner": "您的计划已失效，所以大部分功能暂时停用。",
+    "successTitle": "谢谢您！",
+    "successBody": "您的计划已生效，包含的所有功能现在都已解锁。",
+    "canceledBody": "没关系，没有扣任何费用。",
+    "testCardNote": "测试中？请使用 Stripe 的测试卡号 4242 4242 4242 4242，有效期填任意未来日期，安全码填任意 3 位数字。",
+    "devModeTitle": "测试付款模式",
+    "devModeBody": "尚未连接 Stripe，所以选择计划会立即切换，无需付款。这只在测试服务器上有效。",
+    "status": {
+      "TRIALING": "免费试用中",
+      "ACTIVE": "使用中",
+      "PAST_DUE": "付款有问题",
+      "CANCELED": "已取消",
+      "NONE": "未启用"
+    },
+    "errors": {
+      "owner": "只有账户所有者才能更改计划。",
+      "not_configured": "付款功能还没有设置好，请联系客服。",
+      "generic": "无法打开结账页面，请再试一次。"
+    },
+    "plans": {
+      "SOLO": {
+        "name": "Solo",
+        "tagline": "轻松做好宣传"
+      },
+      "PRO": {
+        "name": "Pro",
+        "tagline": "宣传加上完整的客户管理"
+      },
+      "TEAM": {
+        "name": "Team",
+        "tagline": "适合团队和小型经纪公司"
+      }
+    },
+    "features": {
+      "marketing": "房源介绍、社交媒体帖子、Reel 脚本和邮件",
+      "photoGuide": "手机拍照和拍视频指南",
+      "coach": "跟进助手：每位客户线索该怎么说",
+      "oneLanguage": "1 种宣传语言",
+      "tenListings": "每月 10 个房源",
+      "emailSupport": "邮件客服支持",
+      "everythingSolo": "包含 Solo 的全部功能",
+      "crm": "联系人、交易进度、待办事项和提醒",
+      "microsites": "能收集客户线索的房源页面",
+      "cma": "房价分析（CMA）助手",
+      "transactions": "交易清单和截止日期",
+      "threeLanguages": "3 种宣传语言",
+      "unlimitedListings": "房源不限数量",
+      "chatSupport": "在线聊天客服支持",
+      "everythingPro": "包含 Pro 的全部功能",
+      "fiveSeats": "5 位团队成员",
+      "allLanguages": "全部 8 种宣传语言",
+      "whiteLabel": "使用您自己的品牌名称和标志",
+      "teamDashboard": "团队业绩总览",
+      "leadRouting": "客户线索自动分配",
+      "prioritySupport": "优先客服支持"
+    }
+  },
+  "locked": {
+    "includedIn": "包含在 {plan} 计划中，每月 ${price}",
+    "upgradeButton": "升级到 {plan}",
+    "generic": "您的计划不包含此功能。",
+    "features": {
+      "MARKETING": {
+        "title": "宣传工具",
+        "pitch": "按您的风格撰写房源介绍、社交媒体帖子、Reel 脚本和邮件。"
+      },
+      "PHOTO_GUIDE": {
+        "title": "拍照指南",
+        "pitch": "用您自己的手机，拍出专业水准的房源照片。"
+      },
+      "FOLLOW_UP_COACH": {
+        "title": "跟进助手",
+        "pitch": "每位客户线索该怎么说，一清二楚。"
+      },
+      "CRM": {
+        "title": "井井有条的客户名单",
+        "pitch": "所有买家和卖家集中在一处，交易一目了然，再也不会忘记跟进。"
+      },
+      "MICROSITES": {
+        "title": "为您带来客户的房源页面",
+        "pitch": "点一下就能为房源创建页面。有意向的买家会直接进入您的联系人。"
+      },
+      "CMA": {
+        "title": "房价分析（CMA）助手",
+        "pitch": "输入可比房源，就能得到清晰的、可以给客户看的房价分析和谈话要点。"
+      },
+      "TRANSACTIONS": {
+        "title": "交易清单",
+        "pitch": "从签约到过户，每个截止日期都能跟踪。"
+      },
+      "TEAM_DASHBOARD": {
+        "title": "团队总览",
+        "pitch": "看看整个团队的表现。"
+      },
+      "LEAD_ROUTING": {
+        "title": "客户线索分配",
+        "pitch": "自动把新的客户线索分给合适的队友。"
+      },
+      "WHITE_LABEL": {
+        "title": "您自己的品牌",
+        "pitch": "显示您团队的名称和标志，而不是我们的。"
+      }
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "subtitle": "您的资料、写作风格和使用的语言。",
+    "saved": "已保存！",
+    "billingLink": "计划与付款",
+    "profileSection": "您的资料",
+    "publicEmail": "给客户看的邮箱",
+    "publicEmailHint": "会显示在您的房源页面上，也用于邮件签名。",
+    "brokeragePhone": "经纪公司电话",
+    "mlsId": "MLS 经纪人编号",
+    "headshotUrl": "头像照片链接",
+    "headshotUrlHint": "粘贴您照片的链接。会显示在您的房源页面上。",
+    "bio": "个人简介",
+    "bioHint": "用 2 到 3 句话介绍自己。会显示在您的房源页面上。",
+    "voiceSection": "您的写作风格",
+    "signature": "邮件结尾署名",
+    "signatureHint": "您习惯怎样在邮件末尾署名。",
+    "languagesSection": "语言和手机",
+    "saveButton": "保存设置",
+    "whiteLabelSection": "您的品牌",
+    "whiteLabelIntro": "把 RealtyBoost 的名称换成您团队的名称和标志。",
+    "brandName": "团队或经纪公司名称",
+    "brandColor": "品牌颜色",
+    "brandColorHint": "颜色代码，例如 #1d4ed8",
+    "logoUrl": "标志链接",
+    "saveBrand": "保存品牌"
+  },
+  "modules": {
+    "mls-listing": {
+      "name": "MLS 房源描述",
+      "description": "三个版本，每个都有标题、简短描述和完整描述。",
+      "longLimit": "您的 MLS 字符数上限",
+      "longLimitHint": "请查看您所在 MLS 的规定。不确定的话，1,000 对大多数 MLS 都适用。",
+      "chars500": "500 个字符",
+      "chars1000": "1,000 个字符",
+      "chars1500": "1,500 个字符",
+      "chars2000": "2,000 个字符",
+      "chars4000": "4,000 个字符",
+      "emphasis": "有什么特别想突出的吗？",
+      "emphasisPlaceholder": "全新的厨房",
+      "view": {
+        "variants": "您的三个版本",
+        "headline": "标题",
+        "short": "简短描述",
+        "long": "完整的 MLS 描述",
+        "bullets": "特色清单",
+        "bulletsCopy": "特色清单（可直接复制）",
+        "checklist": "发布之前请检查"
+      }
+    },
+    "social-posts": {
+      "name": "社交媒体帖子",
+      "description": "Instagram、Facebook、LinkedIn 和 X，每个平台都按它喜欢的方式来写。",
+      "occasion": "是什么情况？",
+      "occasions": {
+        "just_listed": "新挂牌",
+        "open_house": "开放日",
+        "coming_soon": "即将挂牌",
+        "price_improvement": "调整价格",
+        "under_contract": "已签约",
+        "just_sold": "刚刚售出"
+      },
+      "useEmoji": "加几个表情符号",
+      "view": {
+        "caption": "帖子文字",
+        "hashtags": "话题标签",
+        "hashtagsHint": "Instagram 每个帖子最多可以用 5 个话题标签。",
+        "captionWithTags": "带话题标签的帖子文字（可直接复制）",
+        "altText": "照片说明（替代文字）",
+        "altTextHint": "把这段文字粘贴到 Instagram 的“无障碍”设置里，看不到照片的人就能知道照片里有什么。",
+        "stories": "快拍（Story）页面"
+      }
+    },
+    "reel-script": {
+      "name": "Reel / TikTok 视频计划",
+      "description": "开场吸引点、分镜头脚本、拍摄清单、旁白和帖子文字。",
+      "duration": "多长时间？",
+      "seconds15": "15 秒",
+      "seconds30": "30 秒",
+      "seconds60": "60 秒",
+      "style": "风格",
+      "styles": {
+        "tour": "走一圈看房",
+        "top_features": "亮点倒数",
+        "reveal": "新挂牌揭晓",
+        "detail_montage": "细节和装修用料"
+      },
+      "onCamera": "开头和结尾我会亲自出镜",
+      "view": {
+        "length": "{seconds} 秒",
+        "scenes": "{count} 个镜头",
+        "hook": "开场吸引点（前 2 秒）",
+        "storyboard": "分镜头脚本",
+        "scene": "镜头 {number}",
+        "seconds": "{seconds} 秒",
+        "shot": "拍什么",
+        "cameraMove": "怎么移动镜头",
+        "overlay": "屏幕上的文字",
+        "voiceover": "说什么",
+        "totalSeconds": "总共：约 {seconds} 秒",
+        "voiceoverScript": "完整的旁白稿",
+        "shotList": "拍摄当天的清单",
+        "editing": "用 CapCut（免费）完成剪辑",
+        "caption": "帖子文字"
+      }
+    },
+    "email-blast": {
+      "name": "房源邮件",
+      "description": "新挂牌、开放日、调整价格或刚刚售出，写好即可粘贴使用。",
+      "emailType": "邮件类型",
+      "types": {
+        "just_listed": "新挂牌",
+        "open_house": "开放日邀请",
+        "price_improvement": "调整价格",
+        "just_sold": "刚刚售出"
+      },
+      "audience": "发给谁？",
+      "audiences": {
+        "sphere": "朋友、邻居和老客户",
+        "buyers": "正在找类似房子的买家",
+        "agents": "其他经纪人"
+      },
+      "view": {
+        "subjects": "邮件主题",
+        "subjectOption": "方案 {number}",
+        "preview": "预览文字",
+        "email": "邮件内容",
+        "copyAll": "整封邮件（可直接复制）",
+        "canSpam": "请用您的邮件营销工具发送这封邮件，这样邮件里会包含您的邮寄地址和退订链接（这是 CAN-SPAM 法律的要求）。"
+      }
+    },
+    "photo-guide": {
+      "name": "自己动手的拍照和视频指南",
+      "description": "用您自己的手机拍这个房源：设置、拍摄清单、最佳光线、后期修图。",
+      "phone": "用哪款手机？",
+      "phoneHint": "我们会针对这款手机给您具体的设置。",
+      "phoneDefault": "我平时用的手机（来自设置）",
+      "time": "您有多少时间？",
+      "times": {
+        "quick": "大约 20 分钟",
+        "afternoon": "一个下午（1 到 2 小时）",
+        "weekend": "一个周末（高级方案）"
+      },
+      "style": "想要什么样的效果？",
+      "styles": {
+        "bright_airy": "明亮通透",
+        "warm_cozy": "温暖舒适",
+        "modern_crisp": "现代利落",
+        "luxury": "奢华高端"
+      },
+      "detail": "要多详细？",
+      "details": {
+        "quick": "简单版：一页纸速查表",
+        "pro": "专业版：完整的分步指南"
+      },
+      "includeVideo": "包含看房视频拍摄计划",
+      "view": {
+        "bestTime": "最佳拍摄时间",
+        "totalTime": "需要的时间",
+        "roomOrder": "请按这个顺序拍",
+        "beforeYouStart": "开始之前",
+        "phoneSettings": "{phone} 的设置",
+        "setting": "设置项",
+        "value": "请设为",
+        "why": "原因",
+        "lighting": "光线安排",
+        "shotList": "拍摄清单",
+        "lens": "镜头",
+        "staging": "把房子布置好",
+        "composition": "取景规则",
+        "editing": "用 {app} 修图（免费）",
+        "video": "看房视频",
+        "seconds": "{seconds} 秒",
+        "troubleshooting": "遇到问题时"
+      }
+    },
+    "follow-up-coach": {
+      "name": "跟进助手",
+      "description": "和客户线索联系该怎么说：电话话术、难题的应对、短信、邮件和两周跟进计划。",
+      "situation": "对方是怎么联系到您的？",
+      "situations": {
+        "portal_inquiry": "Zillow、Realtor.com 或其他网站",
+        "listing_page": "我的房源页面上的表单",
+        "open_house": "我的开放日",
+        "sign_call": "看到我的院内招牌后打来电话",
+        "referral": "别人介绍的",
+        "past_client": "老客户",
+        "gone_quiet": "不再回复的客户线索"
+      },
+      "goal": "您接下来想达成什么？",
+      "goals": {
+        "showing": "约看房",
+        "consultation": "约买家面谈",
+        "preapproval": "帮他们办理贷款预批准",
+        "listing_appointment": "约卖家挂牌面谈",
+        "stay_in_touch": "保持联系，等他们准备好"
+      },
+      "leadName": "对方的名字",
+      "leadNameHint": "如果您在上面选了联系人，这里可以留空。",
+      "whatTheySaid": "对方说了什么或问了什么？",
+      "whatTheySaidPlaceholder": "“价格可以谈吗？我们三月从俄亥俄州搬过来。”",
+      "experience": "您的经验",
+      "experiences": {
+        "new": "我是新手（入行不满一年）",
+        "experienced": "我经验丰富"
+      },
+      "view": {
+        "callScript": "电话沟通",
+        "callNow": "现在就打电话",
+        "opening": "开场白",
+        "questions": "问这些问题",
+        "keyPoints": "说明这些要点",
+        "askForAppointment": "提出下一步",
+        "voicemail": "如果转到语音信箱",
+        "objections": "如果对方说…",
+        "theySay": "对方说",
+        "youSay": "您说",
+        "text": "短信",
+        "openTextApp": "用我的短信应用打开",
+        "textConsent": "只给主动联系过您、或同意接收短信的人发短信。如果对方要求停止，请立即停止。",
+        "email": "邮件",
+        "subject": "主题",
+        "body": "内容",
+        "openEmailApp": "用我的邮件应用打开",
+        "plan": "您的两周跟进计划",
+        "day": "第 {day} 天",
+        "tips": "小贴士",
+        "avoid": "请避免这样做"
+      }
+    },
+    "microsite-copy": {
+      "name": "房源页面文案",
+      "description": "为您的房源页面写标题、欢迎语和亮点。"
+    },
+    "cma-narrative": {
+      "name": "房价分析说明",
+      "description": "给客户看的可比成交房源说明。"
+    }
+  },
+  "landing": {
+    "metaTitle": "RealtyBoost：为房地产经纪人提供房源宣传、拍照指南和客户跟进",
+    "metaDescription": "用您自己的口吻撰写 MLS 房源描述、社交媒体帖子、视频计划和邮件，用自己的手机拍出漂亮的房源照片，并知道每位客户线索该怎么说。支持五种语言。",
+    "signIn": "登录",
+    "eyebrow": "为只想专心卖房、不想和软件较劲的经纪人而设计",
+    "heroTitle": "几分钟做好每个房源的宣传，用您的口吻，说客户的语言。",
+    "heroBody": "房屋资料只需填写一次，就能得到 MLS 描述、社交媒体帖子、Reel 视频计划、房源邮件和一步一步的手机拍照指南。买家来电时，您也清楚该怎么说。",
+    "ctaTrial": "免费试用 14 天",
+    "ctaTrialShort": "免费试用",
+    "ctaHow": "看看怎么用",
+    "ctaNote": "开始时无需信用卡，随时可以取消。",
+    "photoTitle": "没有摄影师？没问题。",
+    "photoBody": "专业的房源照片，每套房子可能要花几百美元。对于比较简单的房源，RealtyBoost 会根据这套房子和您的手机，为您量身制定拍摄计划。",
+    "photoPoints": {
+      "settings": "针对您手机型号的相机设置：iPhone、Samsung Galaxy 或 Google Pixel",
+      "light": "根据房子的朝向，告诉您一天中最佳的拍摄时间",
+      "shots": "按房间列出的拍摄清单和布置检查表",
+      "editing": "使用免费应用的修图步骤，并附上起始数值",
+      "video": "简单的看房视频计划：20 分钟就能拍完，也可以花一个周末拍得更精细"
+    },
+    "howTitle": "使用方法",
+    "how": {
+      "one": {
+        "title": "房屋资料填写一次",
+        "body": "地址、卧室数、浴室数，以及房子的特别之处。只写真实情况，我们绝不编造。"
+      },
+      "two": {
+        "title": "点一下需要的内容",
+        "body": "MLS 描述、帖子、视频计划、邮件、拍照指南，或是新客户线索的电话话术。"
+      },
+      "three": {
+        "title": "复制，然后使用",
+        "body": "大大的复制按钮，每个平台都有字符数提示，清单还可以直接打印。"
+      }
+    },
+    "featuresTitle": "经纪人需要的一切，都在这一个地方",
+    "featuresBody": "不必再用五个不同的工具、记五个不同的密码。",
+    "features": {
+      "mls": {
+        "title": "MLS 房源描述",
+        "body": "三个版本，附带标题，字数符合您所在 MLS 的字符限制。"
+      },
+      "social": {
+        "title": "社交媒体帖子",
+        "body": "Instagram、Facebook、LinkedIn 和 X，每个平台都按它喜欢的方式来写。"
+      },
+      "reels": {
+        "title": "Reel 和 TikTok 视频计划",
+        "body": "吸引人的开场、分镜头脚本、拍摄清单和旁白，30 分钟就能拍完。"
+      },
+      "email": {
+        "title": "房源邮件",
+        "body": "新挂牌、开放日、调整价格和刚刚售出。"
+      },
+      "coach": {
+        "title": "跟进助手",
+        "body": "客户线索打来电话时该怎么说：话术、难题的应对、短信、邮件和两周跟进计划。"
+      },
+      "pages": {
+        "title": "房源页面",
+        "body": "点一下就能为房源创建页面，有意向的买家会直接进入您的联系人。"
+      },
+      "crm": {
+        "title": "简单的客户名单",
+        "body": "联系人、可拖动的交易进度、待办事项和提醒。"
+      },
+      "cma": {
+        "title": "房价分析助手",
+        "body": "输入可比房源，就能得到清楚的计算和可以给客户看的谈话要点。"
+      },
+      "checklists": {
+        "title": "交易清单",
+        "body": "从签约到过户的每个截止日期，都在同一张清单里。"
+      }
+    },
+    "trust": {
+      "fairHousing": {
+        "title": "已做公平住房检查",
+        "body": "在您看到之前，每个字都会检查是否违反公平住房规定，并且会告诉您我们改了什么。"
+      },
+      "languages": {
+        "title": "五种语言",
+        "body": "英语、西班牙语、中文、越南语和韩语，整个应用及它写出的所有内容都支持。"
+      },
+      "easy": {
+        "title": "专为轻松使用而设计",
+        "body": "字大、按钮清楚、用词简单。每个页面只做一件事。不用看 40 页的说明书。"
+      }
+    },
+    "pricingTitle": "收费简单明了",
+    "pricingBody": "每个计划都先免费试用 14 天 Pro。",
+    "faqTitle": "经纪人常问的问题",
+    "faq": {
+      "computers": {
+        "q": "我不太会用电脑，能用这个吗？",
+        "a": "可以。它是专为忙碌的经纪人设计的：字大、按钮清楚、一次只做一步。只要您会填表格，就会用 RealtyBoost。"
+      },
+      "accuracy": {
+        "q": "AI 会不会编造房子的情况？",
+        "a": "它只会根据您输入的事实来写，我们也要求它绝不虚构房屋特色。不过使用前您还是要把内容看一遍，因为您才是专家。"
+      },
+      "posting": {
+        "q": "它会替我发布到社交媒体吗？",
+        "a": "目前还不会。您点一下就能复制粘贴，这样发出去的内容由您自己掌握。"
+      },
+      "privacy": {
+        "q": "谁能看到我的客户和房源？",
+        "a": "只有您自己（以及 Team 计划里的队友）。您的数据与其他账户完全分开保存。"
+      },
+      "cancel": {
+        "q": "可以随时取消吗？",
+        "a": "可以。没有合约。在您的付款页面点两下就能取消。"
+      },
+      "languages": {
+        "q": "能用两种语言写同一个房源吗？",
+        "a": "可以。勾选多种语言，每个版本都会并排显示给您。"
+      }
+    },
+    "comingTitle": "即将推出",
+    "coming": {
+      "mls": "从您的 MLS 导入房源",
+      "esign": "电子签名",
+      "sending": "直接在应用里发送邮件和短信",
+      "showings": "看房预约安排"
+    },
+    "finalTitle": "您的下一个房源，午饭前就能宣传出去。",
+    "finalBody": "免费体验全部功能 14 天。",
+    "footerNote": "RealtyBoost 写的是草稿。发布之前请务必仔细检查。"
+  },
+  "microsite": {
+    "title": "房源页面",
+    "backToListing": "返回此房源",
+    "intro": "为这套房子创建一个简单的网页。把链接分享到帖子、邮件和短信里，任何人填写表单后，都会直接进入您的联系人，并带有跟进提醒。",
+    "point1": "每个页面都有您的照片、电话和经纪公司",
+    "point2": "收集姓名、邮箱和电话的表单，并取得恰当的同意",
+    "point3": "适合放在门口平板电脑上的开放日签到页面",
+    "createButton": "创建页面",
+    "creating": "正在创建…",
+    "liveAt": "您的页面已发布。请分享这个链接：",
+    "notLiveYet": "您的页面还没有发布。请勾选下方的“发布此页面”，然后保存。",
+    "copyLink": "复制链接",
+    "open": "打开页面",
+    "openHouseMode": "开放日签到",
+    "writeHint": "让我们根据您的房源资料，来写标题、欢迎语和亮点。",
+    "writeButton": "帮我写这个页面",
+    "writing": "正在写…大约 20 秒",
+    "written": "页面已经写好了。请先读一遍，想改哪里都可以，然后保存。",
+    "writeFailed": "现在无法写这个页面，请再试一次。",
+    "headline": "标题",
+    "introLabel": "欢迎语",
+    "highlights": "亮点",
+    "highlightsHint": "每行写一条。",
+    "body": "关于这套房子",
+    "language": "页面语言",
+    "languageHint": "表单和按钮会使用这种语言。",
+    "accentColor": "主题颜色",
+    "showPrice": "显示价格",
+    "published": "发布此页面",
+    "publishedHint": "有链接的人都能看到。取消勾选就会隐藏。",
+    "saveButton": "保存页面",
+    "saved": "已保存！",
+    "publishedNow": "已保存，您的页面已发布！"
+  },
+  "publicPage": {
+    "beds": "{count} 间卧室",
+    "baths": "{count} 间浴室",
+    "sqft": "{count, number} 平方英尺",
+    "built": "建于 {year} 年",
+    "photoAlt": "{address} 的照片",
+    "openHouse": "开放日",
+    "highlights": "亮点",
+    "aboutHome": "关于这套房子",
+    "license": "{state} 州执照号码 #{number}",
+    "equalHousing": "平等住房机会。我们遵守联邦《公平住房法》（Fair Housing Act）以及所有州和地方的公平住房法律。",
+    "disclaimer": "相关信息据信准确，但不作保证。买家应自行核实所有细节。",
+    "listedBy": "由 {brokerage} 的 {agent} 挂牌。",
+    "formTitle": "有兴趣吗？请与我们联系",
+    "kioskTitle": "请签到",
+    "kioskWelcome": "欢迎光临！",
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "contactHint": "请填写邮箱或电话号码，方便我们联系您。",
+    "interest": "我想",
+    "interests": {
+      "showing": "预约私人看房",
+      "info": "了解更多信息",
+      "openHouse": "了解开放日的消息",
+      "selling": "谈谈出售我的房子"
+    },
+    "message": "问题或留言",
+    "emailOptIn": "是的，{agent} 可以就这套房子和类似的房子给我发邮件。我可以随时退订。",
+    "smsConsent": "是的，{agent} 可以就这套房子和房地产服务，用上面的号码给我打电话或发短信，包括使用自动发送的短信。购买任何东西都不需要同意这一条。可能会产生短信和数据费用。回复 STOP 即可退出。",
+    "workingWithAgent": "您现在有合作的房地产经纪人吗？",
+    "yes": "有",
+    "no": "没有",
+    "submit": "发送我的请求",
+    "kioskSubmit": "签到",
+    "sending": "正在发送…",
+    "thanksTitle": "谢谢您！",
+    "thanksBody": "{agent} 会尽快与您联系。",
+    "kioskThanksTitle": "感谢您的参观！",
+    "kioskThanksBody": "祝您参观愉快，请随意看看。",
+    "nextVisitor": "几秒钟后，此页面会重置，供下一位访客使用。",
+    "optional": "选填",
+    "errors": {
+      "missing": "请填写您的名字。",
+      "contact": "请填写邮箱地址或电话号码。",
+      "rate": "请求太多了，请等几分钟后再试。",
+      "generic": "抱歉，出了点问题。请直接打电话联系。"
+    }
+  },
+  "contacts": {
+    "title": "客户联系人",
+    "subtitle": "{count, plural, =0 {您合作的所有人，都在这一个地方。} one {您的联系人里有 # 位。} other {您的联系人里有 # 位。}}",
+    "addContact": "添加联系人",
+    "editTitle": "编辑联系人",
+    "backToContacts": "返回联系人",
+    "backToContact": "返回此联系人",
+    "searchPlaceholder": "按姓名、邮箱或电话搜索",
+    "status": "状态",
+    "role": "身份",
+    "source": "来源",
+    "anyStatus": "所有状态",
+    "anyRole": "所有身份",
+    "anySource": "所有来源",
+    "clearFilters": "清除筛选",
+    "savedViews": "已保存的列表",
+    "viewName": "给这个列表起个名字",
+    "saveView": "保存此列表",
+    "deleteView": "删除已保存的列表 {name}",
+    "noMatches": "没有符合这些筛选条件的联系人。",
+    "emptyTitle": "还没有联系人",
+    "emptyBody": "添加买家、卖家和老客户，或者发布房源页面，新的客户线索就会自动出现在这里。",
+    "deleted": "联系人已删除。",
+    "created": "联系人已添加。",
+    "saved": "修改已保存。",
+    "edit": "编辑",
+    "call": "打电话",
+    "text": "发短信",
+    "email": "发邮件",
+    "coachButton": "我该怎么说？",
+    "added": "添加时间",
+    "lastContacted": "上次联系",
+    "consentTitle": "联系许可",
+    "consentEmail": "同意接收营销邮件",
+    "consentSms": "同意接听电话和接收短信",
+    "consentGiven": "{date} 通过 {source} 同意",
+    "consentNone": "没有书面许可记录。对主动联系过您的人进行一对一的个人回复是可以的；但要把他们加入营销名单，需要先征得同意。",
+    "doNotContactTitle": "请勿联系",
+    "doNotContactBody": "此人要求不要联系他。打电话和发短信的按钮已隐藏。",
+    "deals": "交易",
+    "addDeal": "添加交易",
+    "noDeals": "还没有交易。",
+    "tasks": "待办事项和提醒",
+    "coachHistory": "为此人生成的话术",
+    "deleteTitle": "删除此联系人",
+    "deleteWarning": "这会删除该联系人及其交易、待办事项、备注和历史记录，删除后无法恢复。",
+    "deleteConfirm": "是的，我要删除这位联系人",
+    "deleteButton": "删除联系人",
+    "deleting": "正在删除…",
+    "statuses": {
+      "NEW": "新客户线索",
+      "NURTURE": "保持联系中",
+      "ACTIVE": "合作中的客户",
+      "PAST_CLIENT": "老客户",
+      "DO_NOT_CONTACT": "请勿联系"
+    },
+    "roles": {
+      "BUYER": "买家",
+      "SELLER": "卖家",
+      "INVESTOR": "投资者",
+      "RENTER": "租客",
+      "PAST_CLIENT": "老客户",
+      "COOPERATING_AGENT": "其他经纪人",
+      "LENDER": "贷款机构",
+      "VENDOR": "服务供应商",
+      "OTHER": "其他"
+    },
+    "sources": {
+      "MICROSITE": "我的房源页面",
+      "OPEN_HOUSE": "开放日",
+      "ZILLOW": "Zillow",
+      "REALTOR_COM": "Realtor.com",
+      "FACEBOOK": "Facebook",
+      "INSTAGRAM": "Instagram",
+      "GOOGLE": "Google",
+      "WEBSITE": "我的网站",
+      "REFERRAL": "别人介绍",
+      "PAST_CLIENT": "老客户",
+      "SPHERE": "亲友",
+      "SIGN_CALL": "院内招牌",
+      "OTHER": "其他"
+    },
+    "stages": {
+      "NEW_LEAD": "新客户线索",
+      "NURTURE": "保持联系中",
+      "APPOINTMENT": "已约好面谈",
+      "ACTIVE": "合作中（已签协议）",
+      "UNDER_CONTRACT": "已签约",
+      "CLOSED": "已成交",
+      "LOST": "已丢失"
+    },
+    "form": {
+      "who": "对方是谁",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "电子邮箱",
+      "phone": "电话",
+      "roles": "他们是…",
+      "language": "偏好的语言",
+      "sourceDetail": "来源的更多说明",
+      "sourceDetailHint": "例如：“Zillow，1248 Maple Grove”或“Linda K. 介绍的”。",
+      "tags": "标签",
+      "tagsHint": "简短的标签，用逗号分隔，例如：首次购房、外地搬迁",
+      "lookingFor": "他们在找什么",
+      "lookingForHint": "适用于买家。我们会据此显示您的哪些房源符合他们的需求。",
+      "priceMin": "预算下限（$）",
+      "priceMax": "预算上限（$）",
+      "bedsMin": "卧室数（至少）",
+      "bathsMin": "浴室数（至少）",
+      "bedsShort": "卧",
+      "bathsShort": "卫",
+      "timeline": "他们想什么时候搬家？",
+      "timelinePlaceholder": "春天、3 个月内…",
+      "propertyTypes": "房屋类型",
+      "areas": "喜欢的地区",
+      "mustHaves": "必须具备的条件",
+      "preApproved": "已获得贷款预批准",
+      "lender": "贷款机构",
+      "saveContact": "保存联系人",
+      "saveChanges": "保存修改"
+    }
+  },
+  "crm": {
+    "activity": {
+      "title": "沟通记录",
+      "type": "发生了什么",
+      "direction": "谁先联系的",
+      "outbound": "我联系了他们",
+      "inbound": "他们联系了我",
+      "summary": "简短说明",
+      "summaryPlaceholder": "就周六看房的事留了语音信箱",
+      "logButton": "添加到记录",
+      "logging": "正在添加…",
+      "empty": "还没有记录。",
+      "types": {
+        "CALL": "电话",
+        "EMAIL": "邮件",
+        "TEXT": "短信",
+        "MEETING": "会面",
+        "SHOWING": "看房",
+        "LEAD": "新客户线索",
+        "STAGE_CHANGE": "交易阶段变动",
+        "OTHER": "其他"
+      }
+    },
+    "notes": {
+      "title": "备注",
+      "placeholder": "写一条备注…",
+      "addButton": "保存备注",
+      "adding": "正在保存…"
+    },
+    "tasks": {
+      "pageTitle": "待办事项和提醒",
+      "pageSubtitle": "您要做的所有事情，最紧急的排在最前面。",
+      "newTask": "新待办事项",
+      "placeholder": "打电话给 Maria 谈验房的事",
+      "due": "何时",
+      "addButton": "添加待办事项",
+      "adding": "正在添加…",
+      "empty": "这里没有待办事项。",
+      "overdue": "已逾期",
+      "noDueDate": "没有截止日期",
+      "markDone": "把“{title}”标记为已完成",
+      "markNotDone": "把“{title}”标记为未完成",
+      "allClear": "所有事情都做完了！",
+      "groups": {
+        "overdue": "已逾期",
+        "today": "今天",
+        "upcoming": "即将到期",
+        "noDate": "没有截止日期",
+        "done": "最近完成"
+      }
+    }
+  },
+  "pipeline": {
+    "title": "交易进度",
+    "subtitle": "{count, plural, =0 {还没有进行中的交易。} one {# 笔进行中的交易，总价值 {value}。} other {# 笔进行中的交易，总价值 {value}。}}",
+    "addDeal": "添加交易",
+    "hint": "把卡片拖到新的一列，或使用每张卡片上的“移动到”菜单。",
+    "dealCount": "{count, plural, =0 {没有交易} one {# 笔交易} other {# 笔交易}}",
+    "moveTo": "移动到",
+    "dropHere": "把交易拖到这里",
+    "overdue": "{count} 项已逾期",
+    "stale": "已停留 {days} 天",
+    "deleted": "交易已删除。",
+    "emptyTitle": "还没有交易",
+    "emptyBody": "一笔交易就是一位客户加一个目标，例如“Maria 在 Plano 买房”。从您的房源页面来的新客户线索会自动生成交易。",
+    "sides": {
+      "BUYER": "买家",
+      "SELLER": "卖家",
+      "BOTH": "买卖双方"
+    }
+  },
+  "deals": {
+    "title": "交易",
+    "newTitle": "添加交易",
+    "newSubtitle": "一位客户，一个目标。",
+    "backToPipeline": "返回交易进度",
+    "needContactTitle": "请先添加联系人",
+    "needContactBody": "每笔交易都要对应一位联系人。",
+    "addContact": "添加联系人",
+    "created": "交易已添加。",
+    "saved": "修改已保存。",
+    "coach": "我该怎么说？",
+    "value": "价格",
+    "estCommission": "预计佣金",
+    "nextDeadline": "下一个截止日期",
+    "checklist": "过户清单",
+    "checklistProgress": "已完成 {done} 项，共 {total} 项",
+    "checklistPitch": "添加一份分步清单，列出从签约到过户的常见截止日期。每个日期您都可以修改。",
+    "addChecklist": "添加过户清单",
+    "adding": "正在添加…",
+    "optionalItem": "如适用",
+    "overdue": "已逾期",
+    "dueDate": "截止日期",
+    "setDate": "设定",
+    "addItem": "添加您自己的步骤",
+    "addItemButton": "添加步骤",
+    "checklistNote": "这里的截止日期只是常见的示例。请务必以您已签署合同中的日期为准，并遵守您所属经纪公司负责人（broker）的规定。",
+    "tasks": "待办事项",
+    "editTitle": "交易详情",
+    "deleteConfirm": "是的，删除这笔交易",
+    "deleteButton": "删除交易",
+    "deleting": "正在删除…",
+    "form": {
+      "title": "交易名称",
+      "titleHint": "例如：“Maria，在 Plano 买房”。",
+      "contact": "客户",
+      "pickContact": "选择联系人",
+      "property": "房子",
+      "noProperty": "还没有具体的房子",
+      "side": "您代表",
+      "stage": "阶段",
+      "value": "价格（$）",
+      "valueHint": "挂牌价、出价或预算。",
+      "commission": "您的佣金（%）",
+      "contractDate": "签约日期",
+      "contractDateHint": "用来填写清单上的截止日期。",
+      "expectedClose": "预计过户日期",
+      "lostReason": "为什么丢失了？",
+      "lostReasonHint": "仅当交易标记为“已丢失”时填写。",
+      "withChecklist": "添加过户清单",
+      "withChecklistHint": "常见的步骤和截止日期，之后可以修改。",
+      "saveDeal": "保存交易",
+      "saveChanges": "保存修改"
+    }
+  },
+  "cma": {
+    "title": "房价分析（CMA）",
+    "subtitle": "把一套房子与附近最近的成交房源做比较，得到清楚的、可以给客户看的谈话要点。",
+    "newTitle": "新建房价分析",
+    "newSubtitle": "输入这套房子和 3 到 6 套最近的可比成交房源。计算由我们来做，决定由您来下。",
+    "backToList": "返回房价分析列表",
+    "emptyTitle": "还没有房价分析",
+    "emptyBody": "CMA（市场比较分析）能帮助您和卖家用真实的数字来谈价格。",
+    "reportTitle": "房价分析",
+    "defaultTitle": "房价分析：{address}",
+    "defaultTitleBlank": "房价分析",
+    "notAppraisalTitle": "这是 CMA，不是估价报告",
+    "notAppraisalBody": "可比房源和调整金额都由您来选择。软件只负责计算并起草说明。建议的价格由您决定，而不是软件。",
+    "print": "打印或另存为 PDF",
+    "rewrite": "重写说明",
+    "rewriting": "正在重写…",
+    "rewritten": "说明已重写。",
+    "preparedBy": "由 {name} 于 {date} 编制",
+    "license": "执照号码 #{number}",
+    "subjectLine": "{beds} 间卧室 · {baths} 间浴室 · {sqft, number} 平方英尺",
+    "suggestedRange": "建议用来讨论的挂牌价范围",
+    "adjustedRange": "调整后的成交可比价：{low} 至 {high}（中间值：{median}）",
+    "forDiscussion": "这只是您与客户交谈的起点。分享之前请核实每一个数字。",
+    "noSold": "至少添加一套已成交的可比房源，才能看到价格范围。",
+    "warnings": {
+      "fewer_than_three_sold": "已成交的可比房源少于三套。多添加几套，分析会更可靠。",
+      "weak_comps": "有一套或多套可比房源需要很大幅度的调整（超过价格的 25%）。建议换成更接近的房源。"
+    },
+    "compsTable": "可比房源",
+    "col": {
+      "address": "地址",
+      "status": "状态",
+      "price": "价格",
+      "size": "卧/卫 · 平方英尺",
+      "ppsf": "每平方英尺 $",
+      "adjustments": "调整项",
+      "adjusted": "调整后价格"
+    },
+    "status": {
+      "sold": "已售出",
+      "pending": "待成交",
+      "active": "在售"
+    },
+    "adj": {
+      "size": "面积",
+      "bedrooms": "卧室",
+      "bathrooms": "浴室",
+      "garage": "车库",
+      "pool": "泳池",
+      "condition": "房屋状况"
+    },
+    "milesAway": "相距 {miles} 英里",
+    "gross": "调整总额：{pct}%",
+    "sqftRateUsed": "面积调整所用的标准：每相差一平方英尺 {rate}。",
+    "noNarrative": "文字说明还没有准备好。请点“重写说明”再试一次。",
+    "disclaimerTitle": "重要提示",
+    "disclaimer": "这份市场比较分析（CMA）由持牌房地产从业人员编制，目的是协助定价决策。它不是估价报告，也不得当作估价报告使用，例如用于贷款用途。它依据的是经纪人收集并认为可靠的可比房产信息，但不作任何保证。持牌估价师可能会得出不同的结论。最终的定价建议是经纪人的专业意见。",
+    "deleteConfirm": "是的，删除这份分析",
+    "delete": "删除",
+    "deleting": "正在删除…",
+    "errors": {
+      "invalid": "有些数字缺失或不正确。每套可比房源都需要填写地址、价格和面积（平方英尺）。"
+    },
+    "form": {
+      "subjectTitle": "您要定价的房子",
+      "reportTitle": "这份分析的名称",
+      "address": "地址",
+      "beds": "卧室数",
+      "baths": "浴室数",
+      "sqft": "面积（平方英尺）",
+      "yearBuilt": "建造年份",
+      "garage": "车库车位数",
+      "condition": "房屋状况",
+      "conditions": {
+        "1": "1：需要大修",
+        "2": "2：需要部分整修",
+        "3": "3：一般",
+        "4": "4：已翻新",
+        "5": "5：几乎全新"
+      },
+      "pool": "泳池",
+      "compsTitle": "可比房源",
+      "compsHint": "请选择附近的、面积和类型相近的、最近 3 到 6 个月内成交的房子。空白的行会被忽略。",
+      "compNumber": "可比房源 {number}",
+      "removeComp": "删除",
+      "addComp": "再添加一套可比房源",
+      "status": "状态",
+      "statuses": {
+        "sold": "已售出",
+        "pending": "待成交",
+        "active": "在售（竞争房源）"
+      },
+      "soldPrice": "成交价（$）",
+      "listPrice": "挂牌价（$）",
+      "date": "成交或挂牌日期",
+      "distance": "相距英里数",
+      "notes": "备注",
+      "notesPlaceholder": "卖家负担了 $5k 过户费用；屋顶全新",
+      "adjustmentsTitle": "调整金额（选填）",
+      "adjustmentsHint": "这些是每套可比房源都会用到的起始数值。请按您所在市场的情况修改。",
+      "settings": {
+        "sqftRate": "每多一平方英尺 $",
+        "perBedroom": "每间卧室 $",
+        "perBathroom": "每间浴室 $",
+        "perGarageSpace": "每个车库车位 $",
+        "pool": "有泳池 $",
+        "conditionPct": "房屋状况每差一级 %"
+      },
+      "sqftRateHint": "留空的话，会使用各可比房源平均每平方英尺价格的一半。",
+      "language": "说明使用的语言",
+      "audience": "谁会看这份分析？",
+      "audiences": {
+        "seller": "卖家",
+        "buyer": "买家"
+      },
+      "submit": "分析并撰写报告",
+      "working": "正在处理…大约 30 秒",
+      "submitHint": "{count, plural, =0 {请至少填写一套可比房源的地址、价格和面积。} one {已有 # 套可比房源就绪。} other {已有 # 套可比房源就绪。}}"
+    },
+    "narrative": {
+      "summary": "总结",
+      "comps": "每套可比房源的说明",
+      "adjustments": "调整是怎么做的",
+      "pricing": "怎样谈价格",
+      "talkingPoints": "谈话要点",
+      "gaps": "分享之前请检查"
+    }
+  },
+  "help": {
+    "title": "帮助",
+    "subtitle": "用简单的话给您简短的解答。还是不明白？请给我们发邮件，会有真人回复您。",
+    "startTitle": "5 步轻松上手",
+    "steps": {
+      "listing": {
+        "title": "添加房源",
+        "body": "进入“我的房源”，点“添加房源”。把您知道的填进去就行，只有地址是必填的。"
+      },
+      "create": {
+        "title": "选择要创建的内容",
+        "body": "在房源页面上点一个方块：MLS 描述、社交媒体帖子、视频计划、邮件或拍照指南。"
+      },
+      "copy": {
+        "title": "复制，然后使用",
+        "body": "点大大的“复制”按钮，再粘贴到您的 MLS、Facebook 或邮件里。使用前请先读一遍，您才是专家。"
+      },
+      "page": {
+        "title": "发布房源页面",
+        "body": "在房源页面上，点“创建页面”，再把链接分享到您的帖子里。（Pro 计划）"
+      },
+      "leads": {
+        "title": "跟进客户线索",
+        "body": "新的客户线索会连同提醒一起出现在“客户联系人”里。点“我该怎么说？”就能得到电话话术、短信和邮件。"
+      }
+    },
+    "startButton": "添加我的第一个房源",
+    "topicsTitle": "常见问题",
+    "topics": {
+      "photos": {
+        "q": "拍照指南怎么知道该怎么做？",
+        "a": "它会根据您的手机型号、您填写的房间和特色，以及房子的朝向来给出建议。它会告诉您一天中最佳的拍摄时间、手机的设置、每个房间该拍什么，以及怎样免费修图。\n\n小提示：在房源里填写“房子正面朝哪个方向？”，就能得到最好的光线建议。"
+      },
+      "languages": {
+        "q": "怎样用西班牙语（或其他语言）来写？",
+        "a": "进入“设置” → “语言”，选择您使用的语言。之后创建内容时，勾选您想要的所有语言，每个版本都会并排显示给您。"
+      },
+      "fairHousing": {
+        "q": "什么是公平住房检查？",
+        "a": "公平住房法规定，广告必须描述房产本身，而不是应该住在里面的人。每一段文字都会被自动检查。如果我们修改或删除了任何内容，会明确告诉您改了什么以及原因。这只是一道安全保障，不构成法律意见。不确定时，请询问您的经纪公司负责人（broker）。"
+      },
+      "coach": {
+        "q": "什么是跟进助手？",
+        "a": "有客户线索联系您时，助手会写出电话里该怎么说、常见问题的回答、一条短信、一封邮件和一份两周跟进计划。对新手经纪人和忙碌的日子特别有帮助。消息由您自己用手机或邮箱发送。"
+      },
+      "pipeline": {
+        "q": "怎样把交易移到下一个阶段？",
+        "a": "在“交易进度”页面，把卡片拖到下一列。如果拖动不方便，可以用每张卡片底部的“移动到”菜单。"
+      },
+      "cma": {
+        "q": "房价分析是估价报告吗？",
+        "a": "不是。可比房源和调整金额由您来选择。我们负责计算，并为您的客户起草一份清楚的说明。价格建议由您来定。"
+      },
+      "install": {
+        "q": "可以把 RealtyBoost 放到手机主屏幕上吗？",
+        "a": "可以。\niPhone 或 iPad：在 Safari 中打开 RealtyBoost，点“分享”按钮，再点“添加到主屏幕”。\n安卓：在 Chrome 中打开，点 ⋮ 菜单，再点“安装应用”或“添加到主屏幕”。\n电脑：在 Chrome 或 Edge 中，点击地址栏右端的安装图标。"
+      },
+      "privacy": {
+        "q": "谁能看到我的联系人和房源？",
+        "a": "只有您自己，如果您使用 Team 计划，还有您的队友。每个账户的数据在我们的数据库里都是分开保存的。唯一公开的页面，是您自己选择发布的房源页面。"
+      },
+      "billing": {
+        "q": "怎样更改或取消我的计划？",
+        "a": "进入“设置” → “计划与付款”，在那里可以更换计划或取消。没有合约。"
+      }
+    },
+    "contactTitle": "和真人聊聊",
+    "contactBody": "有任何问题都可以给我们发邮件。我们通常会在一个工作日内回复。"
+  },
+  "team": {
+    "title": "团队",
+    "subtitle": "已使用 {used} 个席位，共 {seats} 个。以下是最近 30 天的情况。",
+    "member": "团队成员",
+    "content30": "创建的内容",
+    "contacts30": "添加的联系人",
+    "closed30": "成交的交易",
+    "lastSignIn": "上次登录",
+    "roles": {
+      "OWNER": "所有者",
+      "ADMIN": "管理员",
+      "AGENT": "经纪人"
+    },
+    "addTitle": "添加队友",
+    "name": "对方的姓名",
+    "email": "对方的邮箱",
+    "addButton": "添加队友",
+    "adding": "正在添加…",
+    "addedTitle": "队友已添加！",
+    "addedBody": "请私下把这个临时密码告诉对方。对方可以用自己的邮箱和这个密码登录：",
+    "seatsFull": "所有席位都已用完。请移除某位成员，或联系我们增加席位。"
+  }
+}

@@ -1,0 +1,1421 @@
+{
+  "common": {
+    "language": "Idioma",
+    "optional": "opcional",
+    "back": "Atrás",
+    "saving": "Guardando…",
+    "saveAndContinue": "Guardar y continuar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "skipToContent": "Saltar al contenido principal",
+    "demoMode": "Modo de demostración: no hay un servicio de IA conectado, así que la redacción muestra textos de ejemplo. Agregue una clave de IA para escribir contenido real.",
+    "yes": "Sí",
+    "no": "No",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "none": "Ninguno"
+  },
+  "nav": {
+    "main": "Menú principal",
+    "menu": "Menú",
+    "home": "Inicio",
+    "listings": "Mis listados",
+    "create": "Crear contenido",
+    "coach": "Asistente de seguimiento",
+    "contacts": "Contactos",
+    "pipeline": "Embudo de negocios",
+    "tasks": "Tareas",
+    "cma": "Análisis de precio (CMA)",
+    "team": "Equipo",
+    "settings": "Configuración",
+    "help": "Ayuda",
+    "admin": "Administración",
+    "signOut": "Cerrar sesión",
+    "locked": "Mejore su plan para activarlo"
+  },
+  "errors": {
+    "required": "Por favor, complete este campo.",
+    "tooShort": "Esto es demasiado corto.",
+    "tooLong": "Esto es demasiado largo. Por favor, acórtelo.",
+    "invalidFormat": "Esto no parece correcto. Por favor, revíselo.",
+    "invalid": "Por favor, revise este campo.",
+    "fixFields": "Algunos campos necesitan su atención. Están marcados en rojo más abajo.",
+    "notFound": "No pudimos encontrarlo. Es posible que haya sido eliminado.",
+    "generic": "Algo salió mal de nuestro lado. Por favor, intente de nuevo en un minuto."
+  },
+  "auth": {
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "passwordHint": "Al menos 8 caracteres.",
+    "name": "Su nombre completo",
+    "nameHint": "Como desea que aparezca en su publicidad.",
+    "signInTitle": "Bienvenido de nuevo",
+    "signInSubtitle": "Inicie sesión en su cuenta de RealtyBoost.",
+    "signInButton": "Iniciar sesión",
+    "signingIn": "Iniciando sesión…",
+    "signIn": "Iniciar sesión",
+    "noAccount": "¿Es nuevo aquí?",
+    "startTrial": "Comience su prueba gratis de 14 días",
+    "signUpTitle": "Comience su prueba gratis",
+    "signUpSubtitle": "14 días gratis. No necesita tarjeta de crédito para empezar.",
+    "createAccountButton": "Crear mi cuenta",
+    "creatingAccount": "Creando su cuenta…",
+    "trialNote": "Su prueba incluye todo lo del plan Pro.",
+    "haveAccount": "¿Ya tiene una cuenta?",
+    "errors": {
+      "emailTaken": "Ya existe una cuenta con este correo electrónico. Intente iniciar sesión.",
+      "wrongLogin": "El correo electrónico y la contraseña no coinciden. Por favor, revíselos e intente de nuevo."
+    }
+  },
+  "setup": {
+    "title": "Configure su cuenta",
+    "stepOf": "Paso {step} de {total}",
+    "error": "Por favor, revise sus respuestas e intente de nuevo.",
+    "step1": {
+      "title": "Sobre usted",
+      "subtitle": "Esto aparece en su publicidad. Puede cambiarlo en cualquier momento.",
+      "displayName": "Su nombre",
+      "displayNameHint": "El nombre con el que sus clientes lo conocen.",
+      "phone": "Teléfono celular",
+      "brokerage": "Correduría (brokerage)",
+      "brokerageHint": "Muchos estados exigen el nombre de la correduría en los anuncios.",
+      "license": "Número de licencia",
+      "state": "Estado"
+    },
+    "step2": {
+      "title": "Sus idiomas",
+      "subtitle": "Elija el idioma de esta aplicación y los idiomas en que desea que se escriba su publicidad.",
+      "uiLanguage": "Idioma de esta aplicación",
+      "uiLanguageHint": "Botones, menús y textos de ayuda.",
+      "contentLanguage": "Idioma principal de su publicidad",
+      "contentLanguageHint": "Los listados y las publicaciones se escribirán en este idioma.",
+      "extraLanguages": "Otros idiomas que atiende (hasta {count})",
+      "extraLanguagesHint": "Escriba el mismo listado en varios idiomas a la vez.",
+      "soloLimit": "Su plan incluye un idioma de publicidad. El plan Pro incluye tres."
+    },
+    "step3": {
+      "title": "Su manera de escribir",
+      "subtitle": "Elija el estilo que más se parezca a usted. Todo lo que escribamos seguirá ese estilo.",
+      "tone": "Su estilo",
+      "tones": {
+        "warm": {
+          "name": "Cálido y acogedor",
+          "example": "La luz de la mañana llena la cocina, y el porche trasero está listo para fines de semana tranquilos."
+        },
+        "professional": {
+          "name": "Pulido y profesional",
+          "example": "Casa bien cuidada de tres recámaras, con cocina remodelada y garaje para dos autos."
+        },
+        "luxury": {
+          "name": "Refinado y elegante",
+          "example": "Pisos de roble de tablón ancho y carpintería a la medida crean un ambiente sereno y refinado en toda la casa."
+        },
+        "friendly": {
+          "name": "Informal y alegre",
+          "example": "Patio enorme, techo nuevo y una cocina donde de verdad le va a dar gusto cocinar."
+        },
+        "straightforward": {
+          "name": "Claro y sencillo",
+          "example": "3 recámaras. 2 baños. Techo nuevo en 2022. Patio cercado."
+        }
+      },
+      "voiceNotes": "¿Algo más sobre su estilo?",
+      "voiceNotesHint": "Por ejemplo: \"Siempre menciono el tiempo de traslado\" o \"Que sea breve\".",
+      "wordsToAvoid": "Palabras que no quiere ver nunca",
+      "wordsToAvoidHint": "Sepárelas con comas. Por ejemplo: acogedor, imperdible, soñado."
+    },
+    "step4": {
+      "title": "Su teléfono y su zona",
+      "subtitle": "Usamos el modelo de su teléfono para darle los ajustes exactos de cámara para las fotos de sus listados.",
+      "phone": "¿Con qué teléfono toma las fotos?",
+      "phoneHint": "¿No está seguro? En iPhone: Configuración → General → Información.",
+      "phonePick": "Elija su teléfono",
+      "markets": "Zonas que atiende",
+      "marketsHint": "Ciudades o vecindarios, separados por comas."
+    },
+    "step5": {
+      "title": "¡Todo listo!",
+      "subtitle": "Esto es lo que guardamos. Puede cambiar cualquier dato en Configuración.",
+      "name": "Nombre: {name}",
+      "language": "Idioma de su publicidad: {language}",
+      "tone": "Estilo: {tone}",
+      "phone": "Teléfono: {phone}",
+      "notSet": "sin definir",
+      "goDashboard": "Ir a mi página de inicio",
+      "addListing": "Agregar mi primer listado"
+    }
+  },
+  "dashboard": {
+    "title": "Inicio",
+    "morning": "Buenos días, {name}",
+    "afternoon": "Buenas tardes, {name}",
+    "evening": "Buenas noches, {name}",
+    "subtitle": "¿Qué le gustaría hacer hoy?",
+    "quickActions": "Acciones rápidas",
+    "addListing": "Agregar un listado",
+    "addListingBody": "Escriba los datos de la propiedad una sola vez. Úselos para todo.",
+    "createContent": "Crear contenido",
+    "createContentBody": "Textos de listados, publicaciones, videos, correos y guías de fotos.",
+    "coachMe": "¿Qué le digo a este cliente potencial?",
+    "coachMeBody": "Obtenga un guion de llamada, un mensaje de texto y un correo en segundos.",
+    "listingUsage": "Ha agregado {used} de {limit} listados este mes.",
+    "unlimitedUpgrade": "Obtenga listados ilimitados",
+    "todayTasks": "Para hoy",
+    "noTasks": "Nada pendiente para hoy. ¡Buen trabajo!",
+    "newLeads": "Clientes potenciales nuevos",
+    "noLeads": "Todavía no hay clientes potenciales nuevos. Publique una página de listado para empezar a recibirlos.",
+    "seeAll": "Ver todos",
+    "activeDeals": "{count, plural, =0 {Ningún negocio activo} one {# negocio activo} other {# negocios activos}}",
+    "openPipeline": "Abrir el embudo de negocios",
+    "crmPitch": "¿Quiere llevar el control de compradores y vendedores, recibir recordatorios y captar clientes potenciales desde las páginas de sus listados? Todo eso está incluido en Pro.",
+    "seePro": "Ver el plan Pro",
+    "recentContent": "Creado recientemente"
+  },
+  "properties": {
+    "title": "Mis listados",
+    "subtitle": "Todas las propiedades que usted promueve. Haga clic en una para crear contenido.",
+    "addListing": "Agregar un listado",
+    "addFirstListing": "Agregue su primer listado",
+    "emptyTitle": "Todavía no hay listados",
+    "emptyBody": "Agregue los datos de una propiedad una sola vez, y luego cree el texto del listado, publicaciones, videos y un plan de fotos con un clic cada uno.",
+    "newTitle": "Agregar un listado",
+    "newSubtitle": "Complete lo que sepa. Solo la dirección es obligatoria; con más detalles, el texto queda mejor.",
+    "editTitle": "Editar listado",
+    "backToListings": "Volver a mis listados",
+    "backToListing": "Volver a este listado",
+    "bedsShort": "{count} rec",
+    "bathsShort": "{count} ba",
+    "sqftShort": "{count, number} pies²",
+    "builtIn": "Construida en {year}",
+    "piecesCount": "{count, plural, =0 {Sin contenido todavía} one {# pieza de contenido} other {# piezas de contenido}}",
+    "pageLive": "La página está publicada",
+    "pageDraft": "La página es un borrador",
+    "pageViews": "{count, plural, =0 {Sin visitas todavía} one {# visita} other {# visitas}}",
+    "deleted": "El listado fue eliminado.",
+    "saved": "Sus cambios fueron guardados.",
+    "createdTitle": "¡Listado guardado!",
+    "createdBody": "Ahora elija abajo lo que desea crear para este listado.",
+    "editDetails": "Editar detalles",
+    "addDetailsTip": "Consejo: agregue características y mejoras (como \"cubiertas de cuarzo\" o \"techo nuevo 2022\") para obtener textos mucho mejores.",
+    "createForListing": "Crear para este listado",
+    "locked": "Bloqueado: mejore su plan para usarlo",
+    "micrositeTitle": "Página del listado",
+    "micrositePitch": "Una página web sencilla para esta propiedad, con un formulario que envía a los compradores interesados directamente a sus contactos.",
+    "createPage": "Crear la página",
+    "editPage": "Editar la página",
+    "viewPage": "Ver la página",
+    "openHouseKiosk": "Registro para casa abierta",
+    "dealsTitle": "Negocios de esta propiedad",
+    "addDeal": "Agregar un negocio",
+    "noDeals": "Todavía no hay negocios vinculados a esta propiedad.",
+    "cmaTitle": "Análisis de precio",
+    "newCma": "Nuevo análisis de precio",
+    "historyTitle": "Todo lo creado para este listado",
+    "limitReached": "Ha llegado al límite de listados de este mes para su plan. Mejore al plan Pro para tener listados ilimitados.",
+    "deleteTitle": "Eliminar este listado",
+    "deleteWarning": "Esto elimina el listado, su página y todo el contenido creado para él. No se puede deshacer.",
+    "deleteConfirm": "Sí, quiero eliminar este listado",
+    "deleteButton": "Eliminar listado",
+    "deleting": "Eliminando…",
+    "form": {
+      "addressSection": "Dirección",
+      "address": "Dirección de la calle",
+      "unit": "Unidad o apartamento",
+      "city": "Ciudad",
+      "state": "Estado",
+      "zip": "Código postal (ZIP)",
+      "basicsSection": "Lo básico",
+      "status": "Estatus",
+      "propertyType": "Tipo de propiedad",
+      "price": "Precio de lista ($)",
+      "beds": "Recámaras",
+      "baths": "Baños",
+      "bathsHint": "Use .5 para medio baño, por ejemplo 2.5",
+      "sqft": "Pies cuadrados",
+      "lotSize": "Tamaño del terreno",
+      "yearBuilt": "Año de construcción",
+      "stories": "Pisos",
+      "garage": "Garaje o estacionamiento",
+      "garagePlaceholder": "Para 2 autos, adjunto",
+      "hoaFee": "Cuota de HOA ($ por mes)",
+      "detailsSection": "Lo que la hace especial",
+      "detailsIntro": "Por favor, solo datos verdaderos: el texto usa exactamente lo que usted escriba aquí y nunca inventa nada.",
+      "features": "Características principales",
+      "featuresHint": "Cuartos, materiales, distribución. Puede separar con comas o en líneas nuevas.",
+      "featuresPlaceholder": "Cocina abierta con cubiertas de cuarzo, estufa de gas, recámara principal en la planta baja, sala con techo alto",
+      "upgrades": "Mejoras recientes (con el año)",
+      "upgradesHint": "A los compradores les encantan las fechas: \"techo nuevo 2022\" es mejor que \"techo reciente\".",
+      "upgradesPlaceholder": "Techo nuevo 2022, aire acondicionado 2021, pintura interior nueva 2024",
+      "outdoor": "Espacios al aire libre",
+      "outdoorPlaceholder": "Patio trasero cercado, patio techado, robles maduros, jardineras",
+      "neighborhood": "Ubicación y lugares cercanos",
+      "neighborhoodHint": "Datos sobre lugares, no sobre personas: parques, tiendas, tiempos de traslado, el nombre del distrito escolar.",
+      "neighborhoodPlaceholder": "A 2 cuadras del parque Lakeside, a 10 minutos del centro, Plano ISD",
+      "photoSection": "Fotos y casa abierta",
+      "facing": "¿Hacia dónde da el frente de la casa?",
+      "facingHint": "Párese en la puerta principal mirando hacia la calle y revise la brújula de su teléfono. Esto ayuda a planear la mejor hora para las fotos.",
+      "facingUnknown": "No estoy seguro",
+      "phoneModel": "Teléfono para esta sesión",
+      "phoneModelHint": "Déjelo como está para usar el teléfono de su configuración.",
+      "phoneModelDefault": "Usar mi teléfono de siempre",
+      "heroImageUrl": "Enlace de la foto principal",
+      "heroImageUrlHint": "Pegue un enlace a la foto principal (por ejemplo, de su MLS o de Google Fotos). Se muestra en la página del listado.",
+      "openHouseAt": "La casa abierta empieza",
+      "openHouseEnd": "La casa abierta termina",
+      "privateSection": "Privado (nunca se muestra ni se escribe en la publicidad)",
+      "soldPrice": "Precio de venta ($)",
+      "privateNotes": "Notas privadas",
+      "privateNotesHint": "Código del lockbox, notas del vendedor: solo para usted.",
+      "saveListing": "Guardar listado",
+      "saveChanges": "Guardar cambios",
+      "statuses": {
+        "COMING_SOON": "Próximamente",
+        "ACTIVE": "Activo",
+        "PENDING": "Pendiente",
+        "SOLD": "Vendido",
+        "OFF_MARKET": "Fuera del mercado"
+      },
+      "types": {
+        "single_family": "Casa unifamiliar",
+        "condo": "Condominio",
+        "townhouse": "Casa adosada (townhouse)",
+        "multi_family": "Multifamiliar",
+        "manufactured": "Casa prefabricada",
+        "land": "Terreno / lote",
+        "other": "Otro"
+      },
+      "facings": {
+        "N": "Norte",
+        "NE": "Noreste",
+        "E": "Este",
+        "SE": "Sureste",
+        "S": "Sur",
+        "SW": "Suroeste",
+        "W": "Oeste",
+        "NW": "Noroeste"
+      }
+    }
+  },
+  "create": {
+    "title": "Crear contenido",
+    "subtitle": "Elija lo que desea hacer. Todo se escribe con los datos reales de su listado, en su estilo.",
+    "recent": "Creado recientemente",
+    "locked": "Bloqueado: mejore su plan para usarlo",
+    "chooseListing": "¿Para qué listado es?",
+    "backToCreate": "Volver a Crear",
+    "noListingsTitle": "Primero agregue un listado",
+    "noListingsBody": "Se necesitan los datos de una propiedad para trabajar.",
+    "addListing": "Agregar un listado",
+    "forListing": "Para",
+    "changeListing": "Elegir otro listado",
+    "optionalListing": "¿Es sobre una propiedad en particular?",
+    "pickListing": "Elija el listado",
+    "form": {
+      "contact": "¿Para quién es?",
+      "contactHint": "Elija un contacto para usar sus datos, o déjelo vacío.",
+      "noContact": "No está en mis contactos",
+      "languages": "Escribirlo en",
+      "languagesHint": "Marque más de uno para recibir el mismo contenido en varios idiomas. Su plan permite {count, plural, one {# idioma} other {# idiomas}}.",
+      "languageLocked": "Agregue este idioma en Configuración, o mejore su plan para tener más idiomas.",
+      "generateButton": "Escríbalo por mí",
+      "writing": "Escribiendo… esto toma unos 30 segundos",
+      "timeNote": "Verá todo en la siguiente pantalla. No se publica nada en ningún lado hasta que usted lo copie."
+    },
+    "errors": {
+      "unknown_module": "No pudimos encontrar ese tipo de contenido.",
+      "property_required": "Por favor, elija primero un listado.",
+      "language_not_allowed": "Uno de los idiomas no está incluido en su plan o en su configuración.",
+      "invalid_options": "Algunas opciones no eran válidas. Por favor, revíselas.",
+      "ai": "La redacción no se completó."
+    }
+  },
+  "generation": {
+    "title": "Su contenido",
+    "backToCreate": "Volver a Crear",
+    "print": "Imprimir",
+    "emailMe": "Enviármelo por correo",
+    "sending": "Enviando…",
+    "emailed": "¡Enviado! Revise su bandeja de entrada.",
+    "emailNotConfigured": "El correo todavía no está configurado en esta cuenta, así que no se envió nada. Puede imprimir o copiar el contenido.",
+    "regenerate": "Escribir una versión nueva",
+    "rewriting": "Escribiendo una versión nueva…",
+    "changeOptions": "Cambiar las opciones",
+    "languages": "Idiomas",
+    "needsReview": "Por favor, revíselo",
+    "failed": "No se completó",
+    "failedTitle": "Este no se completó",
+    "failedBody": "Por favor, intente de nuevo en un minuto.",
+    "noHistory": "Todavía no se ha creado nada.",
+    "reviewNote": "Lea siempre lo escrito por la IA antes de usarlo. Usted es responsable de lo que publica."
+  },
+  "output": {
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "chars": "{count, plural, one {# carácter} other {# caracteres}}",
+    "charsOfLimit": "{count} de {limit} caracteres",
+    "overLimit": "{count} caracteres: {over} por encima del límite de {limit}. Acórtelo antes de publicar."
+  },
+  "fairHousing": {
+    "title": "Revisión de Vivienda Justa (Fair Housing)",
+    "clean": "La revisión de Vivienda Justa (Fair Housing) fue aprobada. Este texto describe la propiedad, no a las personas.",
+    "removedTitle": "{count, plural, one {Eliminamos # oración} other {Eliminamos # oraciones}}",
+    "removedItem": "\"{phrase}\": {reason}",
+    "flaggedTitle": "{count, plural, one {Por favor, revise # frase} other {Por favor, revise # frases}}",
+    "flaggedItem": "\"{phrase}\": {reason}",
+    "rewrittenTitle": "{count, plural, one {Mejoramos # frase} other {Mejoramos # frases}}",
+    "rewrittenItem": "\"{from}\" → \"{to}\"",
+    "disclaimer": "Esta revisión automática ayuda, pero no es asesoría legal. Si tiene dudas, consulte a su corredor.",
+    "classes": {
+      "familial_status": "habla de familias o niños, lo cual protege la ley de Vivienda Justa",
+      "age": "menciona la edad, la cual protegen muchos estados",
+      "marital_status": "menciona el estado civil, el cual protegen muchos estados",
+      "sex": "sugiere una preferencia por un género",
+      "disability": "podría excluir a personas con discapacidades",
+      "source_of_income": "rechaza los vales de vivienda, lo cual es ilegal en muchos estados",
+      "race_national_origin": "describe la raza, el origen étnico o el origen nacional",
+      "religion": "sugiere una preferencia religiosa",
+      "military_status": "menciona la condición militar, la cual protegen varios estados",
+      "steering": "podría orientar a los compradores hacia o lejos de ciertas zonas (\"seguro\", calificaciones de escuelas)",
+      "style_guideline": "es una redacción que muchos MLS piden a los agentes evitar"
+    }
+  },
+  "billing": {
+    "title": "Plan y facturación",
+    "subtitle": "Precios mensuales sencillos. Cancele cuando quiera.",
+    "backToSettings": "Volver a Configuración",
+    "currentPlan": "Su plan",
+    "noPlan": "Ningún plan activo",
+    "trialDaysLeft": "{days, plural, =0 {Su prueba termina hoy.} one {Queda # día de su prueba gratis.} other {Quedan # días de su prueba gratis.}}",
+    "renewsOn": "Se renueva el {date}",
+    "manageBilling": "Administrar pagos y facturas",
+    "opening": "Abriendo…",
+    "perMonth": "por mes",
+    "mostPopular": "El más popular",
+    "yourPlan": "Este es su plan",
+    "choosePlanButton": "Elegir {plan}",
+    "choosePlan": "Elija un plan",
+    "trialBanner": "{days, plural, =0 {Su prueba gratis termina hoy.} one {Queda # día de su prueba gratis.} other {Quedan # días de su prueba gratis.}}",
+    "inactiveBanner": "Su plan no está activo, así que la mayoría de las funciones están en pausa.",
+    "successTitle": "¡Gracias!",
+    "successBody": "Su plan está activo. Todo lo incluido ya está desbloqueado.",
+    "canceledBody": "No hay problema: no se hizo ningún cobro.",
+    "testCardNote": "¿Está probando? Use la tarjeta de prueba de Stripe 4242 4242 4242 4242, con cualquier fecha futura y cualquier número de 3 dígitos.",
+    "devModeTitle": "Modo de facturación de prueba",
+    "devModeBody": "Stripe no está conectado, así que al elegir un plan este cambia al instante sin pago. Esto solo funciona en servidores de prueba.",
+    "status": {
+      "TRIALING": "Prueba gratis",
+      "ACTIVE": "Activo",
+      "PAST_DUE": "Problema con el pago",
+      "CANCELED": "Cancelado",
+      "NONE": "No activo"
+    },
+    "errors": {
+      "owner": "Solo el dueño de la cuenta puede cambiar el plan.",
+      "not_configured": "Los pagos todavía no están configurados. Por favor, comuníquese con soporte.",
+      "generic": "No pudimos abrir el pago. Por favor, intente de nuevo."
+    },
+    "plans": {
+      "SOLO": {
+        "name": "Solo",
+        "tagline": "Publicidad fácil"
+      },
+      "PRO": {
+        "name": "Pro",
+        "tagline": "Publicidad y toda su lista de clientes"
+      },
+      "TEAM": {
+        "name": "Equipo",
+        "tagline": "Para equipos y corredurías pequeñas"
+      }
+    },
+    "features": {
+      "marketing": "Textos de listados, publicaciones, guiones de Reels y correos",
+      "photoGuide": "Guías de fotografía y video con el teléfono",
+      "coach": "Asistente de seguimiento: qué decirle a cada cliente potencial",
+      "oneLanguage": "1 idioma de publicidad",
+      "tenListings": "10 listados por mes",
+      "emailSupport": "Soporte por correo electrónico",
+      "everythingSolo": "Todo lo del plan Solo",
+      "crm": "Contactos, embudo de negocios, tareas y recordatorios",
+      "microsites": "Páginas de listados que captan clientes potenciales",
+      "cma": "Asistente de análisis de precio (CMA)",
+      "transactions": "Listas de verificación y fechas límite de los negocios",
+      "threeLanguages": "3 idiomas de publicidad",
+      "unlimitedListings": "Listados ilimitados",
+      "chatSupport": "Soporte por chat",
+      "everythingPro": "Todo lo del plan Pro",
+      "fiveSeats": "5 miembros del equipo",
+      "allLanguages": "Los 8 idiomas de publicidad",
+      "whiteLabel": "Su propio nombre de marca y logotipo",
+      "teamDashboard": "Panel de rendimiento del equipo",
+      "leadRouting": "Distribución de clientes potenciales",
+      "prioritySupport": "Soporte prioritario"
+    }
+  },
+  "locked": {
+    "includedIn": "Incluido en el plan {plan} — ${price} por mes",
+    "upgradeButton": "Mejorar a {plan}",
+    "generic": "Esta función no está incluida en su plan.",
+    "features": {
+      "MARKETING": {
+        "title": "Paquete de publicidad",
+        "pitch": "Textos de listados, publicaciones, guiones de Reels y correos escritos en su estilo."
+      },
+      "PHOTO_GUIDE": {
+        "title": "Guías de fotos",
+        "pitch": "Tome fotos de sus listados como un profesional con su propio teléfono."
+      },
+      "FOLLOW_UP_COACH": {
+        "title": "Asistente de seguimiento",
+        "pitch": "Sepa exactamente qué decirle a cada cliente potencial."
+      },
+      "CRM": {
+        "title": "Su lista de clientes, organizada",
+        "pitch": "Tenga a todos sus compradores y vendedores en un solo lugar, vea sus negocios de un vistazo y nunca olvide un seguimiento."
+      },
+      "MICROSITES": {
+        "title": "Páginas de listados que le traen clientes potenciales",
+        "pitch": "Un clic crea una página para su listado. Los compradores interesados llegan directo a sus contactos."
+      },
+      "CMA": {
+        "title": "Asistente de análisis de precio (CMA)",
+        "pitch": "Ingrese sus comparables y obtenga un análisis de precio claro, listo para su cliente, con puntos para conversar."
+      },
+      "TRANSACTIONS": {
+        "title": "Listas de verificación de negocios",
+        "pitch": "Siga cada fecha límite, desde el contrato hasta el cierre."
+      },
+      "TEAM_DASHBOARD": {
+        "title": "Panel del equipo",
+        "pitch": "Vea cómo le va a todo su equipo."
+      },
+      "LEAD_ROUTING": {
+        "title": "Distribución de clientes potenciales",
+        "pitch": "Envíe automáticamente los clientes potenciales nuevos al compañero indicado."
+      },
+      "WHITE_LABEL": {
+        "title": "Su propia marca",
+        "pitch": "Muestre el nombre y el logotipo de su equipo en lugar de los nuestros."
+      }
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "subtitle": "Sus datos, su estilo de escritura y sus idiomas.",
+    "saved": "¡Guardado!",
+    "billingLink": "Plan y facturación",
+    "profileSection": "Sus datos",
+    "publicEmail": "Correo electrónico para clientes",
+    "publicEmailHint": "Se muestra en las páginas de sus listados y se usa en las firmas.",
+    "brokeragePhone": "Teléfono de la correduría",
+    "mlsId": "ID de agente en el MLS",
+    "headshotUrl": "Enlace de su foto de perfil",
+    "headshotUrlHint": "Pegue un enlace a su foto. Se muestra en las páginas de sus listados.",
+    "bio": "Biografía breve",
+    "bioHint": "2 o 3 oraciones sobre usted. Se muestra en las páginas de sus listados.",
+    "voiceSection": "Su estilo de escritura",
+    "signature": "Despedida de sus correos",
+    "signatureHint": "Cómo le gusta firmar sus correos.",
+    "languagesSection": "Idiomas y teléfono",
+    "saveButton": "Guardar configuración",
+    "whiteLabelSection": "Su marca",
+    "whiteLabelIntro": "Reemplace el nombre RealtyBoost con el nombre y el logotipo de su equipo.",
+    "brandName": "Nombre del equipo o de la correduría",
+    "brandColor": "Color de la marca",
+    "brandColorHint": "Un código de color como #1d4ed8",
+    "logoUrl": "Enlace del logotipo",
+    "saveBrand": "Guardar marca"
+  },
+  "modules": {
+    "mls-listing": {
+      "name": "Descripción para el listado en el MLS",
+      "description": "Tres versiones, cada una con un título, una descripción corta y una larga.",
+      "longLimit": "Límite de caracteres de su MLS",
+      "longLimitHint": "Revise las reglas de su MLS. Si no está seguro, 1,000 es seguro para la mayoría.",
+      "chars500": "500 caracteres",
+      "chars1000": "1,000 caracteres",
+      "chars1500": "1,500 caracteres",
+      "chars2000": "2,000 caracteres",
+      "chars4000": "4,000 caracteres",
+      "emphasis": "¿Hay algo que quiera destacar especialmente?",
+      "emphasisPlaceholder": "La cocina nueva",
+      "view": {
+        "variants": "Sus tres versiones",
+        "headline": "Título",
+        "short": "Descripción corta",
+        "long": "Descripción completa para el MLS",
+        "bullets": "Lista de características",
+        "bulletsCopy": "Lista de características (lista para copiar)",
+        "checklist": "Antes de publicar"
+      }
+    },
+    "social-posts": {
+      "name": "Publicaciones para redes sociales",
+      "description": "Instagram, Facebook, LinkedIn y X, cada una escrita como le gusta a esa plataforma.",
+      "occasion": "¿Qué está pasando?",
+      "occasions": {
+        "just_listed": "Recién listado",
+        "open_house": "Casa abierta",
+        "coming_soon": "Próximamente",
+        "price_improvement": "Mejora de precio",
+        "under_contract": "Bajo contrato",
+        "just_sold": "Recién vendido"
+      },
+      "useEmoji": "Usar algunos emojis",
+      "view": {
+        "caption": "Texto de la publicación",
+        "hashtags": "Hashtags",
+        "hashtagsHint": "Instagram permite hasta 5 hashtags por publicación.",
+        "captionWithTags": "Texto con hashtags (listo para copiar)",
+        "altText": "Descripción de la foto (texto alternativo)",
+        "altTextHint": "Pegue esto en la opción \"Accesibilidad\" de Instagram para que las personas que no pueden ver la foto sepan qué contiene.",
+        "stories": "Diapositivas para Historias"
+      }
+    },
+    "reel-script": {
+      "name": "Plan de video para Reel / TikTok",
+      "description": "Gancho, guion escena por escena, lista de tomas, narración y texto de la publicación.",
+      "duration": "¿Cuánto debe durar?",
+      "seconds15": "15 segundos",
+      "seconds30": "30 segundos",
+      "seconds60": "60 segundos",
+      "style": "Estilo",
+      "styles": {
+        "tour": "Recorrido por la propiedad",
+        "top_features": "Cuenta regresiva de las mejores características",
+        "reveal": "Presentación de recién listado",
+        "detail_montage": "Detalles y acabados"
+      },
+      "onCamera": "Voy a salir en cámara en la introducción y al final",
+      "view": {
+        "length": "{seconds} segundos",
+        "scenes": "{count} escenas",
+        "hook": "El gancho (primeros 2 segundos)",
+        "storyboard": "Guion gráfico",
+        "scene": "Escena {number}",
+        "seconds": "{seconds} s",
+        "shot": "Qué filmar",
+        "cameraMove": "Cómo mover la cámara",
+        "overlay": "Texto en pantalla",
+        "voiceover": "Diga",
+        "totalSeconds": "Total: unos {seconds} segundos",
+        "voiceoverScript": "Guion completo de la narración",
+        "shotList": "Lista de tomas para el día de filmación",
+        "editing": "Termínelo en CapCut (gratis)",
+        "caption": "Texto de la publicación"
+      }
+    },
+    "email-blast": {
+      "name": "Correo del listado",
+      "description": "Recién listado, casa abierta, mejora de precio o recién vendido, listo para pegar.",
+      "emailType": "Tipo de correo",
+      "types": {
+        "just_listed": "Recién listado",
+        "open_house": "Invitación a casa abierta",
+        "price_improvement": "Mejora de precio",
+        "just_sold": "Recién vendido"
+      },
+      "audience": "¿A quién va dirigido?",
+      "audiences": {
+        "sphere": "Amigos, vecinos y clientes anteriores",
+        "buyers": "Compradores que buscan una casa como esta",
+        "agents": "Otros agentes"
+      },
+      "view": {
+        "subjects": "Asuntos del correo",
+        "subjectOption": "Opción {number}",
+        "preview": "Texto de vista previa",
+        "email": "El correo",
+        "copyAll": "Correo completo (listo para copiar)",
+        "canSpam": "Envíe esto desde su herramienta de correo de mercadeo para que incluya su dirección postal y un enlace para cancelar la suscripción (lo exige la ley CAN-SPAM)."
+      }
+    },
+    "photo-guide": {
+      "name": "Guía de fotos y video hecha por usted",
+      "description": "Tome las fotos de este listado con su propio teléfono: ajustes, lista de tomas, mejor luz y edición.",
+      "phone": "¿Qué teléfono?",
+      "phoneHint": "Le daremos los ajustes para este teléfono exacto.",
+      "phoneDefault": "Mi teléfono de siempre (de la configuración)",
+      "time": "¿Cuánto tiempo tiene?",
+      "times": {
+        "quick": "Unos 20 minutos",
+        "afternoon": "Una tarde (1 a 2 horas)",
+        "weekend": "Un fin de semana (plan premium)"
+      },
+      "style": "¿Qué estilo desea?",
+      "styles": {
+        "bright_airy": "Luminoso y aireado",
+        "warm_cozy": "Cálido y acogedor",
+        "modern_crisp": "Moderno y nítido",
+        "luxury": "De lujo"
+      },
+      "detail": "¿Con qué nivel de detalle?",
+      "details": {
+        "quick": "Rápida: una hoja de referencia de una página",
+        "pro": "Profesional: guía completa paso a paso"
+      },
+      "includeVideo": "Incluir un plan de video del recorrido",
+      "view": {
+        "bestTime": "Mejor hora para tomar las fotos",
+        "totalTime": "Tiempo necesario",
+        "roomOrder": "Tome las fotos en este orden",
+        "beforeYouStart": "Antes de empezar",
+        "phoneSettings": "Ajustes para su {phone}",
+        "setting": "Ajuste",
+        "value": "Póngalo en",
+        "why": "Por qué",
+        "lighting": "Plan de iluminación",
+        "shotList": "Lista de tomas",
+        "lens": "Lente",
+        "staging": "Prepare la casa",
+        "composition": "Reglas de encuadre",
+        "editing": "Edite en {app} (gratis)",
+        "video": "Video del recorrido",
+        "seconds": "{seconds} s",
+        "troubleshooting": "Si algo sale mal"
+      }
+    },
+    "follow-up-coach": {
+      "name": "Asistente de seguimiento",
+      "description": "Qué decirle a un cliente potencial: guion de llamada, respuestas a preguntas difíciles, un mensaje de texto, un correo y un plan de 2 semanas.",
+      "situation": "¿Cómo se comunicó con usted?",
+      "situations": {
+        "portal_inquiry": "Zillow, Realtor.com u otro sitio web",
+        "listing_page": "El formulario de mi página de listado",
+        "open_house": "Mi casa abierta",
+        "sign_call": "Llamó desde mi letrero en el jardín",
+        "referral": "Alguien lo recomendó",
+        "past_client": "Un cliente anterior",
+        "gone_quiet": "Un cliente potencial que dejó de responder"
+      },
+      "goal": "¿Qué desea lograr?",
+      "goals": {
+        "showing": "Programar una visita a la propiedad",
+        "consultation": "Programar una reunión con el comprador",
+        "preapproval": "Ayudarle a obtener la preaprobación",
+        "listing_appointment": "Programar una cita para un listado",
+        "stay_in_touch": "Mantener el contacto hasta que esté listo"
+      },
+      "leadName": "Su nombre de pila",
+      "leadNameHint": "Déjelo vacío si eligió un contacto arriba.",
+      "whatTheySaid": "¿Qué dijo o qué preguntó?",
+      "whatTheySaidPlaceholder": "\"¿Se puede negociar el precio? Nos mudamos de Ohio en marzo.\"",
+      "experience": "Su experiencia",
+      "experiences": {
+        "new": "Soy nuevo (menos de un año)",
+        "experienced": "Tengo experiencia"
+      },
+      "view": {
+        "callScript": "La llamada telefónica",
+        "callNow": "Llamar ahora",
+        "opening": "Empiece con",
+        "questions": "Haga estas preguntas",
+        "keyPoints": "Comparta estos puntos",
+        "askForAppointment": "Pida el siguiente paso",
+        "voicemail": "Si le contesta el buzón de voz",
+        "objections": "Si dicen…",
+        "theySay": "Dicen",
+        "youSay": "Usted dice",
+        "text": "Mensaje de texto",
+        "openTextApp": "Abrir en mi app de mensajes",
+        "textConsent": "Envíe mensajes de texto solo a personas que lo contactaron o que aceptaron recibirlos. Si le piden que pare, deje de enviarlos.",
+        "email": "Correo electrónico",
+        "subject": "Asunto",
+        "body": "Mensaje",
+        "openEmailApp": "Abrir en mi app de correo",
+        "plan": "Su plan de seguimiento de 2 semanas",
+        "day": "Día {day}",
+        "tips": "Consejos",
+        "avoid": "Evite esto"
+      }
+    },
+    "microsite-copy": {
+      "name": "Texto de la página del listado",
+      "description": "Título, bienvenida y puntos destacados para la página de su listado."
+    },
+    "cma-narrative": {
+      "name": "Explicación del análisis de precio",
+      "description": "Una explicación de sus ventas comparables, lista para su cliente."
+    }
+  },
+  "landing": {
+    "metaTitle": "RealtyBoost — Publicidad de listados, guías de fotos y seguimiento para agentes de bienes raíces",
+    "metaDescription": "Escriba descripciones para el MLS, publicaciones, planes de video y correos con su propio estilo, tome excelentes fotos de sus listados con su propio teléfono y sepa qué decirle a cada cliente potencial. En cinco idiomas.",
+    "signIn": "Iniciar sesión",
+    "eyebrow": "Para agentes de bienes raíces que prefieren vender casas que pelear con programas de computadora",
+    "heroTitle": "Promueva cada listado en minutos, con su estilo y en el idioma de sus clientes.",
+    "heroBody": "Escriba los datos de la propiedad una sola vez. Obtenga la descripción para el MLS, publicaciones, un plan de Reel, un correo del listado y una guía paso a paso para tomar fotos con el teléfono. Y sepa exactamente qué decir cuando llame un comprador.",
+    "ctaTrial": "Comience su prueba gratis de 14 días",
+    "ctaTrialShort": "Comenzar prueba gratis",
+    "ctaHow": "Vea cómo funciona",
+    "ctaNote": "No necesita tarjeta de crédito para empezar. Cancele cuando quiera.",
+    "photoTitle": "¿No tiene fotógrafo? No hay problema.",
+    "photoBody": "Las fotos profesionales de un listado pueden costar cientos de dólares por propiedad. Para listados más sencillos, RealtyBoost le da un plan de fotos hecho para esa casa en particular y para su teléfono exacto.",
+    "photoPoints": {
+      "settings": "Ajustes de cámara para el modelo de su teléfono: iPhone, Samsung Galaxy o Google Pixel",
+      "light": "La mejor hora del día para tomar las fotos, según hacia dónde da la casa",
+      "shots": "Una lista de tomas cuarto por cuarto y una lista para preparar la casa",
+      "editing": "Pasos de edición con aplicaciones gratis y valores iniciales",
+      "video": "Un plan sencillo para un video del recorrido: en 20 minutos o en un fin de semana completo"
+    },
+    "howTitle": "Cómo funciona",
+    "how": {
+      "one": {
+        "title": "Escriba los datos de la casa una vez",
+        "body": "Dirección, recámaras, baños y lo que la hace especial. Solo datos verdaderos: nunca inventamos nada."
+      },
+      "two": {
+        "title": "Haga clic en lo que necesite",
+        "body": "Descripción para el MLS, publicaciones, plan de video, correo, guía de fotos o un guion de llamada para un cliente potencial nuevo."
+      },
+      "three": {
+        "title": "Copie y use",
+        "body": "Botones grandes para copiar, conteo de caracteres para cada plataforma y un botón de imprimir para las listas de verificación."
+      }
+    },
+    "featuresTitle": "Todo lo que un agente necesita, en un solo lugar sencillo",
+    "featuresBody": "En lugar de cinco herramientas distintas con cinco contraseñas.",
+    "features": {
+      "mls": {
+        "title": "Descripciones para el MLS",
+        "body": "Tres versiones con títulos, ajustadas al límite de caracteres de su MLS."
+      },
+      "social": {
+        "title": "Publicaciones para redes sociales",
+        "body": "Instagram, Facebook, LinkedIn y X, cada una escrita como le gusta a esa plataforma."
+      },
+      "reels": {
+        "title": "Planes para Reels y TikTok",
+        "body": "Un gancho, guion gráfico, lista de tomas y narración que puede filmar en 30 minutos."
+      },
+      "email": {
+        "title": "Correos de listados",
+        "body": "Recién listado, casa abierta, mejora de precio y recién vendido."
+      },
+      "coach": {
+        "title": "Asistente de seguimiento",
+        "body": "Qué decir cuando llama un cliente potencial: un guion, respuestas a preguntas difíciles, un mensaje de texto, un correo y un plan de 2 semanas."
+      },
+      "pages": {
+        "title": "Páginas de listados",
+        "body": "Un clic crea una página para su listado que envía a los compradores interesados a sus contactos."
+      },
+      "crm": {
+        "title": "Lista de clientes sencilla",
+        "body": "Contactos, un embudo de negocios que se arrastra y suelta, tareas y recordatorios."
+      },
+      "cma": {
+        "title": "Ayuda para el análisis de precio",
+        "body": "Ingrese sus comparables; obtenga cálculos claros y puntos para conversar con su cliente."
+      },
+      "checklists": {
+        "title": "Listas de verificación de negocios",
+        "body": "Cada fecha límite, desde el contrato hasta el cierre, en una sola lista."
+      }
+    },
+    "trust": {
+      "fairHousing": {
+        "title": "Revisado según Vivienda Justa (Fair Housing)",
+        "body": "Cada palabra se revisa para detectar problemas de Vivienda Justa antes de que usted la vea, y le avisamos qué cambiamos."
+      },
+      "languages": {
+        "title": "Cinco idiomas",
+        "body": "Inglés, español, chino, vietnamita y coreano: toda la aplicación y todo lo que escribe."
+      },
+      "easy": {
+        "title": "Hecho para que sea fácil",
+        "body": "Letra grande, botones claros, palabras sencillas. Una sola cosa por pantalla. Sin manuales de 40 páginas."
+      }
+    },
+    "pricingTitle": "Precios sencillos",
+    "pricingBody": "Todos los planes comienzan con una prueba gratis de 14 días del plan Pro.",
+    "faqTitle": "Preguntas de los agentes",
+    "faq": {
+      "computers": {
+        "q": "No soy bueno con las computadoras. ¿Puedo usar esto?",
+        "a": "Sí. Fue diseñado para agentes ocupados: letra grande, botones claros y un paso a la vez. Si puede llenar un formulario, puede usar RealtyBoost."
+      },
+      "accuracy": {
+        "q": "¿La IA va a inventar cosas sobre la casa?",
+        "a": "Solo escribe con los datos que usted ingresa, y le indicamos que nunca invente características. Aun así, debe leer todo antes de usarlo: usted es el experto."
+      },
+      "posting": {
+        "q": "¿Publica por mí en mis redes sociales?",
+        "a": "Todavía no. Usted copia y pega con un clic, así que usted controla lo que se publica."
+      },
+      "privacy": {
+        "q": "¿Quién puede ver mis clientes y listados?",
+        "a": "Solo usted (y sus compañeros, si tiene un plan de Equipo). Sus datos se mantienen separados de los de cualquier otra cuenta."
+      },
+      "cancel": {
+        "q": "¿Puedo cancelar cuando quiera?",
+        "a": "Sí. No hay contratos. Cancele desde su página de facturación en dos clics."
+      },
+      "languages": {
+        "q": "¿Puede escribir el mismo listado en dos idiomas?",
+        "a": "Sí. Marque más de un idioma y recibirá cada versión lado a lado."
+      }
+    },
+    "comingTitle": "Próximamente",
+    "coming": {
+      "mls": "Importar listados desde su MLS",
+      "esign": "Firmas electrónicas",
+      "sending": "Enviar correos y mensajes de texto desde la aplicación",
+      "showings": "Programador de visitas a propiedades"
+    },
+    "finalTitle": "Su próximo listado podría estar promovido antes del almuerzo.",
+    "finalBody": "Pruebe todo gratis por 14 días.",
+    "footerNote": "RealtyBoost escribe borradores. Revise siempre antes de publicar."
+  },
+  "microsite": {
+    "title": "Página del listado",
+    "backToListing": "Volver a este listado",
+    "intro": "Cree una página web sencilla para esta propiedad. Comparta el enlace en publicaciones, correos y mensajes de texto: quien llene el formulario pasa directo a sus contactos, con recordatorios de seguimiento.",
+    "point1": "Su foto, teléfono y correduría en cada página",
+    "point2": "Un formulario que recoge nombre, correo y teléfono, con el consentimiento correspondiente",
+    "point3": "Una pantalla de registro para casa abierta, para una tableta en la puerta",
+    "createButton": "Crear la página",
+    "creating": "Creando…",
+    "liveAt": "Su página está publicada. Comparta este enlace:",
+    "notLiveYet": "Su página todavía no está publicada. Marque \"Publicar esta página\" abajo y guarde.",
+    "copyLink": "Copiar enlace",
+    "open": "Abrir la página",
+    "openHouseMode": "Registro para casa abierta",
+    "writeHint": "Deje que escribamos el título, la bienvenida y los puntos destacados con los datos de su listado.",
+    "writeButton": "Escriba la página por mí",
+    "writing": "Escribiendo… unos 20 segundos",
+    "written": "Escribimos la página. Léala, cambie lo que desee y luego guarde.",
+    "writeFailed": "No pudimos escribir la página en este momento. Por favor, intente de nuevo.",
+    "headline": "Título",
+    "introLabel": "Texto de bienvenida",
+    "highlights": "Puntos destacados",
+    "highlightsHint": "Uno por línea.",
+    "body": "Sobre la propiedad",
+    "language": "Idioma de la página",
+    "languageHint": "El formulario y los botones estarán en este idioma.",
+    "accentColor": "Color de acento",
+    "showPrice": "Mostrar el precio",
+    "published": "Publicar esta página",
+    "publishedHint": "Cualquier persona con el enlace puede verla. Desmarque para ocultarla.",
+    "saveButton": "Guardar página",
+    "saved": "¡Guardado!",
+    "publishedNow": "Guardado: ¡su página está publicada!"
+  },
+  "publicPage": {
+    "beds": "{count} recámaras",
+    "baths": "{count} baños",
+    "sqft": "{count, number} pies²",
+    "built": "Construida en {year}",
+    "photoAlt": "Foto de {address}",
+    "openHouse": "Casa abierta",
+    "highlights": "Puntos destacados",
+    "aboutHome": "Sobre esta propiedad",
+    "license": "Licencia {state} #{number}",
+    "equalHousing": "Igualdad de Oportunidad en la Vivienda (Equal Housing Opportunity). Cumplimos con la Ley federal de Vivienda Justa (Fair Housing Act) y con todas las leyes estatales y locales de vivienda justa.",
+    "disclaimer": "Se considera que la información es exacta, pero no está garantizada. Los compradores deben verificar todos los detalles.",
+    "listedBy": "Listado por {agent}, {brokerage}.",
+    "formTitle": "¿Le interesa? Comuníquese con nosotros",
+    "kioskTitle": "Por favor, regístrese",
+    "kioskWelcome": "¡Bienvenido!",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "contactHint": "Por favor, indique un correo electrónico o un número de teléfono para poder comunicarnos con usted.",
+    "interest": "Me gustaría",
+    "interests": {
+      "showing": "Programar una visita privada",
+      "info": "Recibir más información",
+      "openHouse": "Enterarme de las casas abiertas",
+      "selling": "Hablar sobre la venta de mi casa"
+    },
+    "message": "Preguntas o comentarios",
+    "emailOptIn": "Sí, {agent} puede enviarme correos electrónicos sobre esta propiedad y otras similares. Puedo cancelar la suscripción en cualquier momento.",
+    "smsConsent": "Sí, {agent} puede llamarme o enviarme mensajes de texto al número indicado arriba sobre esta propiedad y sobre servicios de bienes raíces, incluidos mensajes de texto automatizados. No es necesario dar este consentimiento para comprar ningún producto o servicio. Pueden aplicarse tarifas de mensajes y de datos. Responda STOP para dejar de recibir mensajes.",
+    "workingWithAgent": "¿Está trabajando con un agente de bienes raíces?",
+    "yes": "Sí",
+    "no": "No",
+    "submit": "Enviar mi solicitud",
+    "kioskSubmit": "Registrarme",
+    "sending": "Enviando…",
+    "thanksTitle": "¡Gracias!",
+    "thanksBody": "{agent} se comunicará con usted pronto.",
+    "kioskThanksTitle": "¡Gracias por su visita!",
+    "kioskThanksBody": "Disfrute el recorrido. Siéntase libre de mirar con calma.",
+    "nextVisitor": "Esta pantalla se reiniciará en unos segundos para el siguiente visitante.",
+    "optional": "opcional",
+    "errors": {
+      "missing": "Por favor, escriba su nombre.",
+      "contact": "Por favor, indique un correo electrónico o un número de teléfono.",
+      "rate": "Demasiadas solicitudes. Por favor, espere unos minutos e intente de nuevo.",
+      "generic": "Lo sentimos, algo salió mal. Por favor, llame por teléfono."
+    }
+  },
+  "contacts": {
+    "title": "Contactos",
+    "subtitle": "{count, plural, =0 {Todas las personas con las que trabaja, en un solo lugar.} one {# persona en sus contactos.} other {# personas en sus contactos.}}",
+    "addContact": "Agregar un contacto",
+    "editTitle": "Editar contacto",
+    "backToContacts": "Volver a contactos",
+    "backToContact": "Volver a este contacto",
+    "searchPlaceholder": "Buscar por nombre, correo o teléfono",
+    "status": "Estatus",
+    "role": "Función",
+    "source": "Cómo llegó",
+    "anyStatus": "Cualquier estatus",
+    "anyRole": "Cualquier función",
+    "anySource": "Cualquier origen",
+    "clearFilters": "Quitar filtros",
+    "savedViews": "Listas guardadas",
+    "viewName": "Póngale nombre a esta lista",
+    "saveView": "Guardar esta lista",
+    "deleteView": "Quitar la lista guardada {name}",
+    "noMatches": "Ningún contacto coincide con estos filtros.",
+    "emptyTitle": "Todavía no hay contactos",
+    "emptyBody": "Agregue compradores, vendedores y clientes anteriores, o publique una página de listado y los clientes potenciales nuevos aparecerán aquí automáticamente.",
+    "deleted": "El contacto fue eliminado.",
+    "created": "Contacto agregado.",
+    "saved": "Cambios guardados.",
+    "edit": "Editar",
+    "call": "Llamar",
+    "text": "Mensaje de texto",
+    "email": "Correo",
+    "coachButton": "¿Qué le digo?",
+    "added": "Agregado",
+    "lastContacted": "Último contacto",
+    "consentTitle": "Permiso de contacto",
+    "consentEmail": "Aceptó recibir correos de mercadeo",
+    "consentSms": "Aceptó llamadas y mensajes de texto",
+    "consentGiven": "Dado el {date} por {source}",
+    "consentNone": "No hay permiso por escrito en el archivo. Está bien responder personalmente, de uno a uno, a quienes lo contactaron; pida permiso antes de incluirlos en su mercadeo.",
+    "doNotContactTitle": "No contactar",
+    "doNotContactBody": "Esta persona pidió que no la contacten. Los botones de llamar y enviar mensajes de texto están ocultos.",
+    "deals": "Negocios",
+    "addDeal": "Agregar un negocio",
+    "noDeals": "Todavía no hay negocios.",
+    "tasks": "Tareas y recordatorios",
+    "coachHistory": "Guiones hechos para esta persona",
+    "deleteTitle": "Eliminar este contacto",
+    "deleteWarning": "Esto elimina el contacto, sus negocios, tareas, notas e historial. No se puede deshacer.",
+    "deleteConfirm": "Sí, quiero eliminar este contacto",
+    "deleteButton": "Eliminar contacto",
+    "deleting": "Eliminando…",
+    "statuses": {
+      "NEW": "Cliente potencial nuevo",
+      "NURTURE": "Manteniendo el contacto",
+      "ACTIVE": "Cliente activo",
+      "PAST_CLIENT": "Cliente anterior",
+      "DO_NOT_CONTACT": "No contactar"
+    },
+    "roles": {
+      "BUYER": "Comprador",
+      "SELLER": "Vendedor",
+      "INVESTOR": "Inversionista",
+      "RENTER": "Inquilino",
+      "PAST_CLIENT": "Cliente anterior",
+      "COOPERATING_AGENT": "Otro agente",
+      "LENDER": "Prestamista",
+      "VENDOR": "Proveedor",
+      "OTHER": "Otro"
+    },
+    "sources": {
+      "MICROSITE": "Mi página de listado",
+      "OPEN_HOUSE": "Casa abierta",
+      "ZILLOW": "Zillow",
+      "REALTOR_COM": "Realtor.com",
+      "FACEBOOK": "Facebook",
+      "INSTAGRAM": "Instagram",
+      "GOOGLE": "Google",
+      "WEBSITE": "Mi sitio web",
+      "REFERRAL": "Recomendación",
+      "PAST_CLIENT": "Cliente anterior",
+      "SPHERE": "Amigos y familia",
+      "SIGN_CALL": "Letrero en el jardín",
+      "OTHER": "Otro"
+    },
+    "stages": {
+      "NEW_LEAD": "Cliente potencial nuevo",
+      "NURTURE": "Manteniendo el contacto",
+      "APPOINTMENT": "Cita programada",
+      "ACTIVE": "Activo (acuerdo firmado)",
+      "UNDER_CONTRACT": "Bajo contrato",
+      "CLOSED": "Cerrado",
+      "LOST": "Perdido"
+    },
+    "form": {
+      "who": "Quién es",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "roles": "Es un…",
+      "language": "Idioma preferido",
+      "sourceDetail": "Más sobre cómo llegó",
+      "sourceDetailHint": "Por ejemplo: \"Zillow — 1248 Maple Grove\" o \"Recomendado por Linda K.\"",
+      "tags": "Etiquetas",
+      "tagsHint": "Etiquetas cortas separadas por comas, como: primera vivienda, se muda de otra ciudad",
+      "lookingFor": "Lo que busca",
+      "lookingForHint": "Para compradores. Lo usamos para mostrar cuáles de sus listados coinciden.",
+      "priceMin": "Presupuesto desde ($)",
+      "priceMax": "Presupuesto hasta ($)",
+      "bedsMin": "Recámaras (al menos)",
+      "bathsMin": "Baños (al menos)",
+      "bedsShort": "rec",
+      "bathsShort": "ba",
+      "timeline": "¿Cuándo quiere mudarse?",
+      "timelinePlaceholder": "En primavera, dentro de 3 meses…",
+      "propertyTypes": "Tipos de propiedad",
+      "areas": "Zonas que le gustan",
+      "mustHaves": "Lo indispensable",
+      "preApproved": "Preaprobado para una hipoteca",
+      "lender": "Prestamista",
+      "saveContact": "Guardar contacto",
+      "saveChanges": "Guardar cambios"
+    }
+  },
+  "crm": {
+    "activity": {
+      "title": "Registro de conversaciones",
+      "type": "Qué pasó",
+      "direction": "Quién se comunicó",
+      "outbound": "Yo lo contacté",
+      "inbound": "Él o ella me contactó",
+      "summary": "Resumen breve",
+      "summaryPlaceholder": "Dejé un mensaje de voz sobre la visita del sábado",
+      "logButton": "Agregar al registro",
+      "logging": "Agregando…",
+      "empty": "Todavía no hay nada registrado.",
+      "types": {
+        "CALL": "Llamada",
+        "EMAIL": "Correo",
+        "TEXT": "Mensaje de texto",
+        "MEETING": "Reunión",
+        "SHOWING": "Visita a la propiedad",
+        "LEAD": "Cliente potencial nuevo",
+        "STAGE_CHANGE": "Negocio movido",
+        "OTHER": "Otro"
+      }
+    },
+    "notes": {
+      "title": "Notas",
+      "placeholder": "Escriba una nota…",
+      "addButton": "Guardar nota",
+      "adding": "Guardando…"
+    },
+    "tasks": {
+      "pageTitle": "Tareas y recordatorios",
+      "pageSubtitle": "Todo lo que tiene que hacer, con lo más urgente primero.",
+      "newTask": "Nueva tarea",
+      "placeholder": "Llamar a María sobre la inspección",
+      "due": "Cuándo",
+      "addButton": "Agregar tarea",
+      "adding": "Agregando…",
+      "empty": "No hay tareas aquí.",
+      "overdue": "Atrasada",
+      "noDueDate": "Sin fecha límite",
+      "markDone": "Marcar \"{title}\" como hecha",
+      "markNotDone": "Marcar \"{title}\" como no hecha",
+      "allClear": "¡Está al día con todo!",
+      "groups": {
+        "overdue": "Atrasadas",
+        "today": "Hoy",
+        "upcoming": "Próximas",
+        "noDate": "Sin fecha límite",
+        "done": "Hechas recientemente"
+      }
+    }
+  },
+  "pipeline": {
+    "title": "Embudo de negocios",
+    "subtitle": "{count, plural, =0 {Todavía no hay negocios activos.} one {# negocio activo por un valor de {value}.} other {# negocios activos por un valor de {value}.}}",
+    "addDeal": "Agregar un negocio",
+    "hint": "Arrastre una tarjeta a otra columna, o use el menú \"Mover a\" de cada tarjeta.",
+    "dealCount": "{count, plural, =0 {Ningún negocio} one {# negocio} other {# negocios}}",
+    "moveTo": "Mover a",
+    "dropHere": "Suelte un negocio aquí",
+    "overdue": "{count} atrasados",
+    "stale": "{days} días aquí",
+    "deleted": "El negocio fue eliminado.",
+    "emptyTitle": "Todavía no hay negocios",
+    "emptyBody": "Un negocio es un cliente y una meta, como \"María comprando en Plano\". Los clientes potenciales nuevos de las páginas de sus listados crean negocios automáticamente.",
+    "sides": {
+      "BUYER": "Comprador",
+      "SELLER": "Vendedor",
+      "BOTH": "Ambos lados"
+    }
+  },
+  "deals": {
+    "title": "Negocio",
+    "newTitle": "Agregar un negocio",
+    "newSubtitle": "Un cliente, una meta.",
+    "backToPipeline": "Volver al embudo de negocios",
+    "needContactTitle": "Primero agregue un contacto",
+    "needContactBody": "Cada negocio pertenece a un contacto.",
+    "addContact": "Agregar un contacto",
+    "created": "Negocio agregado.",
+    "saved": "Cambios guardados.",
+    "coach": "¿Qué le digo?",
+    "value": "Precio",
+    "estCommission": "Comisión estimada",
+    "nextDeadline": "Próxima fecha límite",
+    "checklist": "Lista de verificación para el cierre",
+    "checklistProgress": "{done} de {total} hechos",
+    "checklistPitch": "Agregue una lista paso a paso con las fechas límite habituales, desde el contrato hasta el cierre. Puede cambiar cada fecha.",
+    "addChecklist": "Agregar lista de verificación para el cierre",
+    "adding": "Agregando…",
+    "optionalItem": "si aplica",
+    "overdue": "Atrasado",
+    "dueDate": "Fecha límite",
+    "setDate": "Fijar",
+    "addItem": "Agregue un paso propio",
+    "addItemButton": "Agregar paso",
+    "checklistNote": "Las fechas límite son solo ejemplos típicos. Use siempre las fechas de su contrato firmado y siga las reglas de su corredor.",
+    "tasks": "Tareas",
+    "editTitle": "Detalles del negocio",
+    "deleteConfirm": "Sí, eliminar este negocio",
+    "deleteButton": "Eliminar negocio",
+    "deleting": "Eliminando…",
+    "form": {
+      "title": "Nombre del negocio",
+      "titleHint": "Por ejemplo: \"María — comprando en Plano\".",
+      "contact": "Cliente",
+      "pickContact": "Elija un contacto",
+      "property": "Propiedad",
+      "noProperty": "Todavía sin una propiedad específica",
+      "side": "Usted representa al",
+      "stage": "Etapa",
+      "value": "Precio ($)",
+      "valueHint": "Precio de lista, oferta o presupuesto.",
+      "commission": "Su comisión (%)",
+      "contractDate": "Fecha del contrato",
+      "contractDateHint": "Se usa para llenar las fechas límite de la lista de verificación.",
+      "expectedClose": "Fecha de cierre prevista",
+      "lostReason": "¿Por qué se perdió?",
+      "lostReasonHint": "Solo si el negocio está marcado como Perdido.",
+      "withChecklist": "Agregar una lista de verificación para el cierre",
+      "withChecklistHint": "Pasos y fechas límite habituales. Puede cambiarlos después.",
+      "saveDeal": "Guardar negocio",
+      "saveChanges": "Guardar cambios"
+    }
+  },
+  "cma": {
+    "title": "Análisis de precio (CMA)",
+    "subtitle": "Compare una propiedad con ventas recientes cercanas y obtenga puntos claros para conversar con su cliente.",
+    "newTitle": "Nuevo análisis de precio",
+    "newSubtitle": "Ingrese la propiedad y de 3 a 6 ventas comparables recientes. Nosotros hacemos los cálculos; usted toma la decisión.",
+    "backToList": "Volver a los análisis de precio",
+    "emptyTitle": "Todavía no hay análisis de precio",
+    "emptyBody": "Un CMA le ayuda a usted y a su vendedor a hablar del precio con números reales.",
+    "reportTitle": "Análisis de precio",
+    "defaultTitle": "Análisis de precio — {address}",
+    "defaultTitleBlank": "Análisis de precio",
+    "notAppraisalTitle": "Esto es un CMA, no un avalúo",
+    "notAppraisalBody": "Usted elige los comparables y los ajustes. El programa solo hace los cálculos y redacta la explicación. Usted, y no el programa, fija el precio recomendado.",
+    "print": "Imprimir o guardar como PDF",
+    "rewrite": "Volver a escribir la explicación",
+    "rewriting": "Volviendo a escribir…",
+    "rewritten": "La explicación fue reescrita.",
+    "preparedBy": "Preparado por {name} el {date}",
+    "license": "Licencia #{number}",
+    "subjectLine": "{beds} recámaras · {baths} baños · {sqft, number} pies²",
+    "suggestedRange": "Rango sugerido de precio de lista para conversar",
+    "adjustedRange": "Comparables vendidos y ajustados: de {low} a {high} (punto medio: {median})",
+    "forDiscussion": "Un punto de partida para su conversación. Verifique cada cifra antes de compartirla.",
+    "noSold": "Agregue al menos un comparable vendido para ver un rango de precio.",
+    "warnings": {
+      "fewer_than_three_sold": "Hay menos de tres comparables vendidos. Agregue más para un análisis más sólido.",
+      "weak_comps": "Uno o más comparables necesitaron ajustes grandes (más del 25% del precio). Considere reemplazarlos por otros más parecidos."
+    },
+    "compsTable": "Propiedades comparables",
+    "col": {
+      "address": "Dirección",
+      "status": "Estatus",
+      "price": "Precio",
+      "size": "Rec/Ba · Pies²",
+      "ppsf": "$/pie²",
+      "adjustments": "Ajustes",
+      "adjusted": "Precio ajustado"
+    },
+    "status": {
+      "sold": "Vendido",
+      "pending": "Pendiente",
+      "active": "Activo"
+    },
+    "adj": {
+      "size": "Tamaño",
+      "bedrooms": "Recámaras",
+      "bathrooms": "Baños",
+      "garage": "Garaje",
+      "pool": "Piscina",
+      "condition": "Condición"
+    },
+    "milesAway": "a {miles} mi",
+    "gross": "Ajustes totales: {pct}%",
+    "sqftRateUsed": "Ajuste de tamaño usado: {rate} por cada pie cuadrado de diferencia.",
+    "noNarrative": "La explicación escrita no está lista. Use \"Volver a escribir la explicación\" para intentar de nuevo.",
+    "disclaimerTitle": "Importante",
+    "disclaimer": "Este análisis comparativo de mercado (CMA) fue preparado por un agente de bienes raíces con licencia para ayudar a tomar decisiones sobre el precio. No es un avalúo y no debe usarse como tal, por ejemplo, para fines de préstamos. Se basa en información sobre propiedades comparables que el agente reunió y que considera confiable, pero no está garantizada. Un tasador con licencia podría llegar a una conclusión distinta. La recomendación final de precio es la opinión profesional del agente.",
+    "deleteConfirm": "Sí, eliminar este análisis",
+    "delete": "Eliminar",
+    "deleting": "Eliminando…",
+    "errors": {
+      "invalid": "Faltan algunos números o no parecen correctos. Cada comparable necesita una dirección, un precio y los pies cuadrados."
+    },
+    "form": {
+      "subjectTitle": "La propiedad a la que le va a fijar precio",
+      "reportTitle": "Nombre de este análisis",
+      "address": "Dirección",
+      "beds": "Recámaras",
+      "baths": "Baños",
+      "sqft": "Pies cuadrados",
+      "yearBuilt": "Año de construcción",
+      "garage": "Espacios de garaje",
+      "condition": "Condición",
+      "conditions": {
+        "1": "1 — Necesita reparaciones mayores",
+        "2": "2 — Necesita algunas reparaciones",
+        "3": "3 — Promedio",
+        "4": "4 — Actualizada",
+        "5": "5 — Como nueva"
+      },
+      "pool": "Piscina",
+      "compsTitle": "Propiedades comparables",
+      "compsHint": "Use propiedades cercanas, de tamaño y tipo similares, vendidas en los últimos 3 a 6 meses. Las filas vacías se ignoran.",
+      "compNumber": "Comparable {number}",
+      "removeComp": "Quitar",
+      "addComp": "Agregar otro comparable",
+      "status": "Estatus",
+      "statuses": {
+        "sold": "Vendido",
+        "pending": "Pendiente",
+        "active": "Activo (competencia)"
+      },
+      "soldPrice": "Precio de venta ($)",
+      "listPrice": "Precio de lista ($)",
+      "date": "Fecha de venta o de listado",
+      "distance": "Millas de distancia",
+      "notes": "Notas",
+      "notesPlaceholder": "El vendedor pagó $5k de gastos de cierre; techo nuevo",
+      "adjustmentsTitle": "Valores de ajuste (opcional)",
+      "adjustmentsHint": "Son valores iniciales que se usan para todos los comparables. Cámbielos según su mercado.",
+      "settings": {
+        "sqftRate": "$ por pie² adicional",
+        "perBedroom": "$ por recámara",
+        "perBathroom": "$ por baño",
+        "perGarageSpace": "$ por espacio de garaje",
+        "pool": "$ por una piscina",
+        "conditionPct": "% por nivel de condición"
+      },
+      "sqftRateHint": "Déjelo vacío para usar la mitad del promedio de $/pie² de los comparables.",
+      "language": "Escribir la explicación en",
+      "audience": "¿Quién la va a leer?",
+      "audiences": {
+        "seller": "Un vendedor",
+        "buyer": "Un comprador"
+      },
+      "submit": "Analizar y escribir el informe",
+      "working": "Trabajando… unos 30 segundos",
+      "submitHint": "{count, plural, =0 {Complete al menos un comparable con dirección, precio y pies cuadrados.} one {# comparable listo.} other {# comparables listos.}}"
+    },
+    "narrative": {
+      "summary": "Resumen",
+      "comps": "Sobre cada comparable",
+      "adjustments": "Cómo funcionan los ajustes",
+      "pricing": "Cómo hablar del precio",
+      "talkingPoints": "Puntos para conversar",
+      "gaps": "Revise antes de compartir"
+    }
+  },
+  "help": {
+    "title": "Ayuda",
+    "subtitle": "Respuestas breves en palabras sencillas. ¿Todavía tiene dudas? Escríbanos: le responde una persona de verdad.",
+    "startTitle": "Cómo empezar en 5 pasos",
+    "steps": {
+      "listing": {
+        "title": "Agregue un listado",
+        "body": "Vaya a Mis listados y presione \"Agregar un listado\". Complete lo que sepa; la dirección es lo único obligatorio."
+      },
+      "create": {
+        "title": "Elija qué crear",
+        "body": "En la página del listado, haga clic en un recuadro: descripción para el MLS, publicaciones, plan de video, correo o guía de fotos."
+      },
+      "copy": {
+        "title": "Copie y use",
+        "body": "Presione el botón grande Copiar y péguelo en su MLS, Facebook o correo. Léalo primero: usted es el experto."
+      },
+      "page": {
+        "title": "Publique una página de listado",
+        "body": "En la página del listado, presione \"Crear la página\". Comparta el enlace en sus publicaciones. (Plan Pro)"
+      },
+      "leads": {
+        "title": "Dé seguimiento a sus clientes potenciales",
+        "body": "Los clientes potenciales nuevos aparecen en Contactos con recordatorios. Presione \"¿Qué le digo?\" para obtener un guion de llamada, un mensaje de texto y un correo."
+      }
+    },
+    "startButton": "Agregar mi primer listado",
+    "topicsTitle": "Preguntas frecuentes",
+    "topics": {
+      "photos": {
+        "q": "¿Cómo sabe la guía de fotos qué hacer?",
+        "a": "Usa el modelo de su teléfono, los cuartos y las características que usted ingresó, y hacia dónde da la casa. Le dice la mejor hora del día, los ajustes de su teléfono, qué fotografiar en cada cuarto y cómo editar gratis.\n\nConsejo: complete \"¿Hacia dónde da el frente de la casa?\" en el listado para recibir el mejor consejo de iluminación."
+      },
+      "languages": {
+        "q": "¿Cómo escribo en español (o en otro idioma)?",
+        "a": "Vaya a Configuración → Idiomas y elija sus idiomas. Después, al crear algo, marque todos los idiomas que desee. Recibirá cada versión lado a lado."
+      },
+      "fairHousing": {
+        "q": "¿Qué es la revisión de Vivienda Justa (Fair Housing)?",
+        "a": "La ley de Vivienda Justa dice que los anuncios deben describir la propiedad, no a las personas que deberían vivir en ella. Cada texto se revisa automáticamente. Si cambiamos o eliminamos algo, le decimos exactamente qué y por qué. Es una red de seguridad, no asesoría legal: consulte a su corredor si tiene dudas."
+      },
+      "coach": {
+        "q": "¿Qué es el Asistente de seguimiento?",
+        "a": "Cuando un cliente potencial se comunica, el Asistente escribe qué decir por teléfono, respuestas a preguntas comunes, un mensaje de texto, un correo y un plan de seguimiento de 2 semanas. Es excelente para agentes nuevos y para días ocupados. Usted envía los mensajes desde su propio teléfono o correo."
+      },
+      "pipeline": {
+        "q": "¿Cómo muevo un negocio a la siguiente etapa?",
+        "a": "En la página del Embudo de negocios, arrastre la tarjeta a la siguiente columna. Si arrastrar le resulta difícil, use el menú \"Mover a\" que está en la parte de abajo de cada tarjeta."
+      },
+      "cma": {
+        "q": "¿El análisis de precio es un avalúo?",
+        "a": "No. Usted elige las propiedades comparables y los valores de ajuste. Nosotros hacemos los cálculos y redactamos una explicación clara para su cliente. La recomendación de precio es suya."
+      },
+      "install": {
+        "q": "¿Puedo poner RealtyBoost en la pantalla de inicio de mi teléfono?",
+        "a": "Sí.\niPhone o iPad: abra RealtyBoost en Safari, toque el botón Compartir y luego \"Agregar a pantalla de inicio\".\nAndroid: ábralo en Chrome, toque el menú ⋮ y luego \"Instalar aplicación\" o \"Agregar a pantalla de inicio\".\nComputadora: en Chrome o Edge, haga clic en el ícono de instalar que está en el extremo derecho de la barra de direcciones."
+      },
+      "privacy": {
+        "q": "¿Quién puede ver mis contactos y listados?",
+        "a": "Solo usted, y sus compañeros si tiene un plan de Equipo. Los datos de cada cuenta se mantienen separados en nuestra base de datos. Las únicas páginas públicas son las páginas de listados que usted decide publicar."
+      },
+      "billing": {
+        "q": "¿Cómo cambio o cancelo mi plan?",
+        "a": "Vaya a Configuración → Plan y facturación. Allí puede cambiar de plan o cancelar. No hay contratos."
+      }
+    },
+    "contactTitle": "Hable con una persona",
+    "contactBody": "Escríbanos cualquier pregunta por correo. Normalmente respondemos en un día hábil."
+  },
+  "team": {
+    "title": "Equipo",
+    "subtitle": "{used} de {seats} lugares en uso. Actividad de los últimos 30 días.",
+    "member": "Miembro del equipo",
+    "content30": "Contenido creado",
+    "contacts30": "Contactos agregados",
+    "closed30": "Negocios cerrados",
+    "lastSignIn": "Último inicio de sesión",
+    "roles": {
+      "OWNER": "Dueño",
+      "ADMIN": "Administrador",
+      "AGENT": "Agente"
+    },
+    "addTitle": "Agregar un compañero",
+    "name": "Su nombre",
+    "email": "Su correo electrónico",
+    "addButton": "Agregar compañero",
+    "adding": "Agregando…",
+    "addedTitle": "¡Compañero agregado!",
+    "addedBody": "Comparta esta contraseña temporal con esa persona de forma privada. Puede iniciar sesión con su correo electrónico y esta contraseña:",
+    "seatsFull": "Todos los lugares están en uso. Quite a alguien o comuníquese con nosotros para obtener más lugares."
+  }
+}

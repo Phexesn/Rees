@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 const PLAN_FEATURES: Record<string, string[]> = {
   SOLO: ["marketing", "photoGuide", "coach", "oneLanguage", "tenListings", "emailSupport"],
   PRO: ["everythingSolo", "crm", "microsites", "cma", "transactions", "threeLanguages", "unlimitedListings", "chatSupport"],
-  TEAM: ["everythingPro", "fiveSeats", "allLanguages", "whiteLabel", "teamDashboard", "leadRouting", "prioritySupport"],
+  TEAM: ["everythingPro", "fiveSeats", "allLanguages", "whiteLabel", "teamDashboard", "prioritySupport"],
 };
 
 export default async function BillingPage({
