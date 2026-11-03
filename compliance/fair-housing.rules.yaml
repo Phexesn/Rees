@@ -1,0 +1,451 @@
+# Fair Housing filter rules — machine-readable companion to fair-housing.md.
+#
+# Every piece of AI-generated copy is checked against these rules before an
+# agent sees it (src/compliance/fair-housing/). The guiding principle:
+#   DESCRIBE THE PROPERTY, NOT THE PEOPLE.
+#
+# Fields
+#   id          unique id, "<lang>.<class>.<slug>"
+#   lang        en | es | zh | vi | ko | tl | pt-BR | fr-CA | all
+#               (English rules run on every language because AI copy often mixes in English.)
+#   class       protected class (federal + CA/NY/NJ/OR/WA additions) or "steering"
+#   severity    block → clear violation. Rewritten if `replacement` is set,
+#                       otherwise the whole sentence is removed.
+#               warn  → risky / context-dependent. Rewritten if `replacement`
+#                       is set, otherwise kept and shown to the agent to review.
+#   pattern     JavaScript regular expression, matched case-insensitively with
+#               the Unicode flag. Keep patterns specific to avoid false alarms.
+#   replacement optional safe rewrite (applied verbatim to the matched text)
+#   suggestion  what the agent should write instead (shown in the UI)
+#
+# This list is research, not legal advice. Have a Fair Housing attorney review
+# it before launch and whenever you add a market. Changes take effect without a
+# redeploy in development (file is re-read when it changes).
+
+version: 1
+rules:
+  # ───────────────────────────── English ─────────────────────────────
+  # Familial status / age / marital status
+  - id: en.familial.no-children
+    lang: en
+    class: familial_status
+    severity: block
+    pattern: '\bno (kids|children|minors|teens|babies)\b'
+    suggestion: Remove it. Do not say who may live in the home. Describe the space instead (for example "quiet street", "low-maintenance yard").
+  - id: en.familial.adults-only
+    lang: en
+    class: familial_status
+    severity: block
+    pattern: '\badults?[- ]only\b|\bonly adults\b|\badult (living|community|building)\b'
+    suggestion: Remove it. Only housing that legally qualifies as 55+/62+ (HOPA) may advertise age limits — confirm with the broker first.
+  - id: en.familial.perfect-for-people
+    lang: en
+    class: familial_status
+    severity: block
+    pattern: '\b(perfect|ideal|great|wonderful|made|suited|ready|best) for (an? )?(young |growing |small |large |new |busy |active |retired )?(famil(y|ies)|couples?|singles?|newlyweds?|empty[- ]nesters?|retirees?|seniors?|kids|children|bachelors?|bachelorettes?|students?|grandparents?|young (people|professionals))\b'
+    suggestion: Describe what the space offers ("three bedrooms on one level", "large fenced yard") instead of who it is for.
+  - id: en.familial.family-friendly
+    lang: en
+    class: familial_status
+    severity: warn
+    pattern: '\bfamily[- ]friendly\b|\bfamily (neighborhood|community|area)\b'
+    suggestion: Name concrete features instead, like "park two blocks away" or "cul-de-sac street".
+  - id: en.familial.empty-nesters
+    lang: en
+    class: familial_status
+    severity: warn
+    pattern: '\bempty[- ]nesters?\b'
+    suggestion: Describe the layout ("single-level living", "low-maintenance") instead of the buyer.
+  - id: en.age.young-mature
+    lang: en
+    class: age
+    severity: block
+    pattern: '\b(young|mature|older|elderly) (buyers?|residents?|people|professionals?|couples?|adults?|tenants?)\b'
+    suggestion: Remove the age reference. Describe the property only.
+  - id: en.marital.married-only
+    lang: en
+    class: marital_status
+    severity: block
+    pattern: '\b(married|unmarried|single) (couples?|people|persons?) only\b|\bcouples only\b|\bno singles\b'
+    suggestion: Remove it. Marital status is protected in CA, NY, NJ, OR and WA.
+  - id: en.familial.bachelor-pad
+    lang: en
+    class: sex
+    severity: warn
+    pattern: '\bbachelor(ette)? pad\b'
+    replacement: stylish living space
+    suggestion: Use a neutral description such as "stylish living space".
+  - id: en.familial.in-law
+    lang: en
+    class: familial_status
+    severity: warn
+    pattern: '\bmother[- ]in[- ]law (suite|unit|apartment|quarters)\b'
+    replacement: guest suite
+    suggestion: Use "guest suite" or "accessory dwelling unit (ADU)".
+  - id: en.age.retirement
+    lang: en
+    class: age
+    severity: warn
+    pattern: '\bretirement (community|living|haven)\b|\b55\s?\+|\bsenior (community|living)\b'
+    suggestion: Only use if the property legally qualifies as housing for older persons (HOPA). Confirm with your broker.
+
+  # Sex / gender
+  - id: en.sex.gender-only
+    lang: en
+    class: sex
+    severity: block
+    pattern: '\b(female|male|women|men|ladies|gentlemen|girls|boys)[- ]only\b|\bonly (women|men|females|males)\b'
+    suggestion: Remove it. Do not limit who may live in the home.
+  - id: en.sex.his-hers
+    lang: en
+    class: sex
+    severity: warn
+    pattern: '\bhis[- ]and[- ]hers?\b'
+    replacement: dual
+    suggestion: Use "dual" (for example "dual closets", "dual sinks").
+  - id: en.sex.man-cave
+    lang: en
+    class: sex
+    severity: warn
+    pattern: '\bman[- ]cave\b'
+    replacement: bonus room
+    suggestion: Use "bonus room", "den" or "media room".
+  - id: en.sex.gentleman
+    lang: en
+    class: sex
+    severity: warn
+    pattern: "\\bgentleman'?s (farm|ranch|estate)\\b"
+    replacement: hobby farm
+    suggestion: Use "hobby farm" or "small acreage".
+  - id: en.sex.sportsman
+    lang: en
+    class: sex
+    severity: warn
+    pattern: "\\bsportsman'?s (paradise|dream|retreat)\\b"
+    replacement: outdoor lover's retreat
+    suggestion: Describe the outdoor features directly (trails, lake access, acreage).
+  - id: en.style.master
+    lang: en
+    class: style_guideline
+    severity: warn
+    pattern: '\bmaster(?= (bed ?room|bath(room)?|suite|closet|retreat|wing))'
+    replacement: primary
+    suggestion: Many MLSs now ask for "primary" instead of "master" (not a legal violation, but it avoids complaints).
+
+  # Disability
+  - id: en.disability.exclude
+    lang: en
+    class: disability
+    severity: block
+    pattern: '\bno (wheelchairs?|disabled|handicapped|service animals?)\b|\bable[- ]bodied\b|\bnot (suitable|suited|ideal) for (the )?(disabled|handicapped|wheelchairs?|elderly)\b|\bmust be able to (climb|walk)\b'
+    suggestion: Remove it. You may describe accessibility features (for example "no-step entry"), never limit who may live there.
+  - id: en.disability.ideal-for
+    lang: en
+    class: disability
+    severity: block
+    pattern: '\b(perfect|ideal|great) for (the )?(disabled|handicapped|elderly|blind|deaf)\b'
+    suggestion: Describe the features instead ("no-step entry", "wide doorways", "grab bars in primary bath").
+  - id: en.disability.handicapped
+    lang: en
+    class: disability
+    severity: warn
+    pattern: '\bhandicap(ped)?[- ]accessible\b|\bhandicap(ped)? (ramp|bathroom|parking)\b'
+    replacement: accessible
+    suggestion: Use "accessible" (for example "accessible bathroom").
+
+  # Source of income (CA, NY, NJ, OR, WA and many cities)
+  - id: en.income.section-8
+    lang: en
+    class: source_of_income
+    severity: block
+    pattern: '\bno (section[- ]?8|vouchers?|housing (assistance|vouchers?)|hud|welfare|subsidi[sz]ed)\b|\bsection[- ]?8 not accepted\b'
+    suggestion: Remove it. Refusing housing vouchers is illegal in CA, NY, NJ, OR, WA and many other places.
+
+  # Race / color / national origin / citizenship
+  - id: en.race.group-neighborhood
+    lang: en
+    class: race_national_origin
+    severity: block
+    pattern: '\b(white|black|african[- ]american|hispanic|latino|latina|latinx|asian|chinese|korean|vietnamese|filipino|indian|mexican|european|caucasian|arab|middle[- ]eastern|irish|italian|polish|russian)[- ](neighborhood|community|area|enclave|families|family|buyers?|residents?|population|majority)\b'
+    suggestion: Never describe the race or ethnicity of a neighborhood or its residents. Describe the property and named places (parks, shops) instead.
+  - id: en.race.ethnic
+    lang: en
+    class: race_national_origin
+    severity: block
+    pattern: '\bethnic (neighborhood|community|area|enclave)\b|\bhomogeneous (neighborhood|community)\b'
+    suggestion: Remove it. Describe the property, not the people.
+  - id: en.origin.language-only
+    lang: en
+    class: race_national_origin
+    severity: block
+    pattern: '\benglish[- ]speaking (only|neighborhood|community|residents?)\b|\bno (immigrants|foreigners)\b|\b(us |u\.s\. )?citizens only\b|\bmust be an? (us |u\.s\. )?citizen\b'
+    suggestion: Remove it. National origin and (in CA, NY, WA) citizenship/immigration status are protected.
+  - id: en.race.exclusive
+    lang: en
+    class: race_national_origin
+    severity: warn
+    pattern: '\bexclusive (neighborhood|community|enclave|area)\b|\brestricted (neighborhood|community)\b|\btraditional neighborhood\b'
+    suggestion: These words were historically used to signal exclusion. Use specifics ("gated entry", "quarter-acre lots").
+
+  # Religion
+  - id: en.religion.group
+    lang: en
+    class: religion
+    severity: block
+    pattern: '\b(christian|catholic|protestant|jewish|muslim|islamic|hindu|buddhist|mormon|lds|sikh)[- ](home|family|families|neighborhood|community|area|buyers?|residents?)\b'
+    suggestion: Remove it. Never indicate a religious preference.
+  - id: en.religion.near-worship
+    lang: en
+    class: religion
+    severity: warn
+    pattern: '\b(near|close to|steps (from|to)|walk(ing distance)? to|minutes (from|to)) (the |a |an )?(church|churches|synagogue|mosque|temple|parish|cathedral)\b'
+    suggestion: Naming places of worship can suggest a religious preference. Prefer neutral landmarks (parks, shops, transit).
+
+  # Military / veteran status (CA, NY, NJ, WA)
+  - id: en.military.no-military
+    lang: en
+    class: military_status
+    severity: block
+    pattern: '\bno (military|veterans|servicemembers|service members)\b'
+    suggestion: Remove it. Military and veteran status are protected in several states.
+
+  # Steering (describing safety/schools can steer buyers)
+  - id: en.steering.safe
+    lang: en
+    class: steering
+    severity: warn
+    pattern: '\b(safe|safest|low[- ]crime|crime[- ]free|secure) (neighborhood|area|community|street|part of town|location)\b|\blow crime\b'
+    suggestion: '"Safe" is a judgment about people. Describe features instead ("gated entry", "well-lit street", "cul-de-sac").'
+  - id: en.steering.schools
+    lang: en
+    class: steering
+    severity: warn
+    pattern: '\b(good|great|best|top|excellent|top[- ]rated|award[- ]winning) schools?\b|\bschools? (are|is) (great|excellent|the best)\b'
+    suggestion: Name the school district factually ("in the Plano ISD") and let buyers check ratings themselves.
+
+  # ───────────────────────────── Spanish ─────────────────────────────
+  - id: es.familial.no-children
+    lang: es
+    class: familial_status
+    severity: block
+    pattern: '\b(no se (aceptan|admiten|permiten) (niños|niñas|menores)|sin niños|no (niños|menores))\b'
+    suggestion: Elimínelo. No indique quién puede vivir en la casa; describa el espacio.
+  - id: es.familial.adults-only
+    lang: es
+    class: familial_status
+    severity: block
+    pattern: '\b(s[oó]lo|solamente|únicamente) (para )?adultos\b'
+    suggestion: Elimínelo. Solo la vivienda que califica legalmente para personas mayores (HOPA) puede anunciar límites de edad.
+  - id: es.familial.ideal-for
+    lang: es
+    class: familial_status
+    severity: block
+    pattern: '\b(ideal|perfect[ao]|apt[ao]|pensad[ao]|hech[ao]) para (una |un |las |los )?(familias?|parejas?|solteros?|solteras?|reci[eé]n casados|jubilados?|personas mayores|adultos mayores|niños|estudiantes|matrimonios?)( (j[oó]venes|con niños|grandes|pequeñas))?\b'
+    suggestion: Describa lo que ofrece la propiedad ("tres recámaras en un solo nivel", "patio cercado") en lugar de para quién es.
+  - id: es.race.group-neighborhood
+    lang: es
+    class: race_national_origin
+    severity: block
+    pattern: '\b(barrio|vecindario|comunidad|zona|colonia) (hispan[ao]|latin[ao]|blanc[ao]|negr[ao]|asi[aá]tic[ao]|mexican[ao]|cristian[ao]|cat[oó]lic[ao]|jud[ií][ao]|musulman[ao])\b'
+    suggestion: Nunca describa la raza, origen o religión de un vecindario. Describa la propiedad.
+  - id: es.sex.gender-only
+    lang: es
+    class: sex
+    severity: block
+    pattern: '\b(s[oó]lo|solamente|únicamente) (para )?(hombres|mujeres|caballeros|damas|señoritas)\b'
+    suggestion: Elimínelo. No limite quién puede vivir en la casa.
+  - id: es.income.section-8
+    lang: es
+    class: source_of_income
+    severity: block
+    pattern: '\bno (se acepta |aceptamos )?(secci[oó]n 8|section 8|vales de vivienda|asistencia de vivienda)\b'
+    suggestion: Elimínelo. Rechazar vales de vivienda es ilegal en CA, NY, NJ, OR, WA y otros lugares.
+  - id: es.disability.exclude
+    lang: es
+    class: disability
+    severity: block
+    pattern: '\bno (apt[ao]|apropiad[ao]|adecuad[ao]) para (personas )?(discapacitad[ao]s|con discapacidad|sillas de ruedas|ancianos)\b'
+    suggestion: Elimínelo. Puede describir las características de accesibilidad, nunca limitar quién vive allí.
+  - id: es.steering.safe
+    lang: es
+    class: steering
+    severity: warn
+    pattern: '\b(barrio|vecindario|zona|comunidad|colonia) segur[ao]\b|\bbaja criminalidad\b'
+    suggestion: '"Seguro" es un juicio sobre las personas. Describa características ("calle sin salida", "entrada con portón").'
+  - id: es.steering.schools
+    lang: es
+    class: steering
+    severity: warn
+    pattern: '\b(buen[ao]s|excelentes|mejores) escuelas\b'
+    suggestion: Mencione el distrito escolar de forma objetiva y deje que el comprador consulte las calificaciones.
+  - id: es.religion.near-worship
+    lang: es
+    class: religion
+    severity: warn
+    pattern: '\bcerca de (la |una )?(iglesia|sinagoga|mezquita|templo|parroquia)\b'
+    suggestion: Prefiera puntos de referencia neutrales (parques, tiendas, transporte).
+  - id: es.style.master
+    lang: es
+    class: style_guideline
+    severity: warn
+    pattern: '\b(rec[aá]mara|habitaci[oó]n|dormitorio) master\b'
+    replacement: recámara principal
+    suggestion: Use "recámara principal".
+
+  # ───────────────────────────── Simplified Chinese ─────────────────────────────
+  - id: zh.race.group-community
+    lang: zh
+    class: race_national_origin
+    severity: block
+    pattern: '(华人|華人|中国人|白人|黑人|亚裔|亞裔|拉丁裔|西裔|韩裔|越裔|印度裔)(家庭|社区|社區|聚居|居民|区|區|为主|為主)'
+    suggestion: 请删除。不要描述社区或居民的种族、族裔或原籍。请描述房屋本身。
+  - id: zh.familial.no-children
+    lang: zh
+    class: familial_status
+    severity: block
+    pattern: '(不接受|不欢迎|不收|禁止|谢绝)(有)?(小孩|儿童|孩子|宝宝|婴儿)|无小孩|仅限成人|只限成人|成人专属'
+    suggestion: 请删除。不要说明谁可以居住，请描述空间。
+  - id: zh.familial.ideal-for
+    lang: zh
+    class: familial_status
+    severity: block
+    pattern: '(适合|最适合|非常适合|特别适合|理想的?选择[，,]?适合)(年轻的?|新婚|三口之家|大|小)?(夫妇|夫妻|家庭|单身人士|单身|新婚夫妇|退休人士|老人|长者|学生|小家庭|有孩子的家庭)'
+    suggestion: 描述房屋提供的条件（例如"单层三卧室"、"带围栏的大后院"），而不是适合什么人。
+  - id: zh.sex.gender-only
+    lang: zh
+    class: sex
+    severity: block
+    pattern: '仅限(男|女)(性|士)?|只租(男|女)'
+    suggestion: 请删除。不要限制居住者。
+  - id: zh.religion.group
+    lang: zh
+    class: religion
+    severity: block
+    pattern: '(基督徒|天主教|犹太|穆斯林|佛教徒)(家庭|社区|社區|买家)'
+    suggestion: 请删除。不要表示任何宗教偏好。
+  - id: zh.steering.safe
+    lang: zh
+    class: steering
+    severity: warn
+    pattern: '安全(的)?社区|治安(很|非常)?(好|良好|优良)|低犯罪率'
+    suggestion: '"安全"是对人的判断。请描述具体特点（如"死巷"、"门禁入口"）。'
+  - id: zh.steering.schools
+    lang: zh
+    class: steering
+    severity: warn
+    pattern: '(好|优质|顶级|顶尖|名校|优秀)学区|学区(很|非常)?(好|优秀)'
+    suggestion: 请客观写出学区名称，让买家自行查询评分。
+  - id: zh.religion.near-worship
+    lang: zh
+    class: religion
+    severity: warn
+    pattern: '(靠近|邻近|临近|步行(可)?到)(教堂|教会|寺庙|清真寺|犹太会堂)'
+    suggestion: 请使用中性地标（公园、商店、交通）。
+
+  # ───────────────────────────── Vietnamese ─────────────────────────────
+  - id: vi.race.group-community
+    lang: vi
+    class: race_national_origin
+    severity: block
+    pattern: '(khu|cộng đồng|xóm|vùng) (của )?người (Việt|Mỹ trắng|da trắng|da đen|Hoa|Mễ|Châu Á|Á Châu|gốc Á|Hàn|Ấn)'
+    suggestion: Xin xóa. Không mô tả chủng tộc hay nguồn gốc của khu phố hoặc cư dân. Hãy mô tả căn nhà.
+  - id: vi.familial.no-children
+    lang: vi
+    class: familial_status
+    severity: block
+    pattern: 'không (nhận|cho|chấp nhận|có) (trẻ em|trẻ nhỏ|con nít|em bé)|chỉ dành cho người lớn'
+    suggestion: Xin xóa. Không nói ai được ở; hãy mô tả không gian.
+  - id: vi.familial.ideal-for
+    lang: vi
+    class: familial_status
+    severity: block
+    pattern: '(lý tưởng|hoàn hảo|thích hợp|phù hợp) (cho|với) (các |những |một )?(gia đình|cặp đôi|cặp vợ chồng|vợ chồng trẻ|người độc thân|người già|người lớn tuổi|người về hưu|sinh viên|gia đình trẻ|gia đình có con nhỏ)'
+    suggestion: Hãy mô tả những gì căn nhà có ("ba phòng ngủ một tầng", "sân sau có hàng rào") thay vì nó dành cho ai.
+  - id: vi.sex.gender-only
+    lang: vi
+    class: sex
+    severity: block
+    pattern: 'chỉ (dành )?cho (nam|nữ|đàn ông|phụ nữ)'
+    suggestion: Xin xóa. Không giới hạn người ở.
+  - id: vi.steering.safe
+    lang: vi
+    class: steering
+    severity: warn
+    pattern: '(khu|khu phố|khu vực|xóm) (rất )?an toàn|an ninh tốt|ít tội phạm'
+    suggestion: '"An toàn" là nhận xét về con người. Hãy mô tả đặc điểm cụ thể (đường cụt, cổng có kiểm soát).'
+  - id: vi.steering.schools
+    lang: vi
+    class: steering
+    severity: warn
+    pattern: 'trường (học )?(tốt|giỏi|xuất sắc|hàng đầu)|học khu (tốt|giỏi)'
+    suggestion: Ghi tên học khu một cách khách quan để người mua tự tra cứu.
+  - id: vi.religion.near-worship
+    lang: vi
+    class: religion
+    severity: warn
+    pattern: 'gần (nhà thờ|chùa|đền|thánh đường)'
+    suggestion: Hãy dùng địa danh trung lập (công viên, cửa hàng, giao thông).
+
+  # ───────────────────────────── Korean ─────────────────────────────
+  - id: ko.race.group-community
+    lang: ko
+    class: race_national_origin
+    severity: block
+    pattern: '(한인|한국인|백인|흑인|아시아인|히스패닉|중국인|베트남인)\s?(밀집|위주|동네|커뮤니티|가정|가족|거주\s?지역)'
+    suggestion: 삭제해 주세요. 동네나 주민의 인종·출신을 묘사하지 마세요. 집 자체를 설명하세요.
+  - id: ko.familial.no-children
+    lang: ko
+    class: familial_status
+    severity: block
+    pattern: '(아이|어린이|자녀|아동|유아)\s?(불가|사절|금지|없는 (분|세대|가정)만)|성인\s?전용'
+    suggestion: 삭제해 주세요. 누가 살 수 있는지 말하지 말고 공간을 설명하세요.
+  - id: ko.familial.ideal-for
+    lang: ko
+    class: familial_status
+    severity: block
+    pattern: '(신혼부부|젊은 부부|부부|가족|가정|싱글|1인 가구|은퇴자|노부부|어르신|학생|아이 있는 집)(에게|들에게|분들께|을 위한|에)\s?(딱|완벽|적합|이상적|안성맞춤|추천)'
+    suggestion: 누구에게 맞는지 대신 집의 특징("한 층에 침실 3개", "울타리 있는 넓은 뒷마당")을 설명하세요.
+  - id: ko.sex.gender-only
+    lang: ko
+    class: sex
+    severity: block
+    pattern: '(남성|여성|남자|여자)\s?전용'
+    suggestion: 삭제해 주세요. 거주자를 제한하지 마세요.
+  - id: ko.steering.safe
+    lang: ko
+    class: steering
+    severity: warn
+    pattern: '안전한\s?(동네|지역|마을)|치안이\s?(좋|우수|뛰어)'
+    suggestion: '"안전"은 사람에 대한 판단입니다. 구체적 특징(막다른 길, 출입 게이트)을 설명하세요.'
+  - id: ko.steering.schools
+    lang: ko
+    class: steering
+    severity: warn
+    pattern: '(좋은|명문|우수한|최고의)\s?학군|학군이\s?(좋|우수|뛰어)'
+    suggestion: 학군 이름을 객관적으로 적고, 평가는 구매자가 직접 확인하게 하세요.
+  - id: ko.religion.near-worship
+    lang: ko
+    class: religion
+    severity: warn
+    pattern: '(교회|성당|사찰|절|모스크|회당)\s?(근처|인근|가까|도보)'
+    suggestion: 중립적인 랜드마크(공원, 상점, 교통)를 사용하세요.
+
+  # ───────────────────────────── Tagalog / Portuguese (BR) / French (CA) ─────────────────────────────
+  - id: tl.familial.ideal-for
+    lang: tl
+    class: familial_status
+    severity: block
+    pattern: '\b(perpekto|bagay|swak|akma) (para )?sa (mga )?(pamilya|mag-asawa|bagong kasal|retirado|estudyante|walang asawa)\b'
+    suggestion: Ilarawan ang bahay, hindi ang mga taong titira.
+  - id: pt-BR.familial.ideal-for
+    lang: pt-BR
+    class: familial_status
+    severity: block
+    pattern: '\b(ideal|perfeit[ao]|feit[ao]) para (uma |um |as |os )?(fam[ií]lias?|casais?|solteir[ao]s?|rec[eé]m-casados|aposentados?|idosos|crian[cç]as|estudantes)\b|\bn[aã]o aceita(mos)? crian[cç]as\b'
+    suggestion: Descreva o imóvel, não as pessoas.
+  - id: fr-CA.familial.ideal-for
+    lang: fr-CA
+    class: familial_status
+    severity: block
+    pattern: "\\b(id[ée]al|parfait(e)?|con[cç]u(e)?) pour (une |un |les |des )?(familles?|couples?|c[ée]libataires|jeunes mari[ée]s|retrait[ée]s|a[iî]n[ée]s|enfants|[ée]tudiants)\\b|\\bpas d'enfants\\b|\\badultes seulement\\b"
+    suggestion: Décrivez la propriété, pas les personnes.

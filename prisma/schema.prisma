@@ -1,0 +1,544 @@
+// RealtyBoost data model.
+//
+// Multi-tenancy rule: every tenant-owned row has a `tenantId` column, every
+// query runs through `tenantDb(tenantId)` (src/lib/db.ts), and Postgres
+// row-level security (see migrations/*_rls) blocks any query that forgets.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────── Tenancy & auth ───────────────────────────────
+
+enum Plan {
+  SOLO
+  PRO
+  TEAM
+}
+
+enum SubscriptionStatus {
+  TRIALING
+  ACTIVE
+  PAST_DUE
+  CANCELED
+  NONE
+}
+
+enum UserRole {
+  OWNER
+  ADMIN
+  AGENT
+}
+
+model Tenant {
+  id                   String             @id @default(cuid())
+  name                 String
+  plan                 Plan               @default(PRO)
+  subscriptionStatus   SubscriptionStatus @default(TRIALING)
+  trialEndsAt          DateTime?
+  currentPeriodEnd     DateTime?
+  stripeCustomerId     String?            @unique
+  stripeSubscriptionId String?            @unique
+  defaultLocale        String             @default("en")
+  // White-label (Team plan)
+  brandName            String?
+  brandColor           String?
+  logoUrl              String?
+  createdAt            DateTime           @default(now())
+  updatedAt            DateTime           @updatedAt
+
+  users         User[]
+  sessions      Session[]
+  profiles      AgentProfile[]
+  properties    Property[]
+  generations   Generation[]
+  microsites    Microsite[]
+  contacts      Contact[]
+  deals         Deal[]
+  tasks         Task[]
+  notes         Note[]
+  activities    Activity[]
+  savedViews    SavedView[]
+  cmas          Cma[]
+  checklist     ChecklistItem[]
+  auditLogs     AuditLog[]
+}
+
+model User {
+  id              String   @id @default(cuid())
+  tenantId        String
+  email           String   @unique
+  passwordHash    String
+  name            String
+  role            UserRole @default(OWNER)
+  locale          String   @default("en")
+  isPlatformAdmin Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  tenant   Tenant        @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  sessions Session[]
+  profile  AgentProfile?
+  tasks    Task[]        @relation("TaskAssignee")
+
+  @@index([tenantId])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  tenantId  String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+  @@index([userId])
+}
+
+/// One per user: the agent's public identity, brand voice and content defaults.
+model AgentProfile {
+  id               String    @id @default(cuid())
+  tenantId         String
+  userId           String    @unique
+  displayName      String
+  phone            String?
+  email            String?
+  brokerage        String?
+  brokeragePhone   String?
+  licenseNumber    String?
+  licenseState     String?
+  mlsId            String?
+  marketsServed    String?
+  headshotUrl      String?
+  bio              String?
+  brandTone        String    @default("warm")
+  brandVoiceNotes  String?
+  wordsToAvoid     String?
+  signature        String?
+  phoneModel       String?
+  contentLanguage  String    @default("en")
+  extraLanguages   String[]  @default([])
+  setupCompletedAt DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+// ─────────────────────────────── Listings & content ───────────────────────────
+
+enum ListingStatus {
+  COMING_SOON
+  ACTIVE
+  PENDING
+  SOLD
+  OFF_MARKET
+}
+
+model Property {
+  id           String        @id @default(cuid())
+  tenantId     String
+  createdById  String?
+  address      String
+  unit         String?
+  city         String
+  state        String
+  zip          String
+  price        Int?
+  status       ListingStatus @default(ACTIVE)
+  propertyType String        @default("single_family")
+  beds         Float?
+  baths        Float?
+  sqft         Int?
+  lotSize      String?
+  yearBuilt    Int?
+  garage       String?
+  stories      Int?
+  hoaFee       Int?
+  facing       String?
+  features     String?
+  upgrades     String?
+  neighborhood String?
+  outdoor      String?
+  heroImageUrl String?
+  openHouseAt  DateTime?
+  openHouseEnd DateTime?
+  phoneModel   String?
+  privateNotes String?
+  soldPrice    Int?
+  soldAt       DateTime?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  tenant      Tenant       @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  generations Generation[]
+  microsite   Microsite?
+  deals       Deal[]
+  cmas        Cma[]
+
+  @@index([tenantId, createdAt])
+}
+
+enum GenerationStatus {
+  SUCCESS
+  NEEDS_REVIEW
+  FAILED
+}
+
+/// Every AI output. One row per language when "Also generate in" is used
+/// (rows share a batchId).
+model Generation {
+  id               String           @id @default(cuid())
+  tenantId         String
+  userId           String?
+  moduleId         String
+  propertyId       String?
+  contactId        String?
+  batchId          String?
+  language         String
+  input            Json
+  output           Json?
+  compliance       Json?
+  status           GenerationStatus @default(SUCCESS)
+  errorMessage     String?
+  provider         String?
+  model            String?
+  promptId         String?
+  promptVersion    Int?
+  inputTokens      Int              @default(0)
+  outputTokens     Int              @default(0)
+  costUsd          Decimal          @default(0) @db.Decimal(10, 6)
+  latencyMs        Int              @default(0)
+  createdAt        DateTime         @default(now())
+
+  tenant   Tenant    @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  property Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+  contact  Contact?  @relation(fields: [contactId], references: [id], onDelete: SetNull)
+
+  @@index([tenantId, createdAt])
+  @@index([tenantId, propertyId])
+  @@index([batchId])
+}
+
+/// Public lead-capture page for one listing. `slug` is globally unique because
+/// it is the public URL (/l/<slug>).
+model Microsite {
+  id         String   @id @default(cuid())
+  tenantId   String
+  propertyId String   @unique
+  slug       String   @unique
+  published  Boolean  @default(false)
+  language   String   @default("en")
+  headline   String
+  intro      String?
+  highlights String[] @default([])
+  body       String?
+  showPrice  Boolean  @default(true)
+  accentColor String  @default("#1d4ed8")
+  views      Int      @default(0)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  tenant   Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+// ─────────────────────────────── CRM ───────────────────────────────
+
+enum ContactStatus {
+  NEW
+  NURTURE
+  ACTIVE
+  PAST_CLIENT
+  DO_NOT_CONTACT
+}
+
+enum LeadSource {
+  MICROSITE
+  OPEN_HOUSE
+  ZILLOW
+  REALTOR_COM
+  FACEBOOK
+  INSTAGRAM
+  GOOGLE
+  WEBSITE
+  REFERRAL
+  PAST_CLIENT
+  SPHERE
+  SIGN_CALL
+  OTHER
+}
+
+model Contact {
+  id                 String        @id @default(cuid())
+  tenantId           String
+  firstName          String
+  lastName           String?
+  email              String?
+  phone              String?
+  roles              String[]      @default([])
+  status             ContactStatus @default(NEW)
+  source             LeadSource    @default(OTHER)
+  sourceDetail       String?
+  preferredLanguage  String?
+  tags               String[]      @default([])
+  // Buyer preferences
+  priceMin           Int?
+  priceMax           Int?
+  bedsMin            Float?
+  bathsMin           Float?
+  areas              String?
+  propertyTypes      String[]      @default([])
+  mustHaves          String?
+  timeline           String?
+  preApproved        Boolean       @default(false)
+  lender             String?
+  // Consent (TCPA / CAN-SPAM). Stored with timestamp + where it was given.
+  emailOptIn         Boolean       @default(false)
+  smsConsent         Boolean       @default(false)
+  consentAt          DateTime?
+  consentSource      String?
+  consentText        String?
+  lastContactedAt    DateTime?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+
+  tenant      Tenant       @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  deals       Deal[]
+  tasks       Task[]
+  notes       Note[]
+  activities  Activity[]
+  generations Generation[]
+
+  @@index([tenantId, createdAt])
+  @@index([tenantId, status])
+}
+
+enum DealStage {
+  NEW_LEAD
+  NURTURE
+  APPOINTMENT
+  ACTIVE
+  UNDER_CONTRACT
+  CLOSED
+  LOST
+}
+
+enum DealSide {
+  BUYER
+  SELLER
+  BOTH
+}
+
+model Deal {
+  id                String    @id @default(cuid())
+  tenantId          String
+  title             String
+  contactId         String
+  propertyId        String?
+  side              DealSide  @default(BUYER)
+  stage             DealStage @default(NEW_LEAD)
+  value             Int?
+  commissionPct     Float?
+  position          Int       @default(0)
+  expectedCloseDate DateTime?
+  contractDate      DateTime?
+  closedAt          DateTime?
+  lostReason        String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  tenant    Tenant          @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  contact   Contact         @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  property  Property?       @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+  tasks     Task[]
+  notes     Note[]
+  activities Activity[]
+  checklist ChecklistItem[]
+
+  @@index([tenantId, stage])
+}
+
+model Task {
+  id           String    @id @default(cuid())
+  tenantId     String
+  title        String
+  details      String?
+  dueAt        DateTime?
+  completedAt  DateTime?
+  priority     Int       @default(2)
+  contactId    String?
+  dealId       String?
+  assignedToId String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  tenant     Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  contact    Contact? @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  deal       Deal?    @relation(fields: [dealId], references: [id], onDelete: Cascade)
+  assignedTo User?    @relation("TaskAssignee", fields: [assignedToId], references: [id], onDelete: SetNull)
+
+  @@index([tenantId, completedAt, dueAt])
+}
+
+model Note {
+  id        String   @id @default(cuid())
+  tenantId  String
+  body      String
+  contactId String?
+  dealId    String?
+  authorId  String?
+  createdAt DateTime @default(now())
+
+  tenant  Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  contact Contact? @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  deal    Deal?    @relation(fields: [dealId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+enum ActivityType {
+  CALL
+  EMAIL
+  TEXT
+  MEETING
+  SHOWING
+  LEAD
+  STAGE_CHANGE
+  OTHER
+}
+
+enum ActivityDirection {
+  INBOUND
+  OUTBOUND
+  NONE
+}
+
+/// Communication log (manual entry in v1) + system events like new leads.
+model Activity {
+  id         String            @id @default(cuid())
+  tenantId   String
+  type       ActivityType
+  direction  ActivityDirection @default(NONE)
+  summary    String
+  metadata   Json?
+  occurredAt DateTime          @default(now())
+  contactId  String?
+  dealId     String?
+  userId     String?
+  createdAt  DateTime          @default(now())
+
+  tenant  Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  contact Contact? @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  deal    Deal?    @relation(fields: [dealId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, occurredAt])
+  @@index([contactId])
+}
+
+model SavedView {
+  id        String   @id @default(cuid())
+  tenantId  String
+  userId    String
+  name      String
+  entity    String   @default("contact")
+  filters   Json
+  createdAt DateTime @default(now())
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId])
+}
+
+// ─────────────────────────────── Transactions ───────────────────────────────
+
+enum ChecklistKind {
+  TASK
+  DEADLINE
+  DOCUMENT
+}
+
+model ChecklistItem {
+  id          String        @id @default(cuid())
+  tenantId    String
+  dealId      String
+  title       String
+  kind        ChecklistKind @default(TASK)
+  required    Boolean       @default(true)
+  dueAt       DateTime?
+  completedAt DateTime?
+  position    Int           @default(0)
+  createdAt   DateTime      @default(now())
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  deal   Deal   @relation(fields: [dealId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, dealId])
+}
+
+// ─────────────────────────────── CMA ───────────────────────────────
+
+model Cma {
+  id         String   @id @default(cuid())
+  tenantId   String
+  propertyId String?
+  title      String
+  subject    Json
+  comps      Json
+  settings   Json
+  result     Json
+  narrative  Json?
+  language   String   @default("en")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  tenant   Tenant    @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  property Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+
+  @@index([tenantId, createdAt])
+}
+
+// ─────────────────────────────── Observability & billing ──────────────────────
+
+/// One row per AI generation and per CRM mutation. Powers /admin.
+model AuditLog {
+  id           String   @id @default(cuid())
+  tenantId     String
+  userId       String?
+  action       String
+  entity       String?
+  entityId     String?
+  model        String?
+  inputTokens  Int?
+  outputTokens Int?
+  costUsd      Decimal? @db.Decimal(10, 6)
+  latencyMs    Int?
+  metadata     Json?
+  createdAt    DateTime @default(now())
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, createdAt])
+  @@index([action, createdAt])
+}
+
+/// Stripe webhook idempotency (not tenant-scoped: written before tenant is known).
+model StripeEvent {
+  id          String   @id
+  type        String
+  processedAt DateTime @default(now())
+}
