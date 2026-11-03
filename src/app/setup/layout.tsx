@@ -7,7 +7,8 @@ export default function SetupLayout({ children }: { children: React.ReactNode })
       <header className="border-b-2 border-slate-200 bg-white">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-4 px-4 py-3">
           <Logo href="/setup" />
-          <LanguageSwitcher back="/setup" />
+          <div className="hidden md:block"><LanguageSwitcher back="/setup" /></div>
+          <div className="md:hidden"><LanguageSwitcher back="/setup" compact /></div>
         </div>
       </header>
       <main className="mx-auto max-w-3xl px-4 py-10">{children}</main>

@@ -61,7 +61,7 @@ export default async function CmaReportPage({ params, searchParams }: { params: 
 
       <section className="space-y-3">
         <h2 className="text-2xl font-bold">{t("compsTable")}</h2>
-        <div className="overflow-x-auto rounded-2xl border-2 border-slate-200 bg-white">
+        <div className="relative overflow-x-auto rounded-2xl border-2 border-slate-200 bg-white">
           <table className="w-full min-w-[56rem] text-left text-base">
             <thead className="bg-slate-100 text-base">
               <tr>

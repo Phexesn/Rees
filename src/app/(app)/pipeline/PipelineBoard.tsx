@@ -56,7 +56,7 @@ export function PipelineBoard({ deals }: { deals: BoardDeal[] }) {
   const usd = (n: number) => `$${n.toLocaleString("en-US")}`;
 
   return (
-    <div className="-mx-4 overflow-x-auto px-4 pb-4">
+    <div className="relative overflow-x-auto pb-4">
       <div className="flex min-w-max gap-4">
         {DEAL_STAGES.map((stage) => {
           const column = optimistic.filter((d) => d.stage === stage).sort((a, b) => a.position - b.position);

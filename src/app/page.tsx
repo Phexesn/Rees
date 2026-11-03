@@ -43,7 +43,8 @@ export default async function LandingPage() {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3">
           <Logo />
           <div className="flex flex-wrap items-center gap-4">
-            <LanguageSwitcher />
+            <div className="hidden md:block"><LanguageSwitcher /></div>
+            <div className="md:hidden"><LanguageSwitcher compact /></div>
             <LinkButton href="/login" variant="ghost">{t("signIn")}</LinkButton>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default async function TeamPage() {
   return (
     <div className="space-y-8">
       <PageHeader title={t("title")} description={t("subtitle", { used: users.length, seats })} />
-      <div className="overflow-x-auto rounded-2xl border-2 border-slate-200 bg-white">
+      <div className="relative overflow-x-auto rounded-2xl border-2 border-slate-200 bg-white">
         <table className="w-full min-w-[40rem] text-left text-lg">
           <thead className="bg-slate-100">
             <tr>

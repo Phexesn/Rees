@@ -69,10 +69,15 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         </div>
       ) : null}
       <header className="border-b-2 border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3">
           <Logo href="/dashboard" name={whiteLabel ? ctx.tenant.brandName! : "RealtyBoost"} />
-          <div className="flex flex-wrap items-center gap-4">
-            <LanguageSwitcher back="/dashboard" />
+          <div className="flex items-center gap-3">
+            <div className="hidden lg:block">
+              <LanguageSwitcher back="/dashboard" />
+            </div>
+            <div className="lg:hidden">
+              <LanguageSwitcher back="/dashboard" compact />
+            </div>
             <details className="relative lg:hidden">
               <summary className="flex min-h-12 cursor-pointer list-none items-center gap-2 rounded-xl border-2 border-slate-300 px-4 text-lg font-semibold">
                 ☰ {t("menu")}

@@ -26,6 +26,8 @@ RealtyBoost v0.1 runs end to end locally: sign up → 5-step setup → add a lis
 | Translations es / zh / vi / ko | ✅ 1,115 keys each, checker passes | `npm run check:locales`; screenshots in 4 languages |
 | Landing page | ✅ | Screenshot review |
 | Realtor Playbook vault (side product) | ✅ draft, 35 notes, 178 links, 0 broken | link checker |
+| Accessibility (WCAG 2.1 AA) | ✅ 0 violations on 15 key screens | axe-core audit (landing, signup, listing page, kiosk, dashboard, listings, create, contacts, pipeline, tasks, CMA, settings, billing, help, results) |
+| Phone layout | ✅ no sideways scrolling | iPhone 13 emulation: dashboard, pipeline, coach |
 
 ## Half-done / needs attention
 

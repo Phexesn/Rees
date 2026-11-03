@@ -47,7 +47,7 @@ export default function PhotoGuideView({ output }: ModuleViewProps<Output>) {
       </OutputSection>
 
       <OutputSection title={t("phoneSettings", { phone: output.phone_settings.phone })} icon="📱">
-        <div className="overflow-x-auto rounded-xl border-2 border-slate-200 bg-white">
+        <div className="relative overflow-x-auto rounded-xl border-2 border-slate-200 bg-white">
           <table className="w-full text-left text-lg">
             <thead className="bg-slate-100">
               <tr>
